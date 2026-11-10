@@ -1,0 +1,477 @@
+agile_section_html = '''  <!-- ========================================================================= -->
+  <!-- 05. AGILE DRIVEN SERVICES (MOBRILZ PROVEN ARCHITECTURE & TECH MATRIX)       -->
+  <!-- ========================================================================= -->
+  <section id="technologies" class="py-20 md:py-28 bg-[#fdfdfd] relative overflow-hidden border-t border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium tracking-wide bg-blue-50 text-mobrilz-blue border border-blue-100 uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-mobrilz-blue animate-pulse"></span>
+          Agile Methodology & Tooling
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-light text-mobrilz-navy tracking-tight leading-tight">
+          Agile Driven Web & Mobile App Development Services
+        </h2>
+        <p class="text-slate-500 font-light text-base sm:text-lg">
+          Our processes are proven, the expertise is there and our tools are top-notch
+        </p>
+      </div>
+
+      <!-- Main 2-Column Quadrant: Web & Mobile -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+
+        <!-- ======================= WEB QUADRANT ======================= -->
+        <div class="relative bg-white rounded-3xl p-6 sm:p-8 border-2 border-dashed border-blue-200/80 shadow-xs hover:border-mobrilz-blue/50 transition-all duration-300">
+          <!-- Web Header -->
+          <div class="text-center mb-6">
+            <h3 class="text-2xl sm:text-3xl font-light text-mobrilz-navy tracking-tight">Web</h3>
+            <div class="w-12 h-0.5 bg-mobrilz-blue/40 mx-auto mt-2 rounded-full"></div>
+          </div>
+
+          <!-- Monitor Visual Graphic -->
+          <div class="relative flex justify-center items-center py-4">
+            <div class="relative max-w-[280px] sm:max-w-[340px] w-full transition-transform duration-500 hover:scale-[1.02]">
+              <img src="/assets/mobrilz/monitior1.png" alt="Web Development" class="w-full h-auto object-contain drop-shadow-md" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Connecting Curved Dashed Piping with Circular Arrow Down Pin -->
+          <div class="relative my-4 flex items-center justify-center">
+            <div class="w-full border-t-2 border-dashed border-blue-200"></div>
+            <div class="absolute -top-4 w-8 h-8 rounded-full bg-[#dce6fa] border-2 border-white shadow-xs flex items-center justify-center text-mobrilz-blue">
+              <i data-lucide="arrow-down" class="w-4 h-4"></i>
+            </div>
+          </div>
+
+          <!-- Tech Stack Container -->
+          <div class="mt-6 pt-2">
+            <div class="text-center mb-5">
+              <h4 class="text-xl font-light text-mobrilz-navy tracking-tight">Tech Stack</h4>
+            </div>
+
+            <!-- APPS Category Box -->
+            <div class="rounded-2xl border-2 border-dashed border-slate-200 p-4 sm:p-5 mb-5 bg-slate-50/40">
+              <div class="text-center mb-4">
+                <span class="text-xs font-mono font-medium tracking-wider text-mobrilz-blue uppercase bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">APPS</span>
+              </div>
+
+              <!-- BACKEND Subsection -->
+              <div class="mb-4">
+                <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2 font-medium">Backend</div>
+                <div class="grid grid-cols-3 gap-2.5">
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/nodejs.png" alt="Nodejs" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">Nodejs</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/python.png" alt="Python" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">Python</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/laravel.png" alt="Laravel" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">Laravel</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FRONTEND Subsection -->
+              <div class="mb-4">
+                <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2 font-medium">Frontend</div>
+                <div class="grid grid-cols-3 gap-2.5">
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/nextjs.png" alt="Next JS" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">Next JS</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/reactjs.png" alt="React JS" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">React JS</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/nuxt.png" alt="Nuxt JS" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">Nuxt JS</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DATABASE Subsection -->
+              <div>
+                <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2 font-medium">Database</div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/mysql.png" alt="MySQL" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">MySQL</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/postgresql.png" alt="PostgreSQL" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">PostgreSQL</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/mongodb.png" alt="MongoDB" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">Mongo DB</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/mssql.png" alt="MSSQL" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">MSSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- API Category Box -->
+            <div class="rounded-2xl border-2 border-dashed border-slate-200 p-4 sm:p-5 bg-slate-50/40">
+              <div class="text-center mb-3">
+                <span class="text-xs font-mono font-medium tracking-wider text-mobrilz-blue uppercase bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">API</span>
+              </div>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/icons/fastify.png" alt="Fastify" class="w-5 h-5 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy truncate">Fastify</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/icons/restify.png" alt="Restify" class="w-5 h-5 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy truncate">Restify</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/icons/express.png" alt="Express JS" class="w-5 h-5 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy truncate">Express JS</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/icons/lumen.png" alt="Lumen" class="w-5 h-5 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy truncate">Lumen</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/icons/koa.png" alt="Koa.js" class="w-5 h-5 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy truncate">Koa.js</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/icons/hapi.png" alt="Hapi.js" class="w-5 h-5 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy truncate">Hapi.js</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ======================= MOBILE QUADRANT ======================= -->
+        <div class="relative bg-white rounded-3xl p-6 sm:p-8 border-2 border-dashed border-blue-200/80 shadow-xs hover:border-mobrilz-blue/50 transition-all duration-300">
+          <!-- Mobile Header -->
+          <div class="text-center mb-6">
+            <h3 class="text-2xl sm:text-3xl font-light text-mobrilz-navy tracking-tight">Mobile</h3>
+            <div class="w-12 h-0.5 bg-mobrilz-blue/40 mx-auto mt-2 rounded-full"></div>
+          </div>
+
+          <!-- Mobile Slash Graphic with Orbiting Badges -->
+          <div class="relative flex justify-center items-center py-4">
+            <!-- Left Swift Badge -->
+            <div class="absolute left-4 top-1/2 -translate-y-1/2 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm animate-bounce" style="animation-duration: 4s;">
+              <img src="/assets/mobrilz/swift.png" alt="Swift" class="w-5 h-5 object-contain" />
+              <span class="text-xs font-light text-slate-700">Swift</span>
+            </div>
+
+            <!-- Phone Slash Image -->
+            <div class="relative max-w-[240px] sm:max-w-[280px] w-full transition-transform duration-500 hover:scale-[1.02]">
+              <img src="/assets/mobrilz/slash.png" alt="Mobile Development" class="w-full h-auto object-contain drop-shadow-md" loading="lazy" />
+            </div>
+
+            <!-- Right Dart Badge -->
+            <div class="absolute right-4 top-1/2 -translate-y-1/2 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm animate-bounce" style="animation-duration: 4s; animation-delay: 1.5s;">
+              <img src="/assets/mobrilz/dart.png" alt="Dart Flutter" class="w-5 h-5 object-contain" />
+              <span class="text-xs font-light text-slate-700">Flutter</span>
+            </div>
+          </div>
+
+          <!-- Connecting Curved Dashed Piping with Circular Arrow Down Pin -->
+          <div class="relative my-4 flex items-center justify-center">
+            <div class="w-full border-t-2 border-dashed border-blue-200"></div>
+            <div class="absolute -top-4 w-8 h-8 rounded-full bg-[#dce6fa] border-2 border-white shadow-xs flex items-center justify-center text-mobrilz-blue">
+              <i data-lucide="arrow-down" class="w-4 h-4"></i>
+            </div>
+          </div>
+
+          <!-- Tech Stack Container -->
+          <div class="mt-6 pt-2">
+            <div class="text-center mb-5">
+              <h4 class="text-xl font-light text-mobrilz-navy tracking-tight">Tech Stack</h4>
+            </div>
+
+            <!-- Native iOS & Android Boxes Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+              <!-- iOS Box -->
+              <div class="rounded-2xl border-2 border-dashed border-slate-200 p-4 bg-slate-50/40">
+                <div class="text-center mb-3">
+                  <span class="text-xs font-mono font-medium tracking-wider text-mobrilz-blue uppercase bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">iOS</span>
+                </div>
+                <div class="flex items-center gap-2.5 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/icons/swift_icon.png" alt="Swift" class="w-6 h-6 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy">Swift</span>
+                </div>
+              </div>
+
+              <!-- Android Box -->
+              <div class="rounded-2xl border-2 border-dashed border-slate-200 p-4 bg-slate-50/40">
+                <div class="text-center mb-3">
+                  <span class="text-xs font-mono font-medium tracking-wider text-mobrilz-blue uppercase bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">ANDROID</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/java.png" alt="Java" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">Java</span>
+                  </div>
+                  <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                    <img src="/assets/mobrilz/icons/kotlin.png" alt="Kotlin" class="w-5 h-5 object-contain" />
+                    <span class="text-xs font-light text-mobrilz-navy truncate">Kotlin</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hybrid Apps Tech Stack Box -->
+            <div class="rounded-2xl border-2 border-dashed border-slate-200 p-4 sm:p-5 bg-slate-50/40">
+              <div class="text-center mb-3">
+                <span class="text-xs font-mono font-medium tracking-wider text-mobrilz-blue uppercase bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">Hybrid Apps Tech Stack</span>
+              </div>
+              <div class="grid grid-cols-3 gap-2.5">
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/icons/reactjs.png" alt="React Native" class="w-5 h-5 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy truncate">React Native</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/dart.png" alt="Flutter" class="w-5 h-5 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy truncate">Flutter</span>
+                </div>
+                <div class="flex items-center gap-2 p-2 rounded-xl bg-white border border-slate-200/80 hover:border-mobrilz-blue/40 hover:shadow-xs transition-all">
+                  <img src="/assets/mobrilz/icons/ionic.png" alt="Ionic" class="w-5 h-5 object-contain" />
+                  <span class="text-xs font-light text-mobrilz-navy truncate">Ionic</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Middle Grid: Automation Testing, DevOps & Deployment -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+        <!-- Automation Testing -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-dashed border-blue-200/80 shadow-xs flex flex-col justify-between hover:border-mobrilz-blue/50 transition-all">
+          <div>
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-light text-mobrilz-navy tracking-tight">Automation Testing</h3>
+              <div class="w-10 h-0.5 bg-mobrilz-blue/40 mx-auto mt-1.5 rounded-full"></div>
+            </div>
+            <div class="flex justify-center items-center py-2 mb-3">
+              <img src="/assets/mobrilz/testing1.png" alt="Automation Testing" class="h-20 w-auto object-contain drop-shadow-sm" />
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-100">
+            <div class="flex flex-col items-center p-2 rounded-xl bg-slate-50 border border-slate-200/70 text-center">
+              <img src="/assets/mobrilz/icons/webDriver.png" alt="WebDriverIO" class="w-5 h-5 object-contain mb-1" />
+              <span class="text-[11px] font-light text-slate-700 truncate w-full">WebDriverIO</span>
+            </div>
+            <div class="flex flex-col items-center p-2 rounded-xl bg-slate-50 border border-slate-200/70 text-center">
+              <img src="/assets/mobrilz/icons/nightwatch.png" alt="NightWatch.js" class="w-5 h-5 object-contain mb-1" />
+              <span class="text-[11px] font-light text-slate-700 truncate w-full">NightWatch</span>
+            </div>
+            <div class="flex flex-col items-center p-2 rounded-xl bg-slate-50 border border-slate-200/70 text-center">
+              <img src="/assets/mobrilz/icons/lumen.png" alt="Laravel Dusk" class="w-5 h-5 object-contain mb-1" />
+              <span class="text-[11px] font-light text-slate-700 truncate w-full">Dusk</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps Box -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-dashed border-blue-200/80 shadow-xs flex flex-col justify-between hover:border-mobrilz-blue/50 transition-all">
+          <div>
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-light text-mobrilz-navy tracking-tight">DevOps</h3>
+              <div class="w-10 h-0.5 bg-mobrilz-blue/40 mx-auto mt-1.5 rounded-full"></div>
+            </div>
+            <div class="flex justify-center items-center gap-4 py-4 mb-2">
+              <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 hover:scale-105 transition-transform shadow-xs">
+                <img src="/assets/mobrilz/github.png" alt="GitHub" class="w-8 h-8 object-contain" />
+              </div>
+              <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 hover:scale-105 transition-transform shadow-xs">
+                <img src="/assets/mobrilz/jenkins.png" alt="Jenkins" class="w-8 h-8 object-contain" />
+              </div>
+              <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 hover:scale-105 transition-transform shadow-xs">
+                <img src="/assets/mobrilz/docker.png" alt="Docker" class="w-8 h-8 object-contain" />
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-100 text-center">
+            <span class="text-xs font-light text-slate-600">GitHub CI/CD</span>
+            <span class="text-xs font-light text-slate-600">Jenkins</span>
+            <span class="text-xs font-light text-slate-600">Docker</span>
+          </div>
+        </div>
+
+        <!-- Deployment Box -->
+        <div class="bg-white rounded-3xl p-6 border-2 border-dashed border-blue-200/80 shadow-xs flex flex-col justify-between hover:border-mobrilz-blue/50 transition-all">
+          <div>
+            <div class="text-center mb-4">
+              <h3 class="text-xl font-light text-mobrilz-navy tracking-tight">Deployment</h3>
+              <div class="w-10 h-0.5 bg-mobrilz-blue/40 mx-auto mt-1.5 rounded-full"></div>
+            </div>
+            <div class="flex justify-center items-center gap-4 py-4 mb-2">
+              <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 hover:scale-105 transition-transform shadow-xs">
+                <img src="/assets/mobrilz/aws.png" alt="AWS" class="w-8 h-8 object-contain" />
+              </div>
+              <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 hover:scale-105 transition-transform shadow-xs">
+                <img src="/assets/mobrilz/azure.png" alt="Azure" class="w-8 h-8 object-contain" />
+              </div>
+              <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center p-2 hover:scale-105 transition-transform shadow-xs">
+                <img src="/assets/mobrilz/gcp.png" alt="GCP" class="w-8 h-8 object-contain" />
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-100 text-center">
+            <span class="text-xs font-light text-slate-600">AWS</span>
+            <span class="text-xs font-light text-slate-600">Azure</span>
+            <span class="text-xs font-light text-slate-600">Google Cloud</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Solutions Matrix: Web Solutions & Mobile Solutions -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Web Solutions -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-dashed border-blue-200/80 shadow-xs hover:border-mobrilz-blue/50 transition-all">
+          <div class="flex items-center justify-between mb-6 pb-3 border-b border-slate-100">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-blue-50 text-mobrilz-blue flex items-center justify-center">
+                <i data-lucide="globe" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-2xl font-light text-mobrilz-navy tracking-tight">Web Solutions</h3>
+            </div>
+            <span class="text-xs font-mono text-slate-400">7 Offerings</span>
+          </div>
+
+          <div class="space-y-3">
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">Single Page Applications</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Modern web apps with seamless user experience.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">PWA (Progressive Web Apps)</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Web apps that work like native applications offline and on mobile.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">CMS Development</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Custom content management solutions built for speed.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">API Development</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Robust and scalable API architectures and microservices.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">Custom CMS</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Tailored content management systems for specialized workflows.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">Web Apps & eCommerce Cloud</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Full-featured web applications and cloud-based online store solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Solutions -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-dashed border-blue-200/80 shadow-xs hover:border-mobrilz-blue/50 transition-all">
+          <div class="flex items-center justify-between mb-6 pb-3 border-b border-slate-100">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-blue-50 text-mobrilz-blue flex items-center justify-center">
+                <i data-lucide="smartphone" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-2xl font-light text-mobrilz-navy tracking-tight">Mobile Solutions</h3>
+            </div>
+            <span class="text-xs font-mono text-slate-400">7 Offerings</span>
+          </div>
+
+          <div class="space-y-3">
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">eCommerce Apps</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Mobile shopping experiences that convert and retain shoppers.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">Real-Time Apps</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Live data feeds, collaborative state, and instant socket updates.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">Android & iOS/iPadOS Native Apps</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Pixel-perfect native applications built with Swift and Kotlin.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">Chat & Video Streaming Apps</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">End-to-end encrypted messaging, WebRTC audio/video call suites.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">Unity & 3D Interactive Apps</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">High-performance 3D graphics, games, and AR/VR applications.</p>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:border-mobrilz-blue/30 hover:shadow-xs transition-all flex items-start gap-3">
+              <div class="w-2 h-2 rounded-full bg-mobrilz-blue mt-1.5 shrink-0"></div>
+              <div>
+                <h5 class="text-sm font-normal text-mobrilz-navy">Hybrid & WebView Apps</h5>
+                <p class="text-xs text-slate-500 font-light mt-0.5">Cross-platform agility with React Native, Flutter, and Capacitor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>'''
+
+with open(r'C:\Users\Manoj\.gemini\antigravity\scratch\mobrilz-homepage\agile_section.html', 'w', encoding='utf-8') as f:
+    f.write(agile_section_html)
+
+print("Saved agile_section.html successfully!")

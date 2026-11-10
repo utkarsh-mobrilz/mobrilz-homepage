@@ -1,0 +1,421 @@
+  <!-- ========================================================================= -->
+  <!-- 11. FOOTER (OSMO.SUPPLY SIGNATURE DESIGN FORMAT · MOBRILZ CONTENT & THEME)  -->
+  <!-- ========================================================================= -->
+  <footer id="footer" class="osmo-footer relative bg-[#f8fafc] text-mobrilz-navy pt-20 pb-12 overflow-hidden border-t border-slate-200/80">
+    
+    <style>
+      /* Osmo Kinetic Rolling Text Button */
+      .osmo-rolling-btn {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 9999px;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        text-decoration: none;
+      }
+      .osmo-rolling-btn .label-wrapper {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        line-height: 1.2;
+      }
+      .osmo-rolling-btn .label-primary,
+      .osmo-rolling-btn .label-hover {
+        display: block;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .osmo-rolling-btn .label-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(100%);
+      }
+      .osmo-rolling-btn:hover .label-primary {
+        transform: translateY(-100%);
+      }
+      .osmo-rolling-btn:hover .label-hover {
+        transform: translateY(0%);
+      }
+
+      /* Osmo Square Social Icon with Double Icon Pop */
+      .osmo-square-icon-btn {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: #ffffff;
+        border: 1px solid rgba(226, 232, 240, 0.9);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        color: #09143f;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      }
+      .osmo-square-icon-btn:hover {
+        border-color: #3779cb;
+        color: #3779cb;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(55, 121, 203, 0.15);
+      }
+      .osmo-square-icon-btn .icon-stack {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        overflow: hidden;
+      }
+      .osmo-square-icon-btn .icon-1,
+      .osmo-square-icon-btn .icon-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .osmo-square-icon-btn .icon-2 {
+        transform: translateY(100%);
+      }
+      .osmo-square-icon-btn:hover .icon-1 {
+        transform: translateY(-100%);
+      }
+      .osmo-square-icon-btn:hover .icon-2 {
+        transform: translateY(0%);
+      }
+
+      /* Osmo Editorial Link with Underline Micro-Motion */
+      .osmo-nav-link {
+        position: relative;
+        display: inline-block;
+        color: #475569;
+        font-weight: 300;
+        font-size: 0.875rem;
+        transition: color 0.25s ease, transform 0.25s ease;
+      }
+      .osmo-nav-link:hover {
+        color: #3779cb;
+        transform: translateX(4px);
+      }
+
+      /* Giant Logo Path Morph Scroll Effect */
+      .osmo-footer-logo-svg path {
+        transition: transform 0.15s ease-out;
+        transform-origin: center center;
+      }
+    </style>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- ==================== TOP ROW: NEWSLETTER & COLUMNS ==================== -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-slate-200/80">
+
+        <!-- Newsletter & Contact Info Box (Col 1-5) -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs font-mono font-medium tracking-wider text-mobrilz-blue uppercase">Stay Connected</span>
+            <h4 class="text-2xl sm:text-3xl font-light text-mobrilz-navy tracking-tight mt-1 mb-2">
+              Subscribe to the Mobrilz Dispatch
+            </h4>
+            <p class="text-slate-500 font-light text-sm leading-relaxed">
+              Bi-weekly engineering briefs on AI orchestration, scalable cloud topologies, and mobile design patterns.
+            </p>
+          </div>
+
+          <!-- Osmo Minimal Pill Input Group -->
+          <form onsubmit="event.preventDefault(); alert('Thank you for subscribing to Mobrilz updates!');" class="space-y-3">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+              <input type="text" placeholder="Your name" required class="px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-light text-slate-800 placeholder-slate-400 focus:outline-none focus:border-mobrilz-blue shadow-xs flex-1" />
+              <input type="email" placeholder="Your work email" required class="px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-light text-slate-800 placeholder-slate-400 focus:outline-none focus:border-mobrilz-blue shadow-xs flex-1" />
+            </div>
+            
+            <div class="flex items-center justify-between pt-1">
+              <label class="flex items-center gap-2 cursor-pointer select-none text-xs font-light text-slate-500">
+                <input type="checkbox" required class="rounded text-mobrilz-blue focus:ring-0 w-3.5 h-3.5" />
+                <span>I agree to the <a href="#faqs" class="text-mobrilz-blue hover:underline">Privacy Policy</a></span>
+              </label>
+
+              <!-- Kinetic Rolling Submit Pill Button -->
+              <button type="submit" class="osmo-rolling-btn px-6 py-2.5 bg-mobrilz-navy text-white text-xs font-medium uppercase tracking-wider shadow-sm hover:bg-mobrilz-cobalt">
+                <span class="label-wrapper">
+                  <span class="label-primary">Get updates</span>
+                  <span class="label-hover">Get updates</span>
+                </span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Office Location & Consultation Prompt -->
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2 mt-4">
+            <div class="flex items-start gap-2.5 text-xs font-light text-slate-600">
+              <i data-lucide="map-pin" class="w-4 h-4 text-mobrilz-blue shrink-0 mt-0.5"></i>
+              <span>E-160, 3rd Floor, Sector 63 Noida, U.P. 201301, India</span>
+            </div>
+            <div class="flex items-start gap-2.5 text-xs font-light text-slate-600">
+              <i data-lucide="clock" class="w-4 h-4 text-mobrilz-blue shrink-0 mt-0.5"></i>
+              <span>Mon - Fri: 9:00 AM - 6:00 PM (IST) &middot; <a href="#cta" class="text-mobrilz-blue hover:underline font-normal">schedule an appointment</a></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Structured Nav Columns (Col 6-12) -->
+        <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8">
+
+          <!-- Col 1: COMPANY -->
+          <div class="space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <h4 class="text-xs font-mono font-medium text-mobrilz-navy uppercase tracking-wider">Company</h4>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-slate-400"></i>
+            </div>
+            <ul class="space-y-2.5">
+              <li><a href="#why-us" class="osmo-nav-link">About Us</a></li>
+              <li><a href="#cta" class="osmo-nav-link">Careers</a></li>
+              <li><a href="#technologies" class="osmo-nav-link">Technologies</a></li>
+              <li><a href="#projects" class="osmo-nav-link">Portfolios</a></li>
+              <li><a href="#faqs" class="osmo-nav-link">Refund Policy</a></li>
+              <li><a href="#faqs" class="osmo-nav-link">Privacy Policy</a></li>
+              <li><a href="#faqs" class="osmo-nav-link">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 2: SERVICES -->
+          <div class="space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <h4 class="text-xs font-mono font-medium text-mobrilz-navy uppercase tracking-wider">Services</h4>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-slate-400"></i>
+            </div>
+            <ul class="space-y-2.5">
+              <li><a href="#expertise" class="osmo-nav-link">Web Development</a></li>
+              <li><a href="#expertise" class="osmo-nav-link">Mobile Apps</a></li>
+              <li><a href="#expertise" class="osmo-nav-link">Cloud Solutions</a></li>
+              <li><a href="#expertise" class="osmo-nav-link">Custom Software</a></li>
+              <li><a href="#expertise" class="osmo-nav-link">UI/UX Design</a></li>
+              <li><a href="#expertise" class="osmo-nav-link">Branding</a></li>
+              <li><a href="#expertise" class="osmo-nav-link">Graphics Design</a></li>
+              <li><a href="#expertise" class="osmo-nav-link">DevOps</a></li>
+              <li><a href="#expertise" class="osmo-nav-link">API Integration</a></li>
+              <li><a href="#expertise" class="osmo-nav-link">Maintenance</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: INDUSTRIES -->
+          <div class="space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <h4 class="text-xs font-mono font-medium text-mobrilz-navy uppercase tracking-wider">Industries</h4>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-slate-400"></i>
+            </div>
+            <ul class="space-y-2.5">
+              <li><a href="#projects" class="osmo-nav-link">Manufacturing</a></li>
+              <li><a href="#projects" class="osmo-nav-link">Finance</a></li>
+              <li><a href="#projects" class="osmo-nav-link">Healthcare</a></li>
+              <li><a href="#projects" class="osmo-nav-link">Education</a></li>
+              <li><a href="#projects" class="osmo-nav-link">E-Commerce</a></li>
+              <li><a href="#projects" class="osmo-nav-link">Consulting</a></li>
+              <li><a href="#projects" class="osmo-nav-link">Logistic</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: RESOURCES -->
+          <div class="space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+              <h4 class="text-xs font-mono font-medium text-mobrilz-navy uppercase tracking-wider">Resources</h4>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-slate-400"></i>
+            </div>
+            <ul class="space-y-2.5">
+              <li><a href="#cta" class="osmo-nav-link">Contact</a></li>
+              <li><a href="#why-us" class="osmo-nav-link">OutSourcing</a></li>
+              <li><a href="#blogs" class="osmo-nav-link">Blog/news</a></li>
+              <li><a href="#cta" class="osmo-nav-link">Make Payment</a></li>
+              <li><a href="#cta" class="osmo-nav-link">Get a Quote</a></li>
+              <li><a href="#faqs" class="osmo-nav-link">Support</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ==================== MIDDLE ROW: ACTION PILLS & SOCIAL ICONS ==================== -->
+      <div class="py-10 flex flex-col md:flex-row items-center justify-between gap-6 border-b border-slate-200/80">
+        
+        <!-- Direct Quick Contact Links (Phone, Email) with Rolling Hover -->
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="tel:+918010355718" class="osmo-rolling-btn px-5 py-2.5 rounded-full bg-white border border-slate-200 text-xs font-light text-slate-700 shadow-xs hover:border-mobrilz-blue">
+            <span class="label-wrapper flex items-center gap-2">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-mobrilz-blue shrink-0"></i>
+              <span class="label-primary">+91-8010355718</span>
+              <span class="label-hover text-mobrilz-blue">+91-8010355718</span>
+            </span>
+          </a>
+
+          <a href="mailto:sales@mobrilz.com" class="osmo-rolling-btn px-5 py-2.5 rounded-full bg-white border border-slate-200 text-xs font-light text-slate-700 shadow-xs hover:border-mobrilz-blue">
+            <span class="label-wrapper flex items-center gap-2">
+              <i data-lucide="mail" class="w-3.5 h-3.5 text-mobrilz-blue shrink-0"></i>
+              <span class="label-primary">sales@mobrilz.com</span>
+              <span class="label-hover text-mobrilz-blue">sales@mobrilz.com</span>
+            </span>
+          </a>
+
+          <a href="#cta" class="osmo-rolling-btn px-6 py-2.5 rounded-full bg-mobrilz-navy text-white text-xs font-medium tracking-wide shadow-sm hover:bg-mobrilz-blue">
+            <span class="label-wrapper">
+              <span class="label-primary">Book Consultation &rarr;</span>
+              <span class="label-hover">Book Consultation &rarr;</span>
+            </span>
+          </a>
+        </div>
+
+        <!-- Osmo Double-Icon Kinetic Square Social Badges -->
+        <div class="flex items-center gap-2.5">
+          <a href="https://linkedin.com/company/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="osmo-square-icon-btn">
+            <div class="icon-stack">
+              <i data-lucide="linkedin" class="icon-1 w-4 h-4"></i>
+              <i data-lucide="linkedin" class="icon-2 w-4 h-4"></i>
+            </div>
+          </a>
+          <a href="https://twitter.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" class="osmo-square-icon-btn">
+            <div class="icon-stack">
+              <i data-lucide="twitter" class="icon-1 w-4 h-4"></i>
+              <i data-lucide="twitter" class="icon-2 w-4 h-4"></i>
+            </div>
+          </a>
+          <a href="https://github.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="osmo-square-icon-btn">
+            <div class="icon-stack">
+              <i data-lucide="github" class="icon-1 w-4 h-4"></i>
+              <i data-lucide="github" class="icon-2 w-4 h-4"></i>
+            </div>
+          </a>
+          <a href="https://youtube.com/@mobrilz" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="osmo-square-icon-btn">
+            <div class="icon-stack">
+              <i data-lucide="youtube" class="icon-1 w-4 h-4"></i>
+              <i data-lucide="youtube" class="icon-2 w-4 h-4"></i>
+            </div>
+          </a>
+          <a href="https://instagram.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="osmo-square-icon-btn">
+            <div class="icon-stack">
+              <i data-lucide="instagram" class="icon-1 w-4 h-4"></i>
+              <i data-lucide="instagram" class="icon-2 w-4 h-4"></i>
+            </div>
+          </a>
+          <a href="https://facebook.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="osmo-square-icon-btn">
+            <div class="icon-stack">
+              <i data-lucide="facebook" class="icon-1 w-4 h-4"></i>
+              <i data-lucide="facebook" class="icon-2 w-4 h-4"></i>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- ==================== SIGNATURE GIANT SCROLL-DRIVEN LOGO ==================== -->
+      <!-- Matches Osmo's signature full-bleed scroll typography with scroll-driven letter fan motion -->
+      <div data-footer-logo-wrap class="pt-12 pb-6 flex items-center justify-center overflow-hidden select-none">
+        <svg class="osmo-footer-logo-svg w-full max-w-6xl h-auto text-mobrilz-navy" viewBox="0 0 1150 170" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <!-- Letter M -->
+          <path id="osmo-l-0" d="M20 150V20H55L95 85L135 20H170V150H135V65L102 120H88L55 65V150H20Z" />
+          <!-- Letter O -->
+          <path id="osmo-l-1" d="M260 152C215 152 185 122 185 85C185 48 215 18 260 18C305 18 335 48 335 85C335 122 305 152 260 152ZM260 120C285 120 298 102 298 85C298 68 285 50 260 50C235 50 222 68 222 85C222 102 235 120 260 120Z" />
+          <!-- Letter B -->
+          <path id="osmo-l-2" d="M360 150V20H420C445 20 465 32 465 55C465 70 452 80 440 83C458 87 472 100 472 118C472 138 450 150 425 150H360ZM395 72H418C428 72 435 66 435 56C435 46 428 40 418 40H395V72ZM395 130H422C432 130 440 124 440 112C440 100 432 92 422 92H395V130Z" />
+          <!-- Letter R -->
+          <path id="osmo-l-3" d="M495 150V20H555C582 20 600 35 600 60C600 80 585 95 565 98L605 150H565L530 102H530V150H495ZM530 82H552C562 82 570 76 570 62C570 48 562 40 552 40H530V82Z" />
+          <!-- Letter I -->
+          <path id="osmo-l-4" d="M630 150V20H665V150H630Z" />
+          <!-- Letter L -->
+          <path id="osmo-l-5" d="M695 150V20H730V120H785V150H695Z" />
+          <!-- Letter Z -->
+          <path id="osmo-l-6" d="M815 150V122L875 50H818V20H915V48L855 120H918V150H815Z" />
+        </svg>
+      </div>
+
+      <!-- ==================== BOTTOM DETAILS ROW ==================== -->
+      <div class="pt-8 border-t border-slate-200/80 flex flex-col md:flex-row items-center justify-between text-xs font-light text-slate-500 gap-4">
+        
+        <!-- Legal Pills with Osmo Tag Hover -->
+        <div class="flex flex-wrap items-center gap-2">
+          <a href="#faqs" class="osmo-rolling-btn px-3 py-1 rounded-full bg-slate-100 hover:bg-white border border-transparent hover:border-slate-300 text-[11px] font-mono text-slate-600 transition-all">
+            <span class="label-wrapper">
+              <span class="label-primary">Licensing</span>
+              <span class="label-hover text-mobrilz-blue">Licensing</span>
+            </span>
+          </a>
+          <a href="#faqs" class="osmo-rolling-btn px-3 py-1 rounded-full bg-slate-100 hover:bg-white border border-transparent hover:border-slate-300 text-[11px] font-mono text-slate-600 transition-all">
+            <span class="label-wrapper">
+              <span class="label-primary">Terms & Conditions</span>
+              <span class="label-hover text-mobrilz-blue">Terms & Conditions</span>
+            </span>
+          </a>
+          <a href="#faqs" class="osmo-rolling-btn px-3 py-1 rounded-full bg-slate-100 hover:bg-white border border-transparent hover:border-slate-300 text-[11px] font-mono text-slate-600 transition-all">
+            <span class="label-wrapper">
+              <span class="label-primary">Privacy Policy</span>
+              <span class="label-hover text-mobrilz-blue">Privacy Policy</span>
+            </span>
+          </a>
+        </div>
+
+        <!-- Copyright Center -->
+        <div class="font-mono text-[11px] text-slate-500">
+          &copy; 2026 MOBRILZ TECHNOLOGIES &middot; ALL RIGHTS RESERVED
+        </div>
+
+        <!-- Made with Pride in India -->
+        <div class="flex items-center gap-1.5 font-medium text-slate-700">
+          <span>Engineered with pride in India</span>
+          <span class="inline-block text-sm leading-none ml-0.5">🇮🇳</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Osmo ScrollTrigger Kinetic Letter Fan Script -->
+    <script>
+      (function() {
+        function setupOsmoFooterMotion() {
+          const wrap = document.querySelector('[data-footer-logo-wrap]');
+          if (!wrap || typeof gsap === 'undefined') return;
+
+          const paths = Array.from(wrap.querySelectorAll('svg path'));
+          if (!paths.length) return;
+
+          // Osmo signature fan-out angles: left letters tilt counter-clockwise, right letters tilt clockwise
+          const fanAngles = [-40, -22, -10, 0, 10, 22, 40];
+          const yPercents = [85, 45, 20, 5, 20, 45, 85];
+
+          // Initialize rotated resting state
+          paths.forEach((p, idx) => {
+            gsap.set(p, {
+              transformOrigin: "center center",
+              rotate: fanAngles[idx] || 0,
+              yPercent: yPercents[idx] || 0,
+              opacity: 0.85
+            });
+          });
+
+          // ScrollTrigger scrub to snap into flat alignment on scroll
+          if (typeof ScrollTrigger !== 'undefined') {
+            gsap.to(paths, {
+              rotate: 0,
+              yPercent: 0,
+              opacity: 1,
+              ease: "power2.out",
+              stagger: 0.02,
+              scrollTrigger: {
+                trigger: wrap,
+                start: "top 95%",
+                end: "bottom 95%",
+                scrub: 1.2
+              }
+            });
+          }
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', setupOsmoFooterMotion);
+        } else {
+          setupOsmoFooterMotion();
+        }
+      })();
+    </script>
+  </footer>

@@ -1,0 +1,10 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary dev archives & caches
+__pycache__/
+*.pyc
+
+# Local server & system logs
+*.log
