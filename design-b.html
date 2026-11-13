@@ -1522,7 +1522,7 @@
     </div>
 
     <!-- Voyager 3D Curved Cylindrical Carousel Stage -->
-    <div id="voyagerStage" class="voyager-stage mt-0 mb-0">
+    <div id="voyagerStage" class="voyager-stage mt-8 sm:mt-10 md:mt-14 mb-0">
       <div id="voyagerTrack" class="voyager-track">
         <!-- Dynamic Cards Injected via JS -->
       </div>
@@ -2113,17 +2113,17 @@
     <div class="w-full max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-14 relative z-10">
       
       <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-4">
+      <div class="text-left max-w-3xl mb-10 sm:mb-14 space-y-4">
         <h2 class="text-3xl sm:text-5xl font-light text-white tracking-tight leading-tight">
           Agile Driven Web &amp; Mobile App Development Services
         </h2>
-        <p class="text-slate-400 font-light text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        <p class="text-slate-400 font-light text-sm sm:text-base max-w-2xl leading-relaxed">
           Full stack architectural blueprint connecting scalable cloud microservices, reactive frontends, and cross platform native mobile ecosystems under unified enterprise CI/CD.
         </p>
       </div>
 
       <!-- TWO-COLUMN SCROLL ARCHITECTURE STAGE -->
-      <div id="tech-nexus-stage" class="relative w-full flex flex-col lg:flex-row items-stretch justify-between gap-8 lg:gap-16 xl:gap-24 py-4">
+      <div id="tech-nexus-stage" class="relative w-full flex flex-col lg:flex-row items-stretch justify-between gap-10 lg:gap-24 xl:gap-32 py-4">
         
         <!-- Dynamic Glowing SVG Connector Lines Overlay (Desktop) -->
         <svg id="tech-nexus-connectors" class="hidden lg:block absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible" xmlns="http://www.w3.org/2000/svg">
@@ -2145,8 +2145,9 @@
         </svg>
 
         <!-- LEFT COLUMN: PURE FLOATING MOBRILZ 'M' LOGO (NO BOX, NO TEXT, MIDDLE ALIGNED ON SCROLL) -->
-        <div id="tech-nexus-left-rail" class="relative w-full lg:w-[22%] xl:w-[20%] shrink-0 z-20 flex flex-col items-center justify-center lg:justify-start py-6 lg:py-0">
-          <div id="tech-nexus-m-track" class="w-full flex items-center justify-center will-change-transform">
+        <div id="tech-nexus-left-rail" class="relative w-full lg:w-[20%] xl:w-[18%] shrink-0 z-20 flex flex-col items-center lg:items-start justify-center lg:justify-start py-6 lg:py-0 lg:pl-2 xl:pl-4">
+          <!-- Smoothly interpolated scroll follower so the M logo and its SVG connector nodes move in 100% locked unison -->
+          <div id="tech-nexus-m-track" class="w-full flex items-center justify-center lg:justify-start will-change-transform">
             <div id="tech-nexus-m" class="relative flex items-center justify-center">
               <!-- Ambient Glow Behind Bare M Logo -->
               <div class="absolute -inset-8 bg-[#3779cb]/25 blur-2xl rounded-full pointer-events-none"></div>
@@ -2175,16 +2176,16 @@
         </div>
 
         <!-- RIGHT COLUMN: ALL TECH STACKS & SOLUTIONS -->
-        <div id="tech-nexus-highway" class="relative z-10 w-full lg:w-[74%] xl:w-[76%] flex flex-col gap-12 lg:gap-14">
+        <div id="tech-nexus-highway" class="relative z-10 w-full lg:w-[68%] xl:w-[70%] flex flex-col gap-12 lg:gap-14">
           
           <!-- 1. WEB TECH STACK -->
           <!-- ================= SUB-SECTION 1: WEB TECH STACK ================= -->
             <div class="relative z-10 w-full lg:flex-1 flex flex-col items-center lg:items-start">
               
               <!-- Section Header Tag -->
-              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
-                <i data-lucide="globe" class="w-3.5 h-3.5 text-[#64b5f6]"></i>
-                <span class="text-xs font-sans font-semibold text-white tracking-wide">Web Tech Stack</span>
+              <div class="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
+                <i data-lucide="globe" class="w-5 h-5 text-[#64b5f6] shrink-0"></i>
+                <span class="text-sm font-sans font-semibold text-white tracking-wide leading-none">Web Tech Stack</span>
               </div>
 
               <!-- Bento Subcolumns: APPS (Backend, Frontend & Database) + API Gateway Stack -->
@@ -2194,71 +2195,71 @@
                 <div class="flex flex-col gap-4">
                   
                   <!-- BACKEND APPS BOX -->
-                  <div id="tech-box-backend" class="rounded-xl bg-[#0b1744]/85 border border-[#274492] hover:bg-[#11225c] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-1.5">
-                      <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Backend</span>
+                  <div id="tech-box-backend" class="rounded-xl bg-[#0b1744]/85 border border-[#274492] hover:bg-[#11225c] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                      <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Backend</span>
                     </div>
                     
-                    <div class="space-y-1.5">
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/nodejs.png" alt="Node.js" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">Node.js</span>
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/nodejs.png" alt="Node.js" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Node.js</span>
                       </div>
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/python.png" alt="Python" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">Python</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/python.png" alt="Python" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Python</span>
                       </div>
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/laravel.png" alt="Laravel" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">Laravel</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/laravel.png" alt="Laravel" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Laravel</span>
                       </div>
                     </div>
                   </div>
 
                   <!-- FRONTEND APPS BOX -->
-                  <div id="tech-box-frontend" class="rounded-xl bg-[#0b1744]/85 border border-[#274492] hover:bg-[#11225c] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-1.5">
-                      <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Frontend</span>
+                  <div id="tech-box-frontend" class="rounded-xl bg-[#0b1744]/85 border border-[#274492] hover:bg-[#11225c] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                      <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Frontend</span>
                     </div>
                     
-                    <div class="space-y-1.5">
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/nextjs.svg" alt="Next.js" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">Next.js</span>
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/nextjs.svg" alt="Next.js" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Next.js</span>
                       </div>
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/reactjs.png" alt="React.js" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">React.js</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/reactjs.png" alt="React.js" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">React.js</span>
                       </div>
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/nuxt.png" alt="Nuxt.js" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">Nuxt.js</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/nuxt.png" alt="Nuxt.js" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Nuxt.js</span>
                       </div>
                     </div>
                   </div>
 
                   <!-- DATABASE BOX -->
-                  <div id="tech-box-database" class="rounded-xl bg-[#0b1744]/85 border border-[#274492] hover:bg-[#11225c] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-1.5">
-                      <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Database</span>
+                  <div id="tech-box-database" class="rounded-xl bg-[#0b1744]/85 border border-[#274492] hover:bg-[#11225c] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                      <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Database</span>
                     </div>
                     
-                    <div class="space-y-1.5">
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/mysql.png" alt="MySQL" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0 brightness-0 invert" />
-                        <span class="text-xs font-medium text-white">MySQL</span>
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/mysql.png" alt="MySQL" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0 brightness-0 invert" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">MySQL</span>
                       </div>
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/postgresql.png" alt="PostgreSQL" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">PostgreSQL</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/postgresql.png" alt="PostgreSQL" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">PostgreSQL</span>
                       </div>
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/mongodb.png" alt="MongoDB" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">MongoDB</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/mongodb.png" alt="MongoDB" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">MongoDB</span>
                       </div>
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/mssql.svg" alt="MSSQL" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">MSSQL</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/mssql.svg" alt="MSSQL" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">MSSQL</span>
                       </div>
                     </div>
                   </div>
@@ -2266,35 +2267,35 @@
                 </div>
 
                 <!-- Column 2: HIGH-CONCURRENCY API GATEWAY BOX -->
-                <div id="tech-box-api-gateway" class="rounded-xl bg-[#0b1744]/85 border border-[#274492] hover:bg-[#11225c] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2 h-fit">
-                  <div class="flex items-center justify-between border-b border-white/10 pb-1.5 mb-2">
-                    <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">API Gateway</span>
+                <div id="tech-box-api-gateway" class="rounded-xl bg-[#0b1744]/85 border border-[#274492] hover:bg-[#11225c] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5 h-fit">
+                  <div class="flex items-center justify-between border-b border-white/10 pb-2 mb-2.5">
+                    <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">API Gateway</span>
                   </div>
                   
-                  <div class="space-y-1.5">
-                    <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                      <img src="./assets/mobrilz/icons/fastify.png" alt="Fastify" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0 brightness-0 invert" />
-                      <span class="text-xs font-medium text-white">Fastify</span>
+                  <div class="space-y-2">
+                    <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                      <img src="./assets/mobrilz/icons/fastify.png" alt="Fastify" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0 brightness-0 invert" />
+                      <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Fastify</span>
                     </div>
-                    <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                      <img src="./assets/mobrilz/icons/restify.png" alt="Restify" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                      <span class="text-xs font-medium text-white">Restify</span>
+                    <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                      <img src="./assets/mobrilz/icons/restify.png" alt="Restify" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                      <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Restify</span>
                     </div>
-                    <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                      <img src="./assets/mobrilz/icons/express.png" alt="Express.js" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                      <span class="text-xs font-medium text-white">Express.js</span>
+                    <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                      <img src="./assets/mobrilz/icons/express.png" alt="Express.js" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                      <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Express.js</span>
                     </div>
-                    <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                      <img src="./assets/mobrilz/icons/lumen.png" alt="Lumen" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                      <span class="text-xs font-medium text-white">Lumen</span>
+                    <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                      <img src="./assets/mobrilz/icons/lumen.png" alt="Lumen" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                      <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Lumen</span>
                     </div>
-                    <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                      <img src="./assets/mobrilz/icons/koa.svg" alt="Koa.js" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                      <span class="text-xs font-medium text-white">Koa.js</span>
+                    <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                      <img src="./assets/mobrilz/icons/koa.svg" alt="Koa.js" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                      <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Koa.js</span>
                     </div>
-                    <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                      <img src="./assets/mobrilz/icons/hapi.svg" alt="Hapi.js" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                      <span class="text-xs font-medium text-white">Hapi.js</span>
+                    <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                      <img src="./assets/mobrilz/icons/hapi.svg" alt="Hapi.js" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                      <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Hapi.js</span>
                     </div>
                   </div>
                 </div>
@@ -2309,9 +2310,9 @@
               <div class="w-full flex flex-col items-center lg:items-start">
                 
                 <!-- Section Header Tag -->
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
-                  <i data-lucide="smartphone" class="w-3.5 h-3.5 text-[#64b5f6]"></i>
-                  <span class="text-xs font-sans font-semibold text-white tracking-wide">Mobile Tech Stack</span>
+                <div class="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
+                  <i data-lucide="smartphone" class="w-[18px] h-[18px] text-[#64b5f6] shrink-0"></i>
+                  <span class="text-sm font-sans font-semibold text-white tracking-wide leading-none">Mobile Tech Stack</span>
                 </div>
 
                 <!-- Bento Subcolumns: 2-column grid identical to Left Side -->
@@ -2321,33 +2322,33 @@
                   <div class="flex flex-col gap-4">
                     
                     <!-- iOS PLATFORM BOX -->
-                    <div id="tech-box-ios" class="rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2">
-                      <div class="flex items-center justify-between border-b border-white/10 pb-1.5">
-                        <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">iOS</span>
+                    <div id="tech-box-ios" class="rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
+                      <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                        <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">iOS</span>
                       </div>
                       
-                      <div class="space-y-1.5">
-                        <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                          <img src="./assets/mobrilz/icons/swift_icon.png" alt="Swift" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                          <span class="text-xs font-medium text-white">Swift</span>
+                      <div class="space-y-2">
+                        <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                          <img src="./assets/mobrilz/icons/swift_icon.png" alt="Swift" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                          <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Swift</span>
                         </div>
                       </div>
                     </div>
 
                     <!-- ANDROID PLATFORM BOX -->
-                    <div id="tech-box-android" class="rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2">
-                      <div class="flex items-center justify-between border-b border-white/10 pb-1.5">
-                        <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Android</span>
+                    <div id="tech-box-android" class="rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
+                      <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                        <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Android</span>
                       </div>
                       
-                      <div class="space-y-1.5">
-                        <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                          <img src="./assets/mobrilz/icons/java.png" alt="Java" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                          <span class="text-xs font-medium text-white">Java</span>
+                      <div class="space-y-2">
+                        <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                          <img src="./assets/mobrilz/icons/java.png" alt="Java" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                          <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Java</span>
                         </div>
-                        <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                          <img src="./assets/mobrilz/icons/kotlin.png" alt="Kotlin" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                          <span class="text-xs font-medium text-white">Kotlin</span>
+                        <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                          <img src="./assets/mobrilz/icons/kotlin.png" alt="Kotlin" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                          <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Kotlin</span>
                         </div>
                       </div>
                     </div>
@@ -2358,23 +2359,23 @@
                   <div class="flex flex-col gap-3">
                     
                     <!-- HYBRID APPS TECH STACK BOX -->
-                    <div id="tech-box-hybrid" class="rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2">
-                      <div class="flex items-center justify-between border-b border-white/10 pb-1.5 mb-2">
-                        <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Hybrid Apps Tech Stack</span>
+                    <div id="tech-box-hybrid" class="rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
+                      <div class="flex items-center justify-between border-b border-white/10 pb-2 mb-2.5">
+                        <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Hybrid Apps Tech Stack</span>
                       </div>
                       
-                      <div class="space-y-1.5">
-                        <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                          <img src="./assets/mobrilz/icons/reactjs.png" alt="React Native" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                          <span class="text-xs font-medium text-white">React Native</span>
+                      <div class="space-y-2">
+                        <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                          <img src="./assets/mobrilz/icons/reactjs.png" alt="React Native" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                          <span class="text-[14.5px] sm:text-[15px] font-medium text-white">React Native</span>
                         </div>
-                        <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                          <img src="./assets/mobrilz/icons/flutter.svg" alt="Flutter" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                          <span class="text-xs font-medium text-white">Flutter</span>
+                        <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                          <img src="./assets/mobrilz/icons/flutter.svg" alt="Flutter" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                          <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Flutter</span>
                         </div>
-                        <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                          <img src="./assets/mobrilz/icons/ionic.png" alt="Ionic" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                          <span class="text-xs font-medium text-white">Ionic</span>
+                        <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                          <img src="./assets/mobrilz/icons/ionic.png" alt="Ionic" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                          <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Ionic</span>
                         </div>
                       </div>
                     </div>
@@ -2388,30 +2389,30 @@
               <!-- SUB-SECTION 3: AUTOMATED SOFTWARE TESTING (Horizontal Presentation) -->
               <div class="w-full flex flex-col items-center lg:items-start">
                 <!-- Section Header Tag -->
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
-                  <i data-lucide="check-check" class="w-3.5 h-3.5 text-emerald-400"></i>
-                  <span class="text-xs font-sans font-semibold text-white tracking-wide">Automated Software Testing</span>
+                <div class="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
+                  <i data-lucide="check-check" class="w-[18px] h-[18px] text-emerald-400 shrink-0"></i>
+                  <span class="text-sm font-sans font-semibold text-white tracking-wide leading-none">Automated Software Testing</span>
                 </div>
 
                 <!-- Horizontal Testing Technologies Card -->
-                <div id="tech-box-qa" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2">
-                  <div class="flex items-center justify-between border-b border-white/10 pb-1.5">
-                    <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">QA &amp; Test Automation</span>
+                <div id="tech-box-qa" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
+                  <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                    <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">QA &amp; Test Automation</span>
                   </div>
                   <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-                    <div class="flex items-center gap-2.5 px-2.5 py-2 rounded-lg bg-white/[0.03] border border-white/5">
-                      <img src="./assets/mobrilz/icons/webDriver.png" alt="WebDriverIO" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                      <span class="text-xs font-medium text-white">WebDriverIO</span>
+                    <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                      <img src="./assets/mobrilz/icons/webDriver.png" alt="WebDriverIO" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                      <span class="text-[14.5px] sm:text-[15px] font-medium text-white">WebDriverIO</span>
                     </div>
                     
-                    <div class="flex items-center gap-2.5 px-2.5 py-2 rounded-lg bg-white/[0.03] border border-white/5">
-                      <img src="./assets/mobrilz/icons/nightwatch.png" alt="NightWatch.js" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                      <span class="text-xs font-medium text-white">NightWatch.js</span>
+                    <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                      <img src="./assets/mobrilz/icons/nightwatch.png" alt="NightWatch.js" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                      <span class="text-[14.5px] sm:text-[15px] font-medium text-white">NightWatch.js</span>
                     </div>
                     
-                    <div class="flex items-center gap-2.5 px-2.5 py-2 rounded-lg bg-white/[0.03] border border-white/5">
-                      <img src="./assets/mobrilz/icons/lumen.png" alt="Laravel Dusk" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                      <span class="text-xs font-medium text-white">Laravel Dusk</span>
+                    <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                      <img src="./assets/mobrilz/icons/lumen.png" alt="Laravel Dusk" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                      <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Laravel Dusk</span>
                     </div>
                   </div>
                 </div>
@@ -2423,30 +2424,30 @@
                 <!-- SUB-SECTION 4: DEVOPS (Vertical Presentation) -->
                 <div class="w-full flex flex-col items-center lg:items-start">
                   <!-- Section Header Tag -->
-                  <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
-                    <i data-lucide="git-branch" class="w-3.5 h-3.5 text-[#64b5f6]"></i>
-                    <span class="text-xs font-sans font-semibold text-white tracking-wide">DevOps</span>
+                  <div class="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
+                    <i data-lucide="git-branch" class="w-[18px] h-[18px] text-[#64b5f6] shrink-0"></i>
+                    <span class="text-sm font-sans font-semibold text-white tracking-wide leading-none">DevOps</span>
                   </div>
 
                   <!-- Vertical DevOps Technologies Card -->
-                  <div id="tech-box-devops" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-1.5">
-                      <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">CI/CD &amp; Containers</span>
+                  <div id="tech-box-devops" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                      <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">CI/CD &amp; Containers</span>
                     </div>
-                    <div class="space-y-1.5">
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/github.svg" alt="GitHub" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">GitHub</span>
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/github.svg" alt="GitHub" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">GitHub</span>
                       </div>
                       
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/jenkins.svg" alt="Jenkins" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">Jenkins</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/jenkins.svg" alt="Jenkins" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Jenkins</span>
                       </div>
                       
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/docker.svg" alt="Docker" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">Docker</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/docker.svg" alt="Docker" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Docker</span>
                       </div>
                     </div>
                   </div>
@@ -2455,30 +2456,30 @@
                 <!-- SUB-SECTION 5: DEPLOYMENT (Vertical Presentation) -->
                 <div class="w-full flex flex-col items-center lg:items-start">
                   <!-- Section Header Tag -->
-                  <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
-                    <i data-lucide="cloud" class="w-3.5 h-3.5 text-[#64b5f6]"></i>
-                    <span class="text-xs font-sans font-semibold text-white tracking-wide">Deployment</span>
+                  <div class="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
+                    <i data-lucide="cloud" class="w-[18px] h-[18px] text-[#64b5f6] shrink-0"></i>
+                    <span class="text-sm font-sans font-semibold text-white tracking-wide leading-none">Deployment</span>
                   </div>
 
                   <!-- Vertical Deployment Technologies Card -->
-                  <div id="tech-box-deployment" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3 shadow-sm space-y-2">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-1.5">
-                      <span class="text-[10px] font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Cloud Infrastructure</span>
+                  <div id="tech-box-deployment" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                      <span class="text-xs font-mono font-semibold tracking-wider text-[#64b5f6] uppercase">Cloud Infrastructure</span>
                     </div>
-                    <div class="space-y-1.5">
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/aws.svg" alt="AWS" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">AWS</span>
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/aws.svg" alt="AWS" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">AWS</span>
                       </div>
                       
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/azure.svg" alt="Azure" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">Azure</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/azure.svg" alt="Azure" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Azure</span>
                       </div>
                       
-                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-white/[0.03] border border-white/5">
-                        <img src="./assets/mobrilz/icons/gcp.svg" alt="GCP" class="w-5 h-5 min-w-[20px] max-w-[20px] max-h-5 object-contain shrink-0" />
-                        <span class="text-xs font-medium text-white">GCP</span>
+                      <div class="flex items-center gap-3.5 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                        <img src="./assets/mobrilz/icons/gcp.svg" alt="GCP" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                        <span class="text-[14.5px] sm:text-[15px] font-medium text-white">GCP</span>
                       </div>
                     </div>
                   </div>
@@ -2487,9 +2488,6 @@
               </div>
           </div>
 
-          <!-- Horizontal Section Separator Line -->
-          <div class="w-full border-t border-[#1e3578]/80"></div>
-
           <!-- 3. WEB SOLUTIONS, MOBILE SOLUTIONS & AI SOLUTIONS -->
           <!-- ================= BOTTOM ROW: WEB SOLUTIONS | MOBILE SOLUTIONS | AI SOLUTIONS ================= -->
           <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 xl:gap-12 items-start">
@@ -2497,43 +2495,43 @@
             <!-- SUB-SECTION A: WEB SOLUTIONS -->
             <div class="w-full flex flex-col items-center lg:items-start">
               <!-- Section Header Tag -->
-              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
-                <i data-lucide="layout-template" class="w-3.5 h-3.5 text-[#64b5f6]"></i>
-                <span class="text-xs font-sans font-semibold text-white tracking-wide">Web Solutions</span>
+              <div class="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
+                <i data-lucide="layout-template" class="w-[18px] h-[18px] text-[#64b5f6] shrink-0"></i>
+                <span class="text-sm font-sans font-semibold text-white tracking-wide leading-none">Web Solutions</span>
               </div>
 
               <!-- Vertical Web Solutions Container -->
-              <div id="tech-box-web-solutions" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3.5 shadow-sm space-y-2">
+              <div id="tech-box-web-solutions" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
                 
                 <!-- 1. Single Page Applications -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <img src="./assets/mobrilz/icons/reactjs.png" alt="Single Page Applications" class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 object-contain shrink-0" />
-                  <span class="text-[13.5px] font-medium text-white">Single Page Applications</span>
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <img src="./assets/mobrilz/icons/reactjs.png" alt="Single Page Applications" class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] object-contain shrink-0" />
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Single Page Applications</span>
                 </div>
 
                 <!-- 2. PWA (Progressive Web Apps) -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none">
                     <rect x="2" y="4" width="20" height="16" rx="3" fill="#5A0FC8" stroke="#8b5cf6" stroke-width="1.2"/>
                     <text x="12" y="14.5" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-weight="900" font-size="6.8" letter-spacing="0.4">PWA</text>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">PWA (Progressive Web Apps)</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">PWA (Progressive Web Apps)</span>
                 </div>
 
                 <!-- 3. CMS Development -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none">
                     <rect x="3" y="3" width="7.5" height="7.5" rx="1.5" fill="#38bdf8"/>
                     <rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5" fill="#60a5fa" opacity="0.85"/>
                     <rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5" fill="#60a5fa" opacity="0.85"/>
                     <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5" fill="#2563eb"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">CMS Development</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">CMS Development</span>
                 </div>
 
                 <!-- 4. API Development -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="3" width="20" height="6" rx="1.5" fill="#0ea5e9" fill-opacity="0.2"/>
                     <rect x="2" y="15" width="20" height="6" rx="1.5" fill="#0ea5e9" fill-opacity="0.2"/>
                     <circle cx="6" cy="6" r="1" fill="#38bdf8"/>
@@ -2541,38 +2539,38 @@
                     <path d="M12 9v6"/>
                     <path d="M9 12h6"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">API Development</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">API Development</span>
                 </div>
 
                 <!-- 5. Custom CMS -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
                     <path d="M18.375 2.625a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4Z" fill="#3b82f6" fill-opacity="0.25"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Custom CMS</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Custom CMS</span>
                 </div>
 
                 <!-- 6. Web Apps -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="3" width="20" height="18" rx="2.5" fill="#1d4ed8" fill-opacity="0.2"/>
                     <line x1="2" y1="8" x2="22" y2="8"/>
                     <path d="m10 12-2 2 2 2"/>
                     <path d="m14 12 2 2-2 2"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Web Apps</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Web Apps</span>
                 </div>
 
                 <!-- 7. eCommerce Cloud -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" fill="#0284c7" fill-opacity="0.25"/>
                     <circle cx="10" cy="16" r="1" fill="#ffffff"/>
                     <circle cx="15" cy="16" r="1" fill="#ffffff"/>
                     <path d="M7.5 10.5h1.5l1.2 3.5h4.8l1-2.5H9.5" stroke="#ffffff" stroke-width="1.5"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">eCommerce Cloud</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">eCommerce Cloud</span>
                 </div>
 
               </div>
@@ -2581,76 +2579,76 @@
             <!-- SUB-SECTION B: MOBILE SOLUTIONS -->
             <div class="w-full flex flex-col items-center lg:items-start">
               <!-- Section Header Tag -->
-              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
-                <i data-lucide="tablet-smartphone" class="w-3.5 h-3.5 text-[#64b5f6]"></i>
-                <span class="text-xs font-sans font-semibold text-white tracking-wide">Mobile Solutions</span>
+              <div class="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
+                <i data-lucide="tablet-smartphone" class="w-[18px] h-[18px] text-[#64b5f6] shrink-0"></i>
+                <span class="text-sm font-sans font-semibold text-white tracking-wide leading-none">Mobile Solutions</span>
               </div>
 
               <!-- Vertical Mobile Solutions Container -->
-              <div id="tech-box-mobile-solutions" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3.5 shadow-sm space-y-2">
+              <div id="tech-box-mobile-solutions" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
                 
                 <!-- 1. eCommerce Apps -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" fill="#9333ea" fill-opacity="0.25"/>
                     <path d="M3 6h18"/>
                     <path d="M16 10a4 4 0 0 1-8 0"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">eCommerce Apps</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">eCommerce Apps</span>
                 </div>
 
                 <!-- 2. Real Time Apps -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" fill="#f59e0b" fill-opacity="0.3"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Real Time Apps</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Real Time Apps</span>
                 </div>
 
                 <!-- 3. Android Apps (Official Android Robot Logo) -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="#3DDC84">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="#3DDC84">
                     <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1367 1.0989L4.841 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Android Apps</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Android Apps</span>
                 </div>
 
                 <!-- 4. iOS/iPadOS Apps (Official Apple Logo) -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="#ffffff">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="#ffffff">
                     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.33c.67-.81 1.12-1.94 1-3.08-.96.04-2.13.64-2.82 1.45-.61.7-.11 1.85-.98 2.97 1.08.08 2.13-.53 2.8-1.34"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">iOS/iPadOS Apps</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">iOS/iPadOS Apps</span>
                 </div>
 
                 <!-- 5. Chat & Video Apps -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="6" width="13" height="12" rx="2.5" fill="#db2777" fill-opacity="0.25"/>
                     <path d="m15 10 5-3v10l-5-3v-4Z" fill="#db2777" fill-opacity="0.25"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Chat &amp; Video Apps</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Chat &amp; Video Apps</span>
                 </div>
 
                 <!-- 6. Unity Apps (Official Unity 3D Cube Emblem) -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2L3 7v10l9 5 9-5V7l-9-5z" fill="#ffffff" fill-opacity="0.12"/>
                     <path d="M3 7l9 5 9-5"/>
                     <path d="M12 22V12"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Unity Apps</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Unity Apps</span>
                 </div>
 
                 <!-- 7. WebView Apps -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="5" y="2" width="14" height="20" rx="2.5" fill="#0284c7" fill-opacity="0.2"/>
                     <circle cx="12" cy="11" r="3.5"/>
                     <line x1="8.5" y1="11" x2="15.5" y2="11"/>
                     <line x1="12" y1="18" x2="12.01" y2="18"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">WebView Apps</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">WebView Apps</span>
                 </div>
 
               </div>
@@ -2659,80 +2657,80 @@
             <!-- SUB-SECTION C: AI SOLUTIONS -->
             <div class="w-full flex flex-col items-center lg:items-start">
               <!-- Section Header Tag -->
-              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
-                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#64b5f6]"></i>
-                <span class="text-xs font-sans font-semibold text-white tracking-wide">AI Solutions</span>
+              <div class="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] mb-5">
+                <i data-lucide="sparkles" class="w-[18px] h-[18px] text-[#64b5f6] shrink-0"></i>
+                <span class="text-sm font-sans font-semibold text-white tracking-wide leading-none">AI Solutions</span>
               </div>
 
               <!-- Vertical AI Solutions Container -->
-              <div id="tech-box-ai-solutions" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3.5 shadow-sm space-y-2">
+              <div id="tech-box-ai-solutions" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-4 shadow-sm space-y-2.5">
                 
                 <!-- 1. Machine Learning Solutions -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z" fill="#0284c7" fill-opacity="0.25"/>
                     <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z" fill="#0284c7" fill-opacity="0.25"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Machine Learning Solutions</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Machine Learning Solutions</span>
                 </div>
 
                 <!-- 2. Natural Language Processing (NLP) -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="#2563eb" fill-opacity="0.25"/>
                     <circle cx="8.5" cy="11.5" r="1" fill="#ffffff"/>
                     <circle cx="12" cy="11.5" r="1" fill="#ffffff"/>
                     <circle cx="15.5" cy="11.5" r="1" fill="#ffffff"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Natural Language Processing (NLP)</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Natural Language Processing (NLP)</span>
                 </div>
 
                 <!-- 3. Computer Vision -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" fill="#0284c7" fill-opacity="0.25"/>
                     <circle cx="12" cy="12" r="3" fill="#38bdf8"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Computer Vision</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Computer Vision</span>
                 </div>
 
                 <!-- 4. Generative AI -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3z" fill="#f59e0b" fill-opacity="0.3"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Generative AI</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Generative AI</span>
                 </div>
 
                 <!-- 5. Predictive Analytics -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M3 3v18h18"/>
                     <path d="m19 9-5 5-4-4-3 3"/>
                     <circle cx="19" cy="9" r="1.5" fill="#34d399"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">Predictive Analytics</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">Predictive Analytics</span>
                 </div>
 
                 <!-- 6. AI Powered Automation & RPA -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="3" y="11" width="18" height="10" rx="2" fill="#2563eb" fill-opacity="0.25"/>
                     <circle cx="12" cy="5" r="2"/>
                     <path d="M12 7v4"/>
                     <circle cx="8.5" cy="16" r="1" fill="#ffffff"/>
                     <circle cx="15.5" cy="16" r="1" fill="#ffffff"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">AI Powered Automation &amp; RPA</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">AI Powered Automation &amp; RPA</span>
                 </div>
 
                 <!-- 7. AI Consulting & Strategy -->
-                <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
-                  <svg class="w-6 h-6 min-w-[24px] max-w-[24px] max-h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <div class="flex items-center gap-3.5 px-3.5 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
+                  <svg class="w-[26px] h-[26px] min-w-[26px] max-w-[26px] max-h-[26px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="9" fill="#0284c7" fill-opacity="0.2"/>
                     <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="#38bdf8" fill-opacity="0.4"/>
                   </svg>
-                  <span class="text-[13.5px] font-medium text-white">AI Consulting &amp; Strategy</span>
+                  <span class="text-[14.5px] sm:text-[15px] font-medium text-white">AI Consulting &amp; Strategy</span>
                 </div>
 
               </div>
@@ -5700,48 +5698,83 @@
         'tech-box-ai-solutions'
       ];
 
+      const svgNS = 'http://www.w3.org/2000/svg';
       const techCards = cardIds
         .map((id) => document.getElementById(id))
         .filter(Boolean);
 
-      const lineStates = new Map();
-      techCards.forEach((card, idx) => {
-        lineStates.set(card, {
+      // Pre-build persistent SVG elements once (zero DOM reconstruction during scroll!)
+      pathsGroup.innerHTML = '';
+      const connections = [];
+
+      techCards.forEach((card) => {
+        const g = document.createElementNS(svgNS, 'g');
+        g.style.opacity = '0';
+
+        const glowPath = document.createElementNS(svgNS, 'path');
+        glowPath.setAttribute('fill', 'none');
+        glowPath.setAttribute('stroke', '#2563eb');
+        glowPath.setAttribute('stroke-width', '3.5');
+        glowPath.setAttribute('stroke-opacity', '0.45');
+        glowPath.setAttribute('stroke-linecap', 'round');
+        glowPath.setAttribute('filter', 'url(#nexusLineGlow)');
+
+        const mainPath = document.createElementNS(svgNS, 'path');
+        mainPath.setAttribute('fill', 'none');
+        mainPath.setAttribute('stroke', 'url(#nexusGradBeam)');
+        mainPath.setAttribute('stroke-width', '1.8');
+        mainPath.setAttribute('stroke-linecap', 'round');
+
+        const dashPath = document.createElementNS(svgNS, 'path');
+        dashPath.setAttribute('fill', 'none');
+        dashPath.setAttribute('stroke', '#e0f2fe');
+        dashPath.setAttribute('stroke-width', '1.1');
+        dashPath.setAttribute('stroke-opacity', '0.85');
+        dashPath.setAttribute('stroke-dasharray', '8 6');
+        dashPath.setAttribute('stroke-linecap', 'round');
+
+        const endGlowDot = document.createElementNS(svgNS, 'circle');
+        endGlowDot.setAttribute('r', '4');
+        endGlowDot.setAttribute('fill', '#38bdf8');
+        endGlowDot.setAttribute('filter', 'url(#nexusLineGlow)');
+
+        const endCoreDot = document.createElementNS(svgNS, 'circle');
+        endCoreDot.setAttribute('r', '2');
+        endCoreDot.setAttribute('fill', '#ffffff');
+
+        g.appendChild(glowPath);
+        g.appendChild(mainPath);
+        g.appendChild(dashPath);
+        g.appendChild(endGlowDot);
+        g.appendChild(endCoreDot);
+        pathsGroup.appendChild(g);
+
+        connections.push({
+          card,
+          g,
+          glowPath,
+          mainPath,
+          dashPath,
+          endGlowDot,
+          endCoreDot,
           opacity: 0,
-          targetOpacity: 0,
-          id: idx
+          targetOpacity: 0
         });
       });
 
-      function updateMPosition() {
-        if (window.innerWidth < 1024) {
-          mTrack.style.transform = '';
-          return;
-        }
-        const railRect = leftRail.getBoundingClientRect();
-        const mHeight = mHub.offsetHeight || 112;
-        const viewportCenterY = window.innerHeight / 2;
-
-        // Desired offset relative to the top of leftRail so that mHub's vertical center sits at viewportCenterY
-        const desiredY = viewportCenterY - railRect.top - mHeight / 2;
-        const maxY = Math.max(0, railRect.height - mHeight);
-        const clampedY = Math.max(0, Math.min(maxY, desiredY));
-
-        mTrack.style.transform = `translate3d(0, ${clampedY.toFixed(1)}px, 0)`;
-      }
-
-      function updateCardVisibility() {
-        const vpBottom = window.innerHeight;
-        techCards.forEach((card) => {
-          const r = card.getBoundingClientRect();
-          // Connect to cards that are within the active viewport window, disconnect as they leave view
-          const isInView = (r.bottom > 90 && r.top < vpBottom - 90);
-          const state = lineStates.get(card);
-          if (state) {
-            state.targetOpacity = isInView ? 1 : 0;
-          }
-        });
-      }
+      // Start origin port node on the right side of the 'M' logo
+      const startNodeGroup = document.createElementNS(svgNS, 'g');
+      startNodeGroup.style.opacity = '0';
+      const startGlowDot = document.createElementNS(svgNS, 'circle');
+      startGlowDot.setAttribute('r', '5');
+      startGlowDot.setAttribute('fill', '#60a5fa');
+      startGlowDot.setAttribute('filter', 'url(#nexusLineGlow)');
+      const startCoreDot = document.createElementNS(svgNS, 'circle');
+      startCoreDot.setAttribute('r', '2.5');
+      startCoreDot.setAttribute('fill', '#ffffff');
+      startNodeGroup.appendChild(startGlowDot);
+      startNodeGroup.appendChild(startCoreDot);
+      pathsGroup.appendChild(startNodeGroup);
 
       function curveH(x1, y1, x2, y2) {
         const deltaX = Math.abs(x2 - x1);
@@ -5750,75 +5783,100 @@
         return `M ${x1.toFixed(1)} ${y1.toFixed(1)} C ${cp1x.toFixed(1)} ${y1.toFixed(1)}, ${cp2x.toFixed(1)} ${y2.toFixed(1)}, ${x2.toFixed(1)} ${y2.toFixed(1)}`;
       }
 
+      let dashOffset = 100;
+      let currentY = null;
+
       function renderLoop() {
         if (window.innerWidth < 1024) {
           mTrack.style.transform = '';
-          pathsGroup.innerHTML = '';
+          pathsGroup.style.display = 'none';
           requestAnimationFrame(renderLoop);
           return;
         }
-
-        updateMPosition();
-        updateCardVisibility();
+        pathsGroup.style.display = '';
 
         const stageRect = stage.getBoundingClientRect();
-        const mRect = mHub.getBoundingClientRect();
-        if (stageRect.width === 0 || mRect.width === 0) {
+        const railRect = leftRail.getBoundingClientRect();
+        const mHeight = mHub.offsetHeight || 112;
+        const mWidth = mHub.offsetWidth || 144;
+
+        if (stageRect.width === 0 || mWidth === 0) {
           requestAnimationFrame(renderLoop);
           return;
         }
 
-        svg.setAttribute('viewBox', `0 0 ${stageRect.width} ${stageRect.height}`);
-
-        // Connection origin on the right edge of the bare 'M' logo
-        const startX = mRect.right - stageRect.left + 4;
-        const startY = mRect.top - stageRect.top + mRect.height / 2;
-
-        const paths = [];
-        const nodes = [];
-        let anyActive = false;
-
-        techCards.forEach((card) => {
-          const state = lineStates.get(card);
-          if (!state) return;
-
-          state.opacity += (state.targetOpacity - state.opacity) * 0.14;
-          if (state.opacity < 0.01) {
-            state.opacity = 0;
-            return;
-          }
-          anyActive = true;
-
-          const cardRect = card.getBoundingClientRect();
-          const endX = cardRect.left - stageRect.left;
-          const endY = cardRect.top - stageRect.top + cardRect.height / 2;
-
-          const d = curveH(startX, startY, endX, endY);
-          const op = state.opacity.toFixed(3);
-          const glowOp = (state.opacity * 0.45).toFixed(3);
-
-          paths.push(`
-            <path d="${d}" fill="none" stroke="#2563eb" stroke-width="3.5" stroke-opacity="${glowOp}" stroke-linecap="round" filter="url(#nexusLineGlow)"></path>
-            <path d="${d}" fill="none" stroke="url(#nexusGradBeam)" stroke-width="1.8" stroke-opacity="${op}" stroke-linecap="round"></path>
-            <path d="${d}" fill="none" stroke="#e0f2fe" stroke-width="1" stroke-opacity="${(state.opacity * 0.85).toFixed(3)}" stroke-dasharray="8 6" stroke-linecap="round">
-              <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2.2s" repeatCount="indefinite" />
-            </path>
-          `);
-
-          nodes.push(`
-            <circle cx="${endX.toFixed(1)}" cy="${endY.toFixed(1)}" r="4" fill="#38bdf8" fill-opacity="${op}" filter="url(#nexusLineGlow)"></circle>
-            <circle cx="${endX.toFixed(1)}" cy="${endY.toFixed(1)}" r="2" fill="#ffffff" fill-opacity="${op}"></circle>
-          `);
-        });
-
-        if (anyActive) {
-          nodes.push(`
-            <circle cx="${startX.toFixed(1)}" cy="${startY.toFixed(1)}" r="5" fill="#60a5fa" filter="url(#nexusLineGlow)"></circle>
-            <circle cx="${startX.toFixed(1)}" cy="${startY.toFixed(1)}" r="2.5" fill="#ffffff"></circle>
-          `);
+        // Only update viewBox when stage dimensions change
+        const vb = `0 0 ${Math.round(stageRect.width)} ${Math.round(stageRect.height)}`;
+        if (svg.getAttribute('viewBox') !== vb) {
+          svg.setAttribute('viewBox', vb);
         }
 
-        pathsGroup.innerHTML = paths.join('') + nodes.join('');
+        // Target Y offset inside leftRail so the M logo's vertical center aligns with the middle of the screen
+        const viewportCenterY = window.innerHeight / 2;
+        const desiredY = viewportCenterY - railRect.top - mHeight / 2;
+        const maxY = Math.max(0, railRect.height - mHeight);
+        const targetY = Math.max(0, Math.min(maxY, desiredY));
+
+        if (currentY === null) {
+          currentY = targetY;
+        } else {
+          // Smooth exponential damping eliminates mouse-wheel step jitter while keeping M and its nodes 100% locked
+          currentY += (targetY - currentY) * 0.22;
+          if (Math.abs(targetY - currentY) < 0.05) currentY = targetY;
+        }
+
+        // Apply the exact same currentY to the M logo AND the SVG origin port in the same frame
+        mTrack.style.transform = `translate3d(0, ${currentY.toFixed(2)}px, 0)`;
+
+        const mLeftInStage = (mHub.getBoundingClientRect().left - stageRect.left);
+        const startX = mLeftInStage + mWidth + 6;
+        const startY = (railRect.top - stageRect.top) + currentY + mHeight / 2;
+
+        startGlowDot.setAttribute('cx', startX.toFixed(1));
+        startGlowDot.setAttribute('cy', startY.toFixed(1));
+        startCoreDot.setAttribute('cx', startX.toFixed(1));
+        startCoreDot.setAttribute('cy', startY.toFixed(1));
+
+        dashOffset -= 0.65;
+        if (dashOffset <= 0) dashOffset = 100;
+        const dashStr = dashOffset.toFixed(1);
+
+        const vpBottom = window.innerHeight;
+        let maxActiveOpacity = 0;
+
+        for (let i = 0; i < connections.length; i++) {
+          const conn = connections[i];
+          const cardRect = conn.card.getBoundingClientRect();
+
+          const isInView = (cardRect.bottom > 90 && cardRect.top < vpBottom - 90);
+          conn.targetOpacity = isInView ? 1 : 0;
+          conn.opacity += (conn.targetOpacity - conn.opacity) * 0.14;
+
+          if (conn.opacity < 0.01) {
+            conn.opacity = 0;
+            if (conn.g.style.opacity !== '0') conn.g.style.opacity = '0';
+            continue;
+          }
+
+          if (conn.opacity > maxActiveOpacity) maxActiveOpacity = conn.opacity;
+          conn.g.style.opacity = conn.opacity.toFixed(3);
+
+          const endX = cardRect.left - stageRect.left;
+          const endY = cardRect.top - stageRect.top + cardRect.height / 2;
+          const d = curveH(startX, startY, endX, endY);
+
+          conn.glowPath.setAttribute('d', d);
+          conn.mainPath.setAttribute('d', d);
+          conn.dashPath.setAttribute('d', d);
+          conn.dashPath.setAttribute('stroke-dashoffset', dashStr);
+
+          conn.endGlowDot.setAttribute('cx', endX.toFixed(1));
+          conn.endGlowDot.setAttribute('cy', endY.toFixed(1));
+          conn.endCoreDot.setAttribute('cx', endX.toFixed(1));
+          conn.endCoreDot.setAttribute('cy', endY.toFixed(1));
+        }
+
+        startNodeGroup.style.opacity = maxActiveOpacity.toFixed(3);
         requestAnimationFrame(renderLoop);
       }
 
