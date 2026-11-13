@@ -5588,15 +5588,12 @@
       PILLARS.forEach((p, i) => {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'why-pillar-row group flex items-start p-4 sm:p-5 text-left border-b border-slate-200/80 last:border-b-0 transition-all duration-200 cursor-pointer border-l-4 border-l-transparent';
+        btn.className = 'why-pillar-row group flex flex-1 items-center p-4 sm:p-6 text-left border-b border-slate-200/80 last:border-b-0 transition-all duration-200 cursor-pointer border-l-4 border-l-transparent';
         btn.innerHTML = `
-          <div class="space-y-0.5 flex-1 min-w-0">
+          <div class="flex-1 min-w-0">
             <h4 class="why-row-title text-sm sm:text-base font-medium text-slate-700 tracking-tight transition-colors group-hover:text-mobrilz-blue">
               ${p.title}
             </h4>
-            <p class="text-xs text-slate-500 font-light line-clamp-1">
-              ${p.blurb}
-            </p>
           </div>
         `;
         btn.onclick = () => renderDetail(i);
