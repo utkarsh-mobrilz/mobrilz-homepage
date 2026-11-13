@@ -749,6 +749,142 @@
     }
 
 </style>
+<style>
+    /* Stage 03 IDE Code Editor Motion */
+    @keyframes ideFloat {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-8px) rotate(0.4deg);
+      }
+    }
+    @keyframes codeScanline {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.6;
+      }
+      80% {
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(400%);
+        opacity: 0;
+      }
+    }
+    @keyframes cursorBlink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes ambientCodeGlow {
+      0%, 100% {
+        opacity: 0.25;
+        transform: scale(0.95) translate(-50%, -50%);
+      }
+      50% {
+        opacity: 0.45;
+        transform: scale(1.15) translate(-50%, -50%);
+      }
+    }
+    .ide-window-motion {
+      animation: ideFloat 5s ease-in-out infinite;
+      will-change: transform;
+    }
+    .ide-scanline {
+      animation: codeScanline 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .ide-cursor {
+      animation: cursorBlink 1s infinite;
+    }
+    .ide-ambient-glow {
+      transform-origin: 0 0;
+      animation: ambientCodeGlow 6s ease-in-out infinite;
+    }
+
+    /* Stage 04 Production Verification Dashboard Motion */
+    @keyframes launchCardFloat {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-6px) rotate(0.3deg);
+      }
+    }
+    @keyframes launchBarFlow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @keyframes rowItemSubtlePulse1 {
+      0%, 100% {
+        border-color: rgba(226, 232, 240, 0.8);
+        background-color: rgba(248, 250, 252, 0.9);
+      }
+      20%, 45% {
+        border-color: rgba(55, 121, 203, 0.35);
+        background-color: rgba(55, 121, 203, 0.04);
+      }
+    }
+    @keyframes rowItemSubtlePulse2 {
+      0%, 100% {
+        border-color: rgba(226, 232, 240, 0.8);
+        background-color: rgba(248, 250, 252, 0.9);
+      }
+      45%, 70% {
+        border-color: rgba(39, 85, 153, 0.35);
+        background-color: rgba(39, 85, 153, 0.04);
+      }
+    }
+    @keyframes rowItemSubtlePulse3 {
+      0%, 100% {
+        border-color: rgba(226, 232, 240, 0.8);
+        background-color: rgba(248, 250, 252, 0.9);
+      }
+      70%, 95% {
+        border-color: rgba(9, 20, 63, 0.3);
+        background-color: rgba(9, 20, 63, 0.04);
+      }
+    }
+    @keyframes checkGlowBounce {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 6px rgba(55, 121, 203, 0.45));
+      }
+    }
+    .launch-card-motion {
+      animation: launchCardFloat 6s ease-in-out infinite;
+      will-change: transform;
+    }
+    .launch-bar-animated {
+      background-size: 200% 200%;
+      animation: launchBarFlow 4.5s ease infinite;
+    }
+    .launch-row-pulse-1 {
+      animation: rowItemSubtlePulse1 6s ease-in-out infinite;
+    }
+    .launch-row-pulse-2 {
+      animation: rowItemSubtlePulse2 6s ease-in-out infinite;
+    }
+    .launch-row-pulse-3 {
+      animation: rowItemSubtlePulse3 6s ease-in-out infinite;
+    }
+    .launch-icon-pulse {
+      animation: checkGlowBounce 3.5s ease-in-out infinite;
+    }
+
+  </style>
 </head>
 <body class="bg-light-grid antialiased selection:bg-[#3779cb] selection:text-white">
   <!-- Interactive Floating Cursor Badge ('View Case Study') -->
@@ -1447,7 +1583,7 @@
           <div id="flubbleContentWrapper" class="relative z-10 transition-all duration-350 ease-out transform">
             <!-- Dynamic Category Heading -->
             <div class="flex items-center gap-2 mb-3">
-              <span id="flubbleDetailTag" class="text-xs font-mono font-medium tracking-wider text-mobrilz-highlight uppercase">Full Stack Development</span>
+              <span id="flubbleDetailTag" class="text-xs font-sans font-semibold tracking-wider text-mobrilz-highlight uppercase">Full Stack Development</span>
             </div>
             
             <!-- Dynamic Description -->
@@ -1508,318 +1644,377 @@
   <!-- ========================================================================= -->
   <!-- 04. OUR PROCESS (BUILT WITH PRECISION - ALTERNATING TIMELINE & MOTION UI)  -->
   <!-- ========================================================================= -->
-  <section id="process" class="relative pt-12 sm:pt-16 lg:pt-20 pb-24 lg:pb-36 bg-[#f8fafc] overflow-hidden font-sans">
-    
-    <!-- Ambient Sapphire Glow & Delicate Technical Dots -->
-    <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#09143f 1px, transparent 1px); background-size: 28px 28px;"></div>
-    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-gradient-to-br from-blue-500/5 via-[#3779cb]/5 to-transparent blur-[160px] pointer-events-none rounded-full"></div>
-
-    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+  <section id="process" class="relative z-10 -mt-6 sm:-mt-10 md:-mt-14 mb-4 sm:mb-8 md:mb-12 pt-20 sm:pt-28 md:pt-36 pb-20 sm:pb-28 md:pb-36 bg-[#f8fafc] text-mobrilz-navy [border-radius:50%_/_40px] sm:[border-radius:50%_/_65px] md:[border-radius:50%_/_90px] overflow-hidden font-sans">
       
-      <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto mb-24 lg:mb-36 space-y-4">
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-light text-mobrilz-navy tracking-tight leading-tight">
-          How we turn vision into <span class="font-light text-slate-800">production software</span>
-        </h2>
-        <p class="text-slate-500 font-light text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-          A disciplined 4 stage sprint roadmap with live previews, milestone checkpoints, and clean code committed to your GitHub from Day 1.
-        </p>
-      </div>
+      <!-- Ambient Sapphire Glow & Delicate Technical Dots -->
+      <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#09143f 1px, transparent 1px); background-size: 28px 28px;"></div>
+      <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-gradient-to-br from-blue-500/5 via-[#3779cb]/5 to-transparent blur-[160px] pointer-events-none rounded-full"></div>
 
-      <!-- Alternating Timeline Container -->
-      <div class="relative">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         
-        <!-- Center Connecting Spine Guide (Static Background Track) -->
-        <div id="timeline-spine-track" class="absolute left-[24px] sm:left-1/2 top-4 bottom-4 w-[2px] bg-slate-200/90 sm:-translate-x-1/2 rounded-full overflow-hidden">
-          <!-- Dynamic Scroll-Follow Gradient Laser Line -->
-          <div id="timeline-progress-spine" class="w-full h-full bg-gradient-to-b from-[#3779cb] via-[#275599] to-[#09143f] origin-top rounded-full shadow-[0_0_14px_rgba(55,121,203,0.8)] scale-y-0 will-change-transform"></div>
+        <!-- Section Header (Scaled up for prominence) -->
+        <div class="text-center max-w-3xl mx-auto mb-24 lg:mb-36 space-y-7 sm:space-y-8">
+          <h2 class="text-4xl sm:text-6xl lg:text-7xl font-light text-mobrilz-navy tracking-tight leading-[1.12]">
+            How we turn vision into <span class="font-light text-slate-800">production software</span>
+          </h2>
+          <p class="text-slate-500 font-light text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed">
+            A disciplined 4 stage sprint roadmap with live previews, milestone checkpoints, and clean code committed to your GitHub from Day 1.
+          </p>
         </div>
 
-        <!-- 4 Process Stages List -->
-        <div class="flex flex-col gap-24 sm:gap-36 relative">
-
-          <!-- ================= STAGE 01: Strategy & Discovery ================= -->
-          <div class="timeline-step relative w-full group" data-step="0">
-            <!-- Central Milestone Connector Pin -->
-            <div class="timeline-pin absolute left-[24px] sm:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-2 border-slate-300 rounded-full z-20 shadow-[0_0_8px_rgba(0,0,0,0.06)] flex items-center justify-center transition-all duration-300">
-              <div class="pin-pulse w-2 h-2 rounded-full bg-mobrilz-blue opacity-0 transition-opacity duration-300"></div>
-              <div class="pin-dot w-1.5 h-1.5 rounded-full bg-slate-300 transition-colors duration-300 absolute"></div>
-            </div>
-
-            <!-- Content Row (Text Left, Visual Right) -->
-            <div class="flex flex-col sm:flex-row items-center justify-between w-full pl-[60px] sm:pl-0 gap-10 sm:gap-0">
-              
-              <!-- Text Column -->
-              <div class="w-full sm:w-[44%] flex flex-col justify-center">
-                <div class="mb-5">
-                  <span class="font-mono text-xs font-semibold uppercase tracking-wider text-mobrilz-blue">
-                    01 Strategy & Architecture
-                  </span>
-                </div>
-                <h3 class="text-2xl sm:text-3xl lg:text-4xl font-light text-mobrilz-navy mb-4 leading-snug tracking-tight">
-                  It starts with a sharp blueprint
-                </h3>
-                <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-light mb-6">
-                  We define technical data models, API endpoints, security bounds, and infrastructure specifications prior to writing code. No ambiguity, zero wasted cycles.
-                </p>
-                <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-500">
-                  <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">Data Schemas</span>
-                  <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">AWS/GCP Topology</span>
-                  <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">Tech Spec Document</span>
-                </div>
-              </div>
-
-              <!-- Interactive Kinetic Visual Column (Orbits & Blueprint Node) -->
-              <div class="w-full sm:w-[46%]">
-                <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-3xl bg-white/80 backdrop-blur-xl border border-slate-200/80 shadow-[0_16px_40px_rgba(9,20,63,0.06)] overflow-hidden flex items-center justify-center p-6 transition-all duration-500">
-                  <div class="absolute inset-0 bg-gradient-to-br from-blue-50/60 via-transparent to-slate-50/50"></div>
-                  
-                  <!-- Pulsing Core Engine -->
-                  <div class="absolute z-10 w-9 h-9 bg-mobrilz-blue rounded-full shadow-[0_0_32px_rgba(55,121,203,0.7)] flex items-center justify-center text-white">
-                    <i data-lucide="target" class="w-4 h-4"></i>
-                  </div>
-                  
-                  <!-- Orbit Track 1 -->
-                  <div class="absolute w-32 h-32 sm:w-40 sm:h-40 border border-blue-400/30 rounded-full flex items-start justify-center animate-spin" style="animation-duration: 9s;">
-                    <div class="w-3.5 h-3.5 bg-mobrilz-cobalt rounded-full -mt-1.5 shadow-[0_0_14px_rgba(39,85,153,0.8)]"></div>
-                  </div>
-                  
-                  <!-- Orbit Track 2 -->
-                  <div class="absolute w-48 h-48 sm:w-60 sm:h-60 border border-blue-400/20 rounded-full flex items-center justify-end animate-spin" style="animation-duration: 14s; animation-direction: reverse;">
-                    <div class="w-4 h-4 bg-mobrilz-highlight rounded-full -mr-2 shadow-[0_0_16px_rgba(154,187,227,0.9)]"></div>
-                  </div>
-
-                  <!-- Radar Scanline Wave -->
-                  <div class="absolute inset-0 bg-gradient-to-b from-blue-500/[0.04] to-transparent pointer-events-none animate-pulse"></div>
-
-                  
-                </div>
-              </div>
-
-            </div>
+        <!-- Alternating Timeline Container -->
+        <div class="relative">
+          
+          <!-- Center Connecting Spine Guide (Static Background Track) -->
+          <div id="timeline-spine-track" class="absolute left-[24px] sm:left-1/2 top-4 bottom-4 w-[2px] bg-slate-200/90 sm:-translate-x-1/2 rounded-full overflow-hidden">
+            <!-- Dynamic Scroll-Follow Gradient Laser Line -->
+            <div id="timeline-progress-spine" class="w-full h-full bg-gradient-to-b from-[#3779cb] via-[#275599] to-[#09143f] origin-top rounded-full shadow-[0_0_14px_rgba(55,121,203,0.8)] scale-y-0 will-change-transform"></div>
           </div>
 
-          <!-- ================= STAGE 02: Design & Prototyping (Reversed) ================= -->
-          <div class="timeline-step relative w-full group" data-step="1">
-            <!-- Central Milestone Connector Pin -->
-            <div class="timeline-pin absolute left-[24px] sm:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-2 border-slate-300 rounded-full z-20 shadow-[0_0_8px_rgba(0,0,0,0.06)] flex items-center justify-center transition-all duration-300">
-              <div class="pin-pulse w-2 h-2 rounded-full bg-mobrilz-cobalt opacity-0 transition-opacity duration-300"></div>
-              <div class="pin-dot w-1.5 h-1.5 rounded-full bg-slate-300 transition-colors duration-300 absolute"></div>
-            </div>
+          <!-- 4 Process Stages List -->
+          <div class="flex flex-col gap-24 sm:gap-36 relative">
 
-            <!-- Content Row (Reversed: Visual Left, Text Right on desktop) -->
-            <div class="flex flex-col sm:flex-row-reverse items-center justify-between w-full pl-[60px] sm:pl-0 gap-10 sm:gap-0">
-              
-              <!-- Text Column -->
-              <div class="w-full sm:w-[44%] flex flex-col justify-center">
-                <div class="mb-5">
-                  <span class="font-mono text-xs font-semibold uppercase tracking-wider text-mobrilz-cobalt">
-                    02 UI/UX & Prototyping
-                  </span>
-                </div>
-                <h3 class="text-2xl sm:text-3xl lg:text-4xl font-light text-mobrilz-navy mb-4 leading-snug tracking-tight">
-                  Then we make it beautiful
-                </h3>
-                <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-light mb-6">
-                  Interactive Figma prototypes, design tokens, and user flow architectures validated across core client user journeys to eliminate UX friction before a single line of code is written.
-                </p>
+            <!-- ================= STAGE 01: Strategy & Discovery ================= -->
+            <div class="timeline-step relative w-full group" data-step="0">
+              <!-- Central Milestone Connector Pin -->
+              <div class="timeline-pin absolute left-[24px] sm:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-2 border-slate-300 rounded-full z-20 shadow-[0_0_8px_rgba(0,0,0,0.06)] flex items-center justify-center transition-all duration-300">
+                <div class="pin-pulse w-2 h-2 rounded-full bg-mobrilz-blue opacity-0 transition-opacity duration-300"></div>
+                <div class="pin-dot w-1.5 h-1.5 rounded-full bg-slate-300 transition-colors duration-300 absolute"></div>
               </div>
 
-              <!-- Interactive Kinetic Visual Column (Mockup UI Builder Preview) -->
-              <div class="w-full sm:w-[46%]">
-                <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-3xl bg-white/80 backdrop-blur-xl border border-slate-200/80 shadow-[0_16px_40px_rgba(9,20,63,0.06)] overflow-hidden flex items-center justify-center p-6 transition-all duration-500">
-                  
-                  <div class="relative z-10 w-full max-w-[310px] aspect-[4/3] bg-white rounded-xl border border-slate-200 shadow-xl overflow-hidden flex flex-col">
-                    <!-- Window Topbar -->
-                    <div class="h-8 border-b border-slate-100 flex items-center px-3 gap-1.5 bg-slate-50/80">
-                      <div class="w-2.5 h-2.5 rounded-full bg-rose-400"></div>
-                      <div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
-                      <div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
-                      <div class="ml-auto w-16 h-2 bg-slate-200 rounded-full"></div>
+              <!-- Content Row (Text Left, Visual Right) -->
+              <div class="flex flex-col sm:flex-row items-center justify-between w-full pl-[60px] sm:pl-0 gap-10 sm:gap-0">
+                
+                <!-- Text Column (Enlarged typography, labels removed) -->
+                <div class="w-full sm:w-[44%] flex flex-col justify-center">
+                  <h3 class="text-3xl sm:text-4xl lg:text-5xl font-light text-mobrilz-navy mb-5 leading-[1.15] tracking-tight">
+                    It starts with a sharp blueprint
+                  </h3>
+                  <p class="text-slate-600 text-base sm:text-lg lg:text-xl leading-relaxed font-light mb-6">
+                    We define technical data models, API endpoints, security bounds, and infrastructure specifications prior to writing code. No ambiguity, zero wasted cycles.
+                  </p>
+                </div>
+
+                <!-- Interactive Kinetic Visual Column (Continuous Orbits, NO Hover State) -->
+                <div class="w-full sm:w-[46%]">
+                  <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-3xl bg-white/80 backdrop-blur-xl border border-slate-200/80 shadow-[0_16px_40px_rgba(9,20,63,0.06)] overflow-hidden flex items-center justify-center p-6">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-50/60 via-transparent to-slate-50/50"></div>
+                    
+                    <!-- Pulsing Core Engine (Scaled up) -->
+                    <div class="absolute z-10 w-14 h-14 bg-mobrilz-blue rounded-full shadow-[0_0_40px_rgba(55,121,203,0.75)] flex items-center justify-center text-white">
+                      <i data-lucide="target" class="w-7 h-7"></i>
                     </div>
-                    <!-- App Canvas Mock -->
-                    <div class="flex flex-1 overflow-hidden">
-                      <!-- Mini Sidebar -->
-                      <div class="w-14 border-r border-slate-100 p-2 flex flex-col gap-2 bg-slate-50/50">
-                        <div class="w-full h-3 bg-mobrilz-blue/40 rounded"></div>
-                        <div class="w-full h-2.5 bg-slate-200 rounded"></div>
-                        <div class="w-full h-2.5 bg-slate-200 rounded"></div>
-                        <div class="w-full h-2.5 bg-slate-200 rounded"></div>
+                    
+                    <!-- Orbit Track 1 (Scaled up) -->
+                    <div class="absolute w-44 h-44 sm:w-56 sm:h-56 border border-blue-400/35 rounded-full flex items-start justify-center animate-spin" style="animation-duration: 9s;">
+                      <div class="w-5 h-5 bg-mobrilz-cobalt rounded-full -mt-2.5 shadow-[0_0_16px_rgba(39,85,153,0.85)]"></div>
+                    </div>
+                    
+                    <!-- Orbit Track 2 (Scaled up) -->
+                    <div class="absolute w-64 h-64 sm:w-80 sm:h-80 border border-blue-400/25 rounded-full flex items-center justify-end animate-spin" style="animation-duration: 14s; animation-direction: reverse;">
+                      <div class="w-5 h-5 bg-mobrilz-highlight rounded-full -mr-2.5 shadow-[0_0_18px_rgba(154,187,227,0.95)]"></div>
+                    </div>
+
+                    <!-- Radar Scanline Wave -->
+                    <div class="absolute inset-0 bg-gradient-to-b from-blue-500/[0.04] to-transparent pointer-events-none animate-pulse"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- ================= STAGE 02: Design & Prototyping (Reversed) ================= -->
+            <div class="timeline-step relative w-full group" data-step="1">
+              <!-- Central Milestone Connector Pin -->
+              <div class="timeline-pin absolute left-[24px] sm:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-2 border-slate-300 rounded-full z-20 shadow-[0_0_8px_rgba(0,0,0,0.06)] flex items-center justify-center transition-all duration-300">
+                <div class="pin-pulse w-2 h-2 rounded-full bg-mobrilz-cobalt opacity-0 transition-opacity duration-300"></div>
+                <div class="pin-dot w-1.5 h-1.5 rounded-full bg-slate-300 transition-colors duration-300 absolute"></div>
+              </div>
+
+              <!-- Content Row (Reversed: Visual Left, Text Right on desktop) -->
+              <div class="flex flex-col sm:flex-row-reverse items-center justify-between w-full pl-[60px] sm:pl-0 gap-10 sm:gap-0">
+                
+                <!-- Text Column (Enlarged typography, labels removed) -->
+                <div class="w-full sm:w-[44%] flex flex-col justify-center">
+                  <h3 class="text-3xl sm:text-4xl lg:text-5xl font-light text-mobrilz-navy mb-5 leading-[1.15] tracking-tight">
+                    Then we make it beautiful
+                  </h3>
+                  <p class="text-slate-600 text-base sm:text-lg lg:text-xl leading-relaxed font-light mb-6">
+                    Interactive Figma prototypes, design tokens, and user flow architectures validated across core client user journeys to eliminate UX friction before a single line of code is written.
+                  </p>
+                </div>
+
+                <!-- Interactive Kinetic Visual Column (High-Fidelity Figma Studio Mockup WITHOUT Bottom Bar) -->
+                <div class="w-full sm:w-[46%]">
+                  <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-3xl bg-white/80 backdrop-blur-xl border border-slate-200/80 shadow-[0_16px_40px_rgba(9,20,63,0.06)] overflow-hidden flex items-center justify-center p-4 sm:p-7">
+                    
+                    <!-- High-Fidelity Design Studio Mockup (Clean Studio Card) -->
+                    <div class="relative z-10 w-full max-w-[340px] sm:max-w-[370px] bg-white rounded-2xl border border-slate-200/90 shadow-[0_16px_36px_rgba(9,20,63,0.1)] overflow-hidden flex flex-col select-none">
+                      
+                      <!-- Topbar -->
+                      <div class="h-9 border-b border-slate-100 px-3.5 flex items-center justify-between bg-slate-50/90">
+                        <div class="flex items-center gap-1.5">
+                          <div class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
+                          <div class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
+                          <div class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
+                        </div>
+                        <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white border border-slate-200/80 shadow-2xs">
+                          <i data-lucide="figma" class="w-3 h-3 text-mobrilz-blue"></i>
+                          <span class="text-[11px] font-sans font-medium text-slate-700">Design System 2.0</span>
+                        </div>
+                        <div class="w-12"></div>
                       </div>
-                      <!-- Main Canvas Elements -->
-                      <div class="flex-1 p-3.5 flex flex-col gap-2.5">
-                        <div class="w-3/4 h-5 bg-blue-100/70 rounded"></div>
-                        <div class="grid grid-cols-2 gap-2">
-                          <div class="h-16 bg-blue-50 border border-blue-100/80 rounded-lg flex items-center justify-center">
-                            <div class="w-6 h-6 rounded-full bg-mobrilz-blue/30"></div>
+
+                      <!-- Canvas Area -->
+                      <div class="p-3.5 sm:p-4 grid grid-cols-12 gap-3 bg-white">
+                        
+                        <!-- Left Panel: Colors & Tokens -->
+                        <div class="col-span-4 p-2.5 rounded-xl bg-slate-50/80 border border-slate-100 flex flex-col justify-between">
+                          <div>
+                            <span class="text-[9px] font-mono font-semibold uppercase tracking-wider text-slate-400 block mb-1.5">Colors</span>
+                            <div class="flex items-center gap-1 mb-2.5">
+                              <span class="w-3.5 h-3.5 rounded-full bg-mobrilz-navy shadow-xs"></span>
+                              <span class="w-3.5 h-3.5 rounded-full bg-mobrilz-cobalt shadow-xs"></span>
+                              <span class="w-3.5 h-3.5 rounded-full bg-mobrilz-blue shadow-xs"></span>
+                              <span class="w-3.5 h-3.5 rounded-full bg-mobrilz-highlight shadow-xs"></span>
+                            </div>
+                            <span class="text-[10px] font-medium text-slate-700 block">Inter Display</span>
+                            <span class="text-[8px] font-mono text-slate-400 block">SemiBold 24px</span>
                           </div>
-                          <div class="h-16 bg-slate-50 border border-slate-100 rounded-lg flex items-center justify-center">
-                            <div class="w-6 h-6 rounded-full bg-mobrilz-highlight/50"></div>
+                          <div class="mt-2 pt-2 border-t border-slate-200/60 flex items-center gap-1 text-[9px] font-mono text-mobrilz-blue">
+                            <i data-lucide="layers" class="w-3 h-3"></i>
+                            <span>Auto Layout</span>
                           </div>
                         </div>
+
+                        <!-- Right Panel: Interactive Flow Cards & Cursor -->
+                        <div class="col-span-8 flex flex-col gap-2 relative">
+                          <!-- Component Card 1 -->
+                          <div class="p-2.5 rounded-xl bg-gradient-to-r from-blue-50/80 to-indigo-50/50 border border-blue-100/80 flex items-center justify-between shadow-2xs">
+                            <div class="flex items-center gap-2">
+                              <span class="w-7 h-7 rounded-lg bg-mobrilz-blue text-white flex items-center justify-center shrink-0 shadow-xs">
+                                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                              </span>
+                              <div class="space-y-1">
+                                <div class="w-16 h-2 bg-slate-800 rounded-full"></div>
+                                <div class="w-24 h-1.5 bg-slate-300 rounded-full"></div>
+                              </div>
+                            </div>
+                            <span class="w-2 h-2 rounded-full bg-mobrilz-blue animate-ping"></span>
+                          </div>
+
+                          <!-- Component Card 2 -->
+                          <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                              <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                                <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+                              </span>
+                              <div class="space-y-1">
+                                <div class="w-14 h-2 bg-slate-700 rounded-full"></div>
+                                <div class="w-20 h-1.5 bg-slate-200 rounded-full"></div>
+                              </div>
+                            </div>
+                            <span class="text-[9px] font-mono text-slate-400">0.2s</span>
+                          </div>
+
+                          <!-- Live Collaborator Cursor Indicator -->
+                          <div class="absolute top-1/2 left-1/3 -translate-y-1/2 flex items-center gap-1 pointer-events-none drop-shadow-md">
+                            <svg class="w-4 h-4 text-mobrilz-blue" viewBox="0 0 24 24" fill="currentColor">
+                              <path d="M3 3l7 18 3-7 7-3L3 3z"/>
+                            </svg>
+                            <span class="px-1.5 py-0.5 rounded-md bg-mobrilz-blue text-white text-[9px] font-sans font-medium tracking-tight">Lead Designer</span>
+                          </div>
+
+                        </div>
+
                       </div>
+
                     </div>
+
                   </div>
-
-                  
-
                 </div>
+
+              </div>
+            </div>
+
+            <!-- ================= STAGE 03: Engineering & Sprint Cycle ================= -->
+            <div class="timeline-step relative w-full group" data-step="2">
+              <!-- Central Milestone Connector Pin -->
+              <div class="timeline-pin absolute left-[24px] sm:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-2 border-slate-300 rounded-full z-20 shadow-[0_0_8px_rgba(0,0,0,0.06)] flex items-center justify-center transition-all duration-300">
+                <div class="pin-pulse w-2 h-2 rounded-full bg-mobrilz-royal opacity-0 transition-opacity duration-300"></div>
+                <div class="pin-dot w-1.5 h-1.5 rounded-full bg-slate-300 transition-colors duration-300 absolute"></div>
               </div>
 
+              <!-- Content Row (Text Left, Visual Right) -->
+              <div class="flex flex-col sm:flex-row items-center justify-between w-full pl-[60px] sm:pl-0 gap-10 sm:gap-0">
+                
+                <!-- Text Column (Enlarged typography, labels removed) -->
+                <div class="w-full sm:w-[44%] flex flex-col justify-center">
+                  <h3 class="text-3xl sm:text-4xl lg:text-5xl font-light text-mobrilz-navy mb-5 leading-[1.15] tracking-tight">
+                    And build it to last
+                  </h3>
+                  <p class="text-slate-600 text-base sm:text-lg lg:text-xl leading-relaxed font-light mb-6">
+                    Bi-weekly demo sprints, automated CI/CD staging environments, strict type safety, and real-time observability across every deployed microservice and frontend component.
+                  </p>
+                </div>
+
+                <!-- Interactive Kinetic Visual Column (Animated IDE with Motion & Developer Build Output) -->
+                <div class="w-full sm:w-[46%]">
+                  <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-3xl bg-[#09143f] border border-slate-800 shadow-[0_20px_50px_rgba(9,20,63,0.18)] overflow-hidden flex items-center justify-center p-6 transition-all duration-500">
+                    
+                    <!-- Pulsing Ambient Blue Glow -->
+                    <div class="absolute top-1/2 left-1/2 w-80 h-80 bg-blue-500/20 rounded-full blur-[90px] pointer-events-none ide-ambient-glow"></div>
+
+                    <!-- Animated Floating IDE Window -->
+                    <div class="ide-window-motion relative z-10 w-full max-w-[380px] sm:max-w-[420px] aspect-[4/3] bg-[#060d28] rounded-2xl border border-white/10 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7)] overflow-hidden flex flex-col">
+                      
+                      <!-- Passing Scanline Laser Beam -->
+                      <div class="ide-scanline absolute -top-8 left-0 right-0 h-16 bg-gradient-to-b from-transparent via-blue-400/[0.08] to-transparent pointer-events-none z-30"></div>
+
+                      <!-- IDE Window Header -->
+                      <div class="h-10 border-b border-white/5 flex items-center px-4 gap-2 bg-[#0b1647]/70 relative z-20">
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#ff5f56] shadow-[0_0_6px_rgba(255,95,86,0.6)]"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] shadow-[0_0_6px_rgba(255,189,46,0.6)]"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#27c93f] shadow-[0_0_6px_rgba(39,201,63,0.6)]"></div>
+                        <div class="ml-auto flex items-center gap-1.5 text-[11px] font-mono text-slate-400">
+                          <i data-lucide="git-branch" class="w-3.5 h-3.5 text-mobrilz-blue animate-pulse"></i> main
+                        </div>
+                      </div>
+
+                      <!-- IDE Code Lines with Living Motion & Developer Output -->
+                      <div class="p-4 sm:p-5 font-mono text-xs sm:text-sm leading-relaxed flex flex-col gap-2 text-slate-300 relative z-20 select-none">
+                        <div class="flex items-center gap-2">
+                          <span class="text-pink-400 font-medium">const</span>
+                          <span class="text-mobrilz-highlight">pipeline</span>
+                          <span class="text-white">=</span>
+                          <span class="text-sky-300">createEngine</span>();
+                        </div>
+                        <div class="flex items-center gap-2 pl-3">
+                          <span class="text-mobrilz-blue font-medium">await</span>
+                          <span class="text-slate-300">pipeline.</span><span class="text-yellow-300">runTests</span>();
+                        </div>
+                        <div class="ide-passing-glow flex items-center gap-2 pl-3 text-emerald-400 bg-emerald-500/[0.06] py-0.5 px-1.5 -ml-1.5 rounded-md border border-emerald-500/20">
+                          <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
+                          <span class="font-medium">148 passing (0.42s)</span>
+                        </div>
+                        <div class="flex items-center gap-2 pl-3">
+                          <span class="text-mobrilz-blue font-medium">await</span>
+                          <span class="text-slate-300">pipeline.</span><span class="text-sky-300">deploy</span>(<span class="text-amber-300">'staging'</span>);
+                          <span class="ide-cursor inline-block w-2 h-4 bg-mobrilz-highlight ml-0.5 rounded-xs"></span>
+                        </div>
+                        <div class="flex items-center gap-2 mt-1 text-emerald-400/90 text-[11px] font-mono">
+                          <span class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.9)] animate-pulse"></span>
+                          <span>✓ Compiled in 240ms (0 errors)</span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
             </div>
+
+            <!-- ================= STAGE 04: Launch & Scale (Reversed) ================= -->
+            <div class="timeline-step relative w-full group" data-step="3">
+              <!-- Central Milestone Connector Pin -->
+              <div class="timeline-pin absolute left-[24px] sm:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-2 border-slate-300 rounded-full z-20 shadow-[0_0_8px_rgba(0,0,0,0.06)] flex items-center justify-center transition-all duration-300">
+                <div class="pin-pulse w-2 h-2 rounded-full bg-mobrilz-navy opacity-0 transition-opacity duration-300"></div>
+                <div class="pin-dot w-1.5 h-1.5 rounded-full bg-slate-300 transition-colors duration-300 absolute"></div>
+              </div>
+
+              <!-- Content Row (Reversed: Visual Left, Text Right on desktop) -->
+              <div class="flex flex-col sm:flex-row-reverse items-center justify-between w-full pl-[60px] sm:pl-0 gap-10 sm:gap-0">
+                
+                <!-- Text Column (Enlarged typography, labels removed) -->
+                <div class="w-full sm:w-[44%] flex flex-col justify-center">
+                  <h3 class="text-3xl sm:text-4xl lg:text-5xl font-light text-mobrilz-navy mb-5 leading-[1.15] tracking-tight">
+                    Ready for the world
+                  </h3>
+                  <p class="text-slate-600 text-base sm:text-lg lg:text-xl leading-relaxed font-light mb-6">
+                    Zero-downtime blue/green deployments, automatic cloud scaling, telemetry tracking, and continuous enterprise SLA support backed by rigorous uptime guarantees.
+                  </p>
+                </div>
+
+                <!-- Interactive Kinetic Visual Column (Continuous Launch Readiness Dashboard - NO Hover State) -->
+                <div class="w-full sm:w-[46%]">
+                  <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-3xl bg-white/80 backdrop-blur-xl border border-slate-200/80 shadow-[0_16px_40px_rgba(9,20,63,0.06)] overflow-hidden flex items-center justify-center p-6">
+                    
+                    <!-- Ambient Glow -->
+                    <div class="absolute -top-10 -right-10 w-44 h-44 bg-mobrilz-blue/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <!-- Finalization Verification Checklist Card (Continuous Motion, NO Hover State) -->
+                    <div class="launch-card-motion relative z-10 w-full max-w-[340px] sm:max-w-[380px] bg-white rounded-2xl border border-slate-200/90 shadow-[0_16px_36px_rgba(9,20,63,0.08)] p-5 flex flex-col gap-4 select-none">
+                      
+                      <!-- Header: Clean title without dots or badges, relevant to 'Ready for the World' -->
+                      <div class="flex items-center justify-between pb-3.5 border-b border-slate-100">
+                        <h4 class="text-xs sm:text-sm font-semibold tracking-wider font-mono text-mobrilz-navy uppercase">
+                          Production Readiness Checklist
+                        </h4>
+                      </div>
+
+                      <!-- Finalized Checklist Items with Mobrilz Branding Direction & Fluid Sequential Highlights -->
+                      <div class="space-y-2.5">
+                        
+                        <!-- Item 1: Cutover Complete -->
+                        <div class="launch-row-pulse-1 flex items-center justify-between p-2.5 rounded-xl bg-slate-50/90 border border-slate-200/70 transition-colors duration-300">
+                          <div class="flex items-center gap-3">
+                            <span class="launch-icon-pulse w-6 h-6 rounded-full bg-[#3779cb] text-white flex items-center justify-center shrink-0 shadow-sm">
+                              <i data-lucide="check" class="w-3.5 h-3.5 stroke-[2.5]"></i>
+                            </span>
+                            <span class="text-xs sm:text-sm font-medium text-slate-800">DNS & SSL Cutover</span>
+                          </div>
+                          <span class="text-[11px] font-mono text-[#3779cb] font-semibold">Finalized</span>
+                        </div>
+
+                        <!-- Item 2: Automated Test Pass -->
+                        <div class="launch-row-pulse-2 flex items-center justify-between p-2.5 rounded-xl bg-slate-50/90 border border-slate-200/70 transition-colors duration-300">
+                          <div class="flex items-center gap-3">
+                            <span class="launch-icon-pulse w-6 h-6 rounded-full bg-[#275599] text-white flex items-center justify-center shrink-0 shadow-sm">
+                              <i data-lucide="check" class="w-3.5 h-3.5 stroke-[2.5]"></i>
+                            </span>
+                            <span class="text-xs sm:text-sm font-medium text-slate-800">Regression Test Suite</span>
+                          </div>
+                          <span class="text-[11px] font-mono text-[#275599] font-semibold">Zero Flaws</span>
+                        </div>
+
+                        <!-- Item 3: Global Edge Sync -->
+                        <div class="launch-row-pulse-3 flex items-center justify-between p-2.5 rounded-xl bg-slate-50/90 border border-slate-200/70 transition-colors duration-300">
+                          <div class="flex items-center gap-3">
+                            <span class="launch-icon-pulse w-6 h-6 rounded-full bg-[#09143f] text-white flex items-center justify-center shrink-0 shadow-sm">
+                              <i data-lucide="check" class="w-3.5 h-3.5 stroke-[2.5]"></i>
+                            </span>
+                            <span class="text-xs sm:text-sm font-medium text-slate-800">Multi-Zone Autoscaling</span>
+                          </div>
+                          <span class="text-[11px] font-mono text-[#09143f] font-semibold">Active</span>
+                        </div>
+
+                      </div>
+
+                      <!-- Bottom Readiness Bar: Production Clearance Progress Bar (Mobrilz Palette, No 100% GO text) -->
+                      <div class="pt-2">
+                        <div class="flex items-center justify-between text-xs font-mono mb-1.5">
+                          <span class="text-slate-500 font-medium">Production Clearance</span>
+                        </div>
+                        <div class="w-full h-2 rounded-full bg-slate-100 overflow-hidden">
+                          <div class="launch-bar-animated h-full rounded-full bg-gradient-to-r from-[#09143f] via-[#275599] to-[#3779cb] w-full shadow-[0_0_10px_rgba(55,121,203,0.35)]"></div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
-
-          <!-- ================= STAGE 03: Engineering & Sprint Cycle ================= -->
-          <div class="timeline-step relative w-full group" data-step="2">
-            <!-- Central Milestone Connector Pin -->
-            <div class="timeline-pin absolute left-[24px] sm:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-2 border-slate-300 rounded-full z-20 shadow-[0_0_8px_rgba(0,0,0,0.06)] flex items-center justify-center transition-all duration-300">
-              <div class="pin-pulse w-2 h-2 rounded-full bg-mobrilz-royal opacity-0 transition-opacity duration-300"></div>
-              <div class="pin-dot w-1.5 h-1.5 rounded-full bg-slate-300 transition-colors duration-300 absolute"></div>
-            </div>
-
-            <!-- Content Row (Text Left, Visual Right) -->
-            <div class="flex flex-col sm:flex-row items-center justify-between w-full pl-[60px] sm:pl-0 gap-10 sm:gap-0">
-              
-              <!-- Text Column -->
-              <div class="w-full sm:w-[44%] flex flex-col justify-center">
-                <div class="mb-5">
-                  <span class="font-mono text-xs font-semibold uppercase tracking-wider text-mobrilz-royal">
-                    03 Sprint Engineering
-                  </span>
-                </div>
-                <h3 class="text-2xl sm:text-3xl lg:text-4xl font-light text-mobrilz-navy mb-4 leading-snug tracking-tight">
-                  And build it to last
-                </h3>
-                <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-light mb-6">
-                  Disciplined 2 week agile sprints with bi weekly client demo sessions, continuous integration, and automated regression testing suites (WebDriverIO, Dusk, Playwright).
-                </p>
-                <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-500">
-                  <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">GitHub Daily Commits</span>
-                  <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">Bi weekly Demos</span>
-                  <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">CI/CD Staging</span>
-                </div>
-              </div>
-
-              <!-- Interactive Kinetic Visual Column (IDE & Code Editor Animation) -->
-              <div class="w-full sm:w-[46%]">
-                <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-3xl bg-[#09143f] border border-slate-800 shadow-[0_20px_50px_rgba(9,20,63,0.18)] overflow-hidden flex items-center justify-center p-6 group-hover:border-blue-400/40 transition-all duration-500">
-                  
-                  <div class="relative z-10 w-full max-w-[310px] aspect-[4/3] bg-[#060d28] rounded-xl border border-white/10 shadow-2xl overflow-hidden flex flex-col">
-                    <!-- IDE Window Header -->
-                    <div class="h-8 border-b border-white/5 flex items-center px-3 gap-1.5 bg-[#0b1647]/70">
-                      <div class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]"></div>
-                      <div class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]"></div>
-                      <div class="w-2.5 h-2.5 rounded-full bg-[#27c93f]"></div>
-                      <div class="ml-auto flex items-center gap-1 text-[10px] font-mono text-slate-400">
-                        <i data-lucide="git-branch" class="w-3 h-3 text-mobrilz-blue"></i> main
-                      </div>
-                    </div>
-                    <!-- IDE Code Lines -->
-                    <div class="p-3.5 font-mono text-[11px] leading-relaxed flex flex-col gap-1.5 text-slate-300">
-                      <div class="flex items-center gap-2">
-                        <span class="text-pink-400">const</span>
-                        <span class="text-mobrilz-highlight">pipeline</span>
-                        <span class="text-white">=</span>
-                        <span class="text-sky-300">createEngine</span>();
-                      </div>
-                      <div class="flex items-center gap-2 pl-3">
-                        <span class="text-mobrilz-blue">await</span>
-                        <span class="text-slate-300">pipeline.</span><span class="text-yellow-300">runTests</span>();
-                      </div>
-                      <div class="flex items-center gap-2 pl-3 text-emerald-400">
-                        <i data-lucide="check" class="w-3 h-3"></i>
-                        <span>148 passing (0.42s)</span>
-                      </div>
-                      <div class="flex items-center gap-2 pl-3">
-                        <span class="text-mobrilz-blue">await</span>
-                        <span class="text-slate-300">pipeline.</span><span class="text-sky-300">deploy</span>(<span class="text-amber-300">'staging'</span>);
-                      </div>
-                      <div class="flex items-center gap-1.5 mt-1 text-slate-400 text-[10px]">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                        <span>Built with precision  Ready</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Floating Terminal Badge -->
-                  <div class="absolute bottom-4 left-4 z-20 px-3 py-1.5 rounded-lg bg-[#060d28]/95 backdrop-blur-md border border-white/15 text-white text-[11px] font-mono shadow-lg flex items-center gap-2">
-                    <i data-lucide="terminal" class="w-3.5 h-3.5 text-mobrilz-blue"></i>
-                    <span>Production Pipeline</span>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- ================= STAGE 04: Launch & Scale (Reversed) ================= -->
-          <div class="timeline-step relative w-full group" data-step="3">
-            <!-- Central Milestone Connector Pin -->
-            <div class="timeline-pin absolute left-[24px] sm:left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-2 border-slate-300 rounded-full z-20 shadow-[0_0_8px_rgba(0,0,0,0.06)] flex items-center justify-center transition-all duration-300">
-              <div class="pin-pulse w-2 h-2 rounded-full bg-mobrilz-navy opacity-0 transition-opacity duration-300"></div>
-              <div class="pin-dot w-1.5 h-1.5 rounded-full bg-slate-300 transition-colors duration-300 absolute"></div>
-            </div>
-
-            <!-- Content Row (Reversed: Visual Left, Text Right on desktop) -->
-            <div class="flex flex-col sm:flex-row-reverse items-center justify-between w-full pl-[60px] sm:pl-0 gap-10 sm:gap-0">
-              
-              <!-- Text Column -->
-              <div class="w-full sm:w-[44%] flex flex-col justify-center">
-                <div class="mb-5">
-                  <span class="font-mono text-xs font-semibold uppercase tracking-wider text-mobrilz-navy">
-                    04 Launch & Scale
-                  </span>
-                </div>
-                <h3 class="text-2xl sm:text-3xl lg:text-4xl font-light text-mobrilz-navy mb-4 leading-snug tracking-tight">
-                  Ready for the world
-                </h3>
-                <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-light mb-6">
-                  Zero downtime blue/green deployments, automatic cloud scaling, telemetry tracking, and continuous enterprise SLA support backed by rigorous uptime guarantees.
-                </p>
-                <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-500">
-                  <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">99.9% SLA Guarantee</span>
-                  <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">Autoscaling</span>
-                  <span class="px-3 py-1 rounded-md bg-white border border-slate-200 shadow-xs">24/7 Monitoring</span>
-                </div>
-              </div>
-
-              <!-- Interactive Kinetic Visual Column (Live Rocket / Launch Telemetry) -->
-              <div class="w-full sm:w-[46%]">
-                <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-3xl bg-white/80 backdrop-blur-xl border border-slate-200/80 shadow-[0_16px_40px_rgba(9,20,63,0.06)] overflow-hidden flex items-center justify-center p-6 transition-all duration-500">
-                  <div class="absolute inset-0 bg-gradient-to-t from-blue-500/10 via-transparent to-transparent"></div>
-                  
-                  <!-- Launch Propulsion Core -->
-                  <div class="relative w-full h-full flex flex-col items-center justify-center">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-mobrilz-blue to-mobrilz-navy rounded-full flex items-center justify-center shadow-[0_0_36px_rgba(55,121,203,0.65)] text-white group-hover:scale-110 transition-transform duration-500">
-                      <i data-lucide="rocket" class="w-8 h-8 sm:w-10 sm:h-10"></i>
-                    </div>
-
-                    <!-- Ambient Floating Telemetry Rings -->
-                    <div class="mt-6 flex items-center gap-3 bg-white/90 backdrop-blur-sm border border-slate-200 rounded-full px-4 py-1.5 shadow-sm">
-                      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-                      <span class="text-xs font-mono text-mobrilz-navy font-medium">Uptime: 99.98%  Zero Downtime</span>
-                    </div>
-                  </div>
-
-                  <!-- Floating Live Cutover Badge -->
-                  <div class="absolute top-4 left-4 px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 text-[11px] font-mono shadow-xs flex items-center gap-2">
-                    <i data-lucide="cloud-lightning" class="w-3.5 h-3.5 text-mobrilz-blue"></i>
-                    <span>Production Cutover</span>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
         </div>
 
       </div>
-
-    </div>
-  </section>
+    </section>
 
   <!-- ========================================================================= -->
   <!-- 05. TECHNOLOGIES (LIGHT, CLEAN, AIRY MATRIX)                              -->
@@ -4343,12 +4538,10 @@
           duration: "4 to 8 weeks",
           image: "./assets/expertise/development.jpg",
           badge: "Full Stack Engineering",
-          showcaseTitle: "Scalable Application Engineering",
-          showcaseSubtitle: "High concurrency web & mobile systems delivered to production."
         },
         {
           title: "Design",
-          tag: "Human-Centered Design",
+          tag: "Human Centered Design",
           desc: "We craft intuitive user journeys, accessible design systems, and distinct digital branding that elevate customer trust and delight users on every interaction.",
           subItems: [
             { name: "UI/UX Design", meta: "User Journeys · Wireframing · Testing" },
@@ -4358,8 +4551,6 @@
           duration: "3 to 5 weeks",
           image: "./assets/expertise/design.jpg",
           badge: "UI/UX & Brand",
-          showcaseTitle: "Product Design Systems",
-          showcaseSubtitle: "Pixel-perfect interfaces tailored for maximum conversion."
         },
         {
           title: "Infrastructure",
@@ -4373,8 +4564,6 @@
           duration: "Continuous / 2 to 4 weeks",
           image: "./assets/expertise/infrastructure.jpg",
           badge: "Cloud Reliability",
-          showcaseTitle: "High-Availability Infrastructure",
-          showcaseSubtitle: "Automated container pipelines with guaranteed 99.98% uptime."
         },
         {
           title: "Digital Marketing",
@@ -4389,8 +4578,6 @@
           duration: "Monthly / Sprints",
           image: "./assets/expertise/marketing.jpg",
           badge: "Growth Engine",
-          showcaseTitle: "Omnichannel Acquisition",
-          showcaseSubtitle: "Targeted paid campaigns and organic search market leadership."
         }
       ];
 
@@ -4437,9 +4624,6 @@
 
         const imgEl = document.getElementById('flubbleShowcaseImg');
         const badgeEl = document.getElementById('flubbleShowcaseBadge');
-        const captionWrapper = document.getElementById('flubbleCaptionWrapper');
-        const titleEl = document.getElementById('flubbleShowcaseTitle');
-        const subtitleEl = document.getElementById('flubbleShowcaseSubtitle');
 
         // On first run / initialization without previous item, update directly without animation delay
         if (previousIndex === -1) {
@@ -4456,8 +4640,6 @@
           }
           if (imgEl) imgEl.src = item.image;
           if (badgeEl) badgeEl.textContent = item.badge;
-          if (titleEl) titleEl.textContent = item.showcaseTitle;
-          if (subtitleEl) subtitleEl.textContent = item.showcaseSubtitle;
           return;
         }
 
@@ -4475,11 +4657,6 @@
         if (metaWrapper) {
           metaWrapper.style.transition = 'opacity 150ms ease-out';
           metaWrapper.style.opacity = '0.3';
-        }
-        if (captionWrapper) {
-          captionWrapper.style.transition = 'transform 180ms cubic-bezier(0.4, 0, 0.2, 1), opacity 180ms cubic-bezier(0.4, 0, 0.2, 1)';
-          captionWrapper.style.opacity = '0';
-          captionWrapper.style.transform = `translateY(${exitOffset})`;
         }
         if (imgEl) {
           imgEl.style.transition = 'transform 240ms cubic-bezier(0.4, 0, 0.2, 1), opacity 200ms ease-in-out';
@@ -4504,8 +4681,6 @@
           }
 
           if (badgeEl) badgeEl.textContent = item.badge;
-          if (titleEl) titleEl.textContent = item.showcaseTitle;
-          if (subtitleEl) subtitleEl.textContent = item.showcaseSubtitle;
           if (imgEl) imgEl.src = item.image;
 
           // Prepare elements at enter offset (instant snap)
@@ -4513,11 +4688,6 @@
             contentWrapper.style.transition = 'none';
             contentWrapper.style.transform = `translateY(${enterOffset})`;
             contentWrapper.style.opacity = '0';
-          }
-          if (captionWrapper) {
-            captionWrapper.style.transition = 'none';
-            captionWrapper.style.transform = `translateY(${enterOffset})`;
-            captionWrapper.style.opacity = '0';
           }
           if (imgEl) {
             imgEl.style.transition = 'none';
@@ -4538,11 +4708,6 @@
             if (metaWrapper) {
               metaWrapper.style.transition = 'opacity 300ms ease-out';
               metaWrapper.style.opacity = '1';
-            }
-            if (captionWrapper) {
-              captionWrapper.style.transition = 'transform 380ms cubic-bezier(0.16, 1, 0.3, 1), opacity 340ms cubic-bezier(0.16, 1, 0.3, 1)';
-              captionWrapper.style.opacity = '1';
-              captionWrapper.style.transform = 'translateY(0)';
             }
             if (imgEl) {
               imgEl.style.transition = 'transform 480ms cubic-bezier(0.16, 1, 0.3, 1), opacity 360ms ease-out';
