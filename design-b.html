@@ -5574,16 +5574,12 @@
             row.style.borderLeftColor = p.color;
             const titleSpan = row.querySelector('.why-row-title');
             if (titleSpan) titleSpan.style.color = '#09143f';
-            const numSpan = row.querySelector('.why-row-num');
-            if (numSpan) numSpan.style.color = p.color;
           } else {
             row.classList.remove('active');
             row.style.backgroundColor = 'transparent';
             row.style.borderLeftColor = 'transparent';
             const titleSpan = row.querySelector('.why-row-title');
             if (titleSpan) titleSpan.style.color = '#334155';
-            const numSpan = row.querySelector('.why-row-num');
-            if (numSpan) numSpan.style.color = '#94a3b8';
           }
         });
       }
@@ -5592,11 +5588,8 @@
       PILLARS.forEach((p, i) => {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'why-pillar-row group flex items-start gap-4 p-4 sm:p-5 text-left border-b border-slate-200/80 last:border-b-0 transition-all duration-200 cursor-pointer border-l-4 border-l-transparent';
+        btn.className = 'why-pillar-row group flex items-start p-4 sm:p-5 text-left border-b border-slate-200/80 last:border-b-0 transition-all duration-200 cursor-pointer border-l-4 border-l-transparent';
         btn.innerHTML = `
-          <span class="why-row-num font-mono text-xs sm:text-sm font-semibold tracking-wider text-slate-400 mt-0.5 shrink-0 transition-colors">
-            ${p.num}
-          </span>
           <div class="space-y-0.5 flex-1 min-w-0">
             <h4 class="why-row-title text-sm sm:text-base font-medium text-slate-700 tracking-tight transition-colors group-hover:text-mobrilz-blue">
               ${p.title}
