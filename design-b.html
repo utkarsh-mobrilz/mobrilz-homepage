@@ -1595,7 +1595,7 @@
             class="flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#0e1742] border border-blue-500/40 shadow-[0_0_25px_rgba(55,121,203,0.22)]"
             data-index="0"
           >
-            <span class="flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-[#09143f]">Development</span>
+            <span class="flubble-nav-text text-2xl sm:text-3xl font-light tracking-tight transition-colors duration-300 text-[#09143f]">Development</span>
           </button>
 
           <!-- Item 2: Design -->
@@ -1606,7 +1606,7 @@
             class="flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#09143f]/75 border border-white/10 hover:border-blue-400/30 hover:bg-[#09143f]"
             data-index="1"
           >
-            <span class="flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white">Design</span>
+            <span class="flubble-nav-text text-2xl sm:text-3xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white">Design</span>
           </button>
 
           <!-- Item 3: Solution / Infrastructure -->
@@ -1617,7 +1617,7 @@
             class="flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#09143f]/75 border border-white/10 hover:border-blue-400/30 hover:bg-[#09143f]"
             data-index="2"
           >
-            <span class="flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white">Infrastructure</span>
+            <span class="flubble-nav-text text-2xl sm:text-3xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white">Infrastructure</span>
           </button>
 
           <!-- Item 4: Digital Marketing -->
@@ -1628,7 +1628,7 @@
             class="flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#09143f]/75 border border-white/10 hover:border-blue-400/30 hover:bg-[#09143f]"
             data-index="3"
           >
-            <span class="flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white">Digital Marketing</span>
+            <span class="flubble-nav-text text-2xl sm:text-3xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white">Digital Marketing</span>
           </button>
 
           <!-- White CTA button matching user design request: "Get a quote" -->
@@ -1649,7 +1649,7 @@
           <div id="flubbleContentWrapper" class="relative z-10 transition-all duration-350 ease-out transform">
             <!-- Dynamic Category Heading -->
             <div class="flex items-center gap-2 mb-3">
-              <span id="flubbleDetailTag" class="text-xs font-sans font-semibold tracking-wider text-mobrilz-highlight uppercase">Full Stack Development</span>
+              <span id="flubbleDetailTag" class="text-sm sm:text-base font-sans font-semibold tracking-wider text-mobrilz-highlight uppercase">Full Stack Development</span>
             </div>
             
             <!-- Dynamic Description -->
@@ -2139,33 +2139,83 @@
         <!-- ARCHITECTURAL BLUEPRINT CANVAS: Modular Subsections -->
         <div class="relative z-10 flex flex-col gap-12 lg:gap-16">
           
-          <!-- TOP ROW: Web Tech Stack (Left) | Mobrilz 'M' Hub (Center) | Mobile Tech Stack (Right) -->
-          <div id="tech-nexus-row" class="relative flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-16 xl:gap-24">
-            
-            <!-- Dynamic Glowing SVG Connector Lines Overlay (Desktop) -->
-            <svg id="tech-nexus-connectors" class="hidden lg:block absolute inset-0 w-full h-full pointer-events-none z-0 overflow-visible" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <filter id="nexusLineGlow" x="-30%" y="-30%" width="160%" height="160%">
-                  <feGaussianBlur stdDeviation="3.5" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-                <linearGradient id="nexusGradLeft" x1="100%" y1="0%" x2="0%" y2="0%">
-                  <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.95" />
-                  <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.7" />
-                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.85" />
-                </linearGradient>
-                <linearGradient id="nexusGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.95" />
-                  <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.7" />
-                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.85" />
-                </linearGradient>
-              </defs>
-              <g id="tech-nexus-paths"></g>
-            </svg>
 
+      <!-- ================= REIMAGINED TWO-COLUMN NEXUS ARCHITECTURE ================= -->
+      <!-- Left: Sticky Floating Mobrilz 'M' Hub (Centered in viewport on scroll) | Right: All Tech Stacks & Solutions -->
+      <div id="tech-nexus-stage" class="relative w-full flex flex-col lg:flex-row items-start gap-8 lg:gap-14 xl:gap-20 py-4">
+        
+        <!-- DYNAMIC GLOWING SVG CONNECTOR LINES OVERLAY -->
+        <svg id="tech-nexus-connectors" class="hidden lg:block absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="nexusLineGlow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="3.5" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+            <linearGradient id="nexusGradBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.95" />
+              <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.85" />
+              <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.3" />
+            </linearGradient>
+          </defs>
+          <g id="tech-nexus-paths"></g>
+        </svg>
+
+        <!-- ================= LEFT COLUMN: STICKY FLOATING 'M' LOGO HUB ================= -->
+        <div class="w-full lg:w-[28%] xl:w-[26%] shrink-0 lg:sticky lg:top-1/2 lg:-translate-y-1/2 z-20 flex flex-col items-center justify-center py-6 lg:py-12">
+          
+          <div id="tech-nexus-m-pedestal" class="relative flex flex-col items-center justify-center p-8 sm:p-10 rounded-3xl bg-[#0b1744]/80 border border-[#274492] backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_40px_rgba(55,121,203,0.35)] transition-all duration-300 group">
+            
+            <!-- Central Ambient Radial Glow -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-[#3779cb]/20 rounded-3xl pointer-events-none"></div>
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/30 via-[#3779cb]/40 to-indigo-600/30 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition-opacity pointer-events-none"></div>
+
+            <!-- Central Mobrilz Floating Brand 'M' -->
+            <div id="tech-nexus-m" class="relative z-10 flex flex-col items-center justify-center cursor-pointer">
+              <svg class="w-24 h-20 sm:w-32 sm:h-24 drop-shadow-[0_4px_30px_rgba(55,121,203,0.9)] transition-all duration-500 group-hover:scale-105" viewBox="0 0 150 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="brand-m-grad-1" x1="104.43" y1="11.64" x2="48.2" y2="67.87" gradientUnits="userSpaceOnUse">
+                    <stop offset=".18" stop-color="#ffffff"/>
+                    <stop offset="1" stop-color="#64b5f6"/>
+                  </linearGradient>
+                  <linearGradient id="brand-m-grad-2" x1="105.63" y1="7.61" x2="149.45" y2="83.51" gradientUnits="userSpaceOnUse">
+                    <stop offset=".15" stop-color="#64b5f6"/>
+                    <stop offset=".94" stop-color="#3779cb"/>
+                  </linearGradient>
+                  <linearGradient id="brand-m-grad-3" x1="13.24" y1="32.79" x2="40.16" y2="79.42" gradientUnits="userSpaceOnUse">
+                    <stop offset=".14" stop-color="#3779cb"/>
+                    <stop offset=".99" stop-color="#64b5f6"/>
+                  </linearGradient>
+                </defs>
+                <path d="M118 28c-3 0-5 1-8 5L91 60C85 68 81 74 73 76c-10 3-18 0-25-9-6-7-8-16-16-17 3-10 16-14 23-6 4 5 7 15 11 15 6 0 18-27 30-38 9-6 19-2 22 7Z" fill="url(#brand-m-grad-1)"/>
+                <path d="M99 14c13-18 40-10 43 12 1 9 1 43 0 55-1 14-18 15-20 3-2-15 1-40 0-56-1-13-11-16-23-14Z" fill="url(#brand-m-grad-2)"/>
+                <path d="M49 36c-4-2-8-2-12-1-9 2-10 11-9 22l1 19c0 6-1 10-5 13-7 6-16 0-17-9-1-11-1-33 3-41 7-14 27-18 39-3Z" fill="url(#brand-m-grad-3)"/>
+              </svg>
+            </div>
+
+            <!-- Pedestal Status Badge -->
+            <div class="relative z-10 mt-5 flex flex-col items-center gap-1.5 text-center">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono tracking-wider text-[#93c5fd] bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)]">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                ACTIVE ARCHITECTURE
+              </span>
+              <p class="text-[12px] font-light text-slate-400 max-w-[190px] leading-snug pt-1">
+                Central Orchestration Engine
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ================= RIGHT COLUMN: ALL TECH STACKS ON THE RIGHT ================= -->
+        <div id="tech-nexus-highway" class="relative z-10 w-full lg:w-[72%] xl:w-[74%] flex flex-col gap-12 lg:gap-16">
+          
+          <!-- 1. WEB TECH STACK -->
+          <div class="w-full flex flex-col gap-6">
+            
             <!-- ================= SUB-SECTION 1: WEB TECH STACK ================= -->
             <div class="relative z-10 w-full lg:flex-1 flex flex-col items-center lg:items-start">
               
@@ -2293,36 +2343,12 @@
 
             <!-- ================= CENTER NEXUS: CLEAN MOBRILZ 'M' EMBLEM ================= -->
             <div class="relative z-10 flex flex-col items-center justify-center my-6 lg:my-0 px-4 sm:px-8 xl:px-12 shrink-0 lg:self-center">
-              
-              <!-- Central Mobrilz Floating Brand 'M' -->
-              <div id="tech-nexus-m" class="relative group flex flex-col items-center justify-center cursor-pointer">
-                <!-- Pure Mobrilz Brand 'M' Vector SVG -->
-                <svg class="w-20 h-16 sm:w-28 sm:h-20 drop-shadow-[0_4px_24px_rgba(55,121,203,0.8)] transition-all duration-300 hover:scale-105" viewBox="0 0 150 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="brand-m-grad-1" x1="104.43" y1="11.64" x2="48.2" y2="67.87" gradientUnits="userSpaceOnUse">
-                      <stop offset=".18" stop-color="#ffffff"/>
-                      <stop offset="1" stop-color="#64b5f6"/>
-                    </linearGradient>
-                    <linearGradient id="brand-m-grad-2" x1="105.63" y1="7.61" x2="149.45" y2="83.51" gradientUnits="userSpaceOnUse">
-                      <stop offset=".15" stop-color="#64b5f6"/>
-                      <stop offset=".94" stop-color="#3779cb"/>
-                    </linearGradient>
-                    <linearGradient id="brand-m-grad-3" x1="13.24" y1="32.79" x2="40.16" y2="79.42" gradientUnits="userSpaceOnUse">
-                      <stop offset=".14" stop-color="#3779cb"/>
-                      <stop offset=".99" stop-color="#64b5f6"/>
-                    </linearGradient>
-                  </defs>
-                  <path d="M118 28c-3 0-5 1-8 5L91 60C85 68 81 74 73 76c-10 3-18 0-25-9-6-7-8-16-16-17 3-10 16-14 23-6 4 5 7 15 11 15 6 0 18-27 30-38 9-6 19-2 22 7Z" fill="url(#brand-m-grad-1)"/>
-                  <path d="M99 14c13-18 40-10 43 12 1 9 1 43 0 55-1 14-18 15-20 3-2-15 1-40 0-56-1-13-11-16-23-14Z" fill="url(#brand-m-grad-2)"/>
-                  <path d="M49 36c-4-2-8-2-12-1-9 2-10 11-9 22l1 19c0 6-1 10-5 13-7 6-16 0-17-9-1-11-1-33 3-41 7-14 27-18 39-3Z" fill="url(#brand-m-grad-3)"/>
-                </svg>
-              </div>
 
-            </div>
+          </div>
 
-            <!-- ================= RIGHT WING: MOBILE TECH STACK & AUTOMATED SOFTWARE TESTING ================= -->
-            <div class="relative z-10 w-full lg:flex-1 flex flex-col gap-10">
-              
+          <!-- 2. MOBILE TECH STACK -->
+          <div class="w-full flex flex-col gap-6">
+                          
               <!-- SUB-SECTION 2: MOBILE TECH STACK -->
               <div class="w-full flex flex-col items-center lg:items-start">
                 
@@ -2401,8 +2427,12 @@
 
                 </div>
 
-              </div>
 
+          </div>
+
+          <!-- 3. TESTING, DEVOPS & CLOUD DEPLOYMENT -->
+          <div class="w-full flex flex-col gap-6">
+            
               <!-- SUB-SECTION 3: AUTOMATED SOFTWARE TESTING (Horizontal Presentation) -->
               <div class="w-full flex flex-col items-center lg:items-start">
                 <!-- Section Header Tag -->
@@ -2509,8 +2539,19 @@
           </div>
 
           <!-- Horizontal Section Separator Line beneath Sub-sections -->
-          <div class="w-full border-t border-[#1e3578]/80"></div>
 
+          </div>
+
+          <!-- SEPARATOR -->
+          <div class="w-full border-t border-[#1e3578]/80 my-2"></div>
+
+          <!-- 4. WEB SOLUTIONS, MOBILE SOLUTIONS & AI SOLUTIONS -->
+          <div class="w-full flex flex-col gap-8">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0d1c52] border border-[#3779cb]/50 shadow-[0_0_15px_rgba(55,121,203,0.3)] w-fit">
+              <i data-lucide="layers" class="w-3.5 h-3.5 text-[#64b5f6]"></i>
+              <span class="text-xs font-mono font-semibold tracking-wider text-white uppercase">Specialized Enterprise Solutions</span>
+            </div>
+            
           <!-- ================= BOTTOM ROW: WEB SOLUTIONS | MOBILE SOLUTIONS | AI SOLUTIONS ================= -->
           <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 xl:gap-12 items-start">
             
@@ -2765,7 +2806,15 @@
       </div>
 
     </div>
-      
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
   <!-- ========================================================================= -->
@@ -5208,10 +5257,10 @@
           const textSpan = btn.querySelector('.flubble-nav-text');
           if (idx === index) {
             btn.className = "flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#0e1742] border border-blue-500/40 shadow-[0_0_25px_rgba(55,121,203,0.22)] translate-x-1";
-            if (textSpan) textSpan.className = "flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-white";
+            if (textSpan) textSpan.className = "flubble-nav-text text-2xl sm:text-3xl font-light tracking-tight transition-colors duration-300 text-white";
           } else {
             btn.className = "flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#09143f]/75 border border-white/10 hover:border-blue-400/30 hover:bg-[#09143f] translate-x-0";
-            if (textSpan) textSpan.className = "flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white";
+            if (textSpan) textSpan.className = "flubble-nav-text text-2xl sm:text-3xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white";
           }
         });
 
@@ -5692,195 +5741,7 @@
   </script>
 
 
-  <script>
-    // Dynamic Glowing SVG Connector Lines between Central 'M' and Target Tech Stack Containers
-    (function initTechNexusConnectors() {
-      function drawNexusLines() {
-        const row = document.getElementById('tech-nexus-row');
-        const svg = document.getElementById('tech-nexus-connectors');
-        const pathsGroup = document.getElementById('tech-nexus-paths');
-        const mHub = document.getElementById('tech-nexus-m');
-        if (!row || !svg || !pathsGroup || !mHub) return;
-
-        if (window.innerWidth < 1024) {
-          pathsGroup.innerHTML = '';
-          return;
-        }
-
-        const rowRect = row.getBoundingClientRect();
-        const mRect = mHub.getBoundingClientRect();
-        if (rowRect.width === 0 || mRect.width === 0) return;
-
-        svg.setAttribute('viewBox', `0 0 ${rowRect.width} ${rowRect.height}`);
-
-        const mLeftX = mRect.left - rowRect.left + 6;
-        const mRightX = mRect.right - rowRect.left - 6;
-        const mCenterY = mRect.top - rowRect.top + mRect.height / 2;
-
-        const getRect = (id) => {
-          const el = document.getElementById(id);
-          if (!el) return null;
-          const r = el.getBoundingClientRect();
-          return {
-            left: r.left - rowRect.left,
-            right: r.right - rowRect.left,
-            top: r.top - rowRect.top,
-            bottom: r.bottom - rowRect.top,
-            width: r.width,
-            height: r.height,
-            cy: r.top - rowRect.top + r.height / 2,
-            cx: r.left - rowRect.left + r.width / 2
-          };
-        };
-
-        const backend = getRect('tech-box-backend');
-        const frontend = getRect('tech-box-frontend');
-        const database = getRect('tech-box-database');
-        const apiGateway = getRect('tech-box-api-gateway');
-        const ios = getRect('tech-box-ios');
-        const android = getRect('tech-box-android');
-        const hybrid = getRect('tech-box-hybrid');
-        const qa = getRect('tech-box-qa');
-        const devops = getRect('tech-box-devops');
-        const deployment = getRect('tech-box-deployment');
-
-        const paths = [];
-        const nodes = [];
-
-        function addConnection(d, side, endX, endY, delay) {
-          const grad = side === 'left' ? 'url(#nexusGradLeft)' : 'url(#nexusGradRight)';
-          paths.push(`
-            <path d="${d}" fill="none" stroke="#3b82f6" stroke-width="4" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" filter="url(#nexusLineGlow)">
-              <animate attributeName="stroke-opacity" values="0.12;0.45;0.18;0.55;0.12" dur="4.8s" begin="${delay}s" repeatCount="indefinite" />
-            </path>
-            <path d="${d}" fill="none" stroke="${grad}" stroke-width="1.6" stroke-opacity="0.75" stroke-linecap="round" stroke-linejoin="round">
-              <animate attributeName="stroke-opacity" values="0.35;0.95;0.45;1;0.35" dur="4.8s" begin="${delay}s" repeatCount="indefinite" />
-            </path>
-            <path d="${d}" fill="none" stroke="#e0f2fe" stroke-width="1.2" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#nexusLineGlow)">
-              <animate attributeName="stroke-opacity" values="0.1;0.85;0.25;0.95;0.1" dur="4.8s" begin="${delay}s" repeatCount="indefinite" />
-            </path>
-          `);
-          nodes.push(`
-            <circle cx="${endX}" cy="${endY}" r="4.5" fill="#38bdf8" fill-opacity="0.35" filter="url(#nexusLineGlow)">
-              <animate attributeName="fill-opacity" values="0.2;0.75;0.3;0.85;0.2" dur="4.8s" begin="${delay}s" repeatCount="indefinite" />
-            </circle>
-            <circle cx="${endX}" cy="${endY}" r="2.5" fill="#e0f2fe" stroke="#38bdf8" stroke-width="1.2" />
-          `);
-        }
-
-        function curveH(x1, y1, x2, y2) {
-          const midX = x1 + (x2 - x1) * 0.5;
-          return `M ${x1.toFixed(1)} ${y1.toFixed(1)} C ${midX.toFixed(1)} ${y1.toFixed(1)}, ${midX.toFixed(1)} ${y2.toFixed(1)}, ${x2.toFixed(1)} ${y2.toFixed(1)}`;
-        }
-
-        // 1. Backend (smooth curved S-bezier from M left -> Backend right edge)
-        if (backend) {
-          const sx = mLeftX + 10;
-          const sy = mCenterY - 7;
-          const ex = backend.right;
-          const ey = backend.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'left', ex, ey, 0.3);
-        }
-
-        // 4. API Gateway (inner left column, right edge <- M left)
-        if (apiGateway) {
-          const sx = mLeftX + 8;
-          const sy = mCenterY - 2;
-          const ex = apiGateway.right;
-          const ey = apiGateway.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'left', ex, ey, 0);
-        }
-
-        // 2. Frontend (smooth curved S-bezier from M left -> Frontend right edge)
-        if (frontend) {
-          const sx = mLeftX + 6;
-          const sy = mCenterY + 3;
-          const ex = frontend.right;
-          const ey = frontend.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'left', ex, ey, 0.6);
-        }
-
-        // 3. Database (direct smooth curve from M left -> Database right edge)
-        if (database) {
-          const sx = mLeftX + 6;
-          const sy = mCenterY + 10;
-          const ex = database.right;
-          const ey = database.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'left', ex, ey, 0.9);
-        }
-
-        // 5. iOS (inner right column, left edge <- M right)
-        if (ios) {
-          const sx = mRightX;
-          const sy = mCenterY - 12;
-          const ex = ios.left;
-          const ey = ios.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 0.15);
-        }
-
-        // 6. Hybrid Apps Tech Stack (smooth curved S-bezier from M right -> Hybrid left edge)
-        if (hybrid) {
-          const sx = mRightX;
-          const sy = mCenterY - 18;
-          const ex = hybrid.left;
-          const ey = hybrid.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 0.45);
-        }
-
-        // 7. Android (inner right column below iOS, left edge <- M right)
-        if (android) {
-          const sx = mRightX;
-          const sy = mCenterY - 4;
-          const ex = android.left;
-          const ey = android.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 0.75);
-        }
-
-        // 8. QA & Test Automation (left edge <- M right)
-        if (qa) {
-          const sx = mRightX;
-          const sy = mCenterY + 4;
-          const ex = qa.left;
-          const ey = qa.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 1.05);
-        }
-
-        // 9. CI/CD & Containers (DevOps left edge <- M right)
-        if (devops) {
-          const sx = mRightX;
-          const sy = mCenterY + 12;
-          const ex = devops.left;
-          const ey = devops.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 1.35);
-        }
-
-        // 10. Cloud Infrastructure (smooth curved S-bezier from M right -> Deployment left edge)
-        if (deployment) {
-          const sx = mRightX;
-          const sy = mCenterY + 18;
-          const ex = deployment.left;
-          const ey = deployment.cy;
-          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 1.65);
-        }
-
-        nodes.push(`
-          <circle cx="${mLeftX}" cy="${mCenterY}" r="3.5" fill="#93c5fd" filter="url(#nexusLineGlow)" />
-          <circle cx="${mRightX}" cy="${mCenterY}" r="3.5" fill="#93c5fd" filter="url(#nexusLineGlow)" />
-        `);
-
-        pathsGroup.innerHTML = paths.join('') + nodes.join('');
-      }
-
-      window.addEventListener('load', () => {
-        setTimeout(drawNexusLines, 60);
-        setTimeout(drawNexusLines, 400);
-      });
-      window.addEventListener('resize', drawNexusLines);
-      if (document.readyState === 'complete' || document.readyState === 'interactive') {
-        setTimeout(drawNexusLines, 50);
-      }
-    })();
-  </script>
+  
 
   </script>
 
