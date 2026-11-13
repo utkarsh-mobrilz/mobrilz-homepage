@@ -2803,13 +2803,7 @@
               </p>
             </div>
 
-            <!-- Interactive Highlight Badges / Tags -->
-            <div class="space-y-2.5 pt-2">
-              <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400 font-medium block">Key Guarantees & Deliverables</span>
-              <div id="whyDetailTags" class="flex flex-wrap gap-2">
-                <!-- Tags populated via JS -->
-              </div>
-            </div>
+
 
             <!-- Proof Metric Stat Box -->
             <div class="grid grid-cols-2 gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100">
@@ -5513,7 +5507,6 @@
       const highlightEl = document.getElementById('whyDetailHighlight');
       const titleEl = document.getElementById('whyDetailTitle');
       const descEl = document.getElementById('whyDetailDesc');
-      const tagsContainer = document.getElementById('whyDetailTags');
       const mLabel1 = document.getElementById('whyMetricLabel1');
       const mVal1 = document.getElementById('whyMetricVal1');
       const mLabel2 = document.getElementById('whyMetricLabel2');
@@ -5545,14 +5538,6 @@
           }
           if (titleEl) titleEl.textContent = p.title;
           if (descEl) descEl.textContent = p.desc;
-          if (tagsContainer) {
-            tagsContainer.innerHTML = p.tags.map(tag => `
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] font-mono border transition-colors"
-                style="background-color: ${p.bgColor}; border-color: ${p.borderColor}; color: ${p.color};">
-                ${tag}
-              </span>
-            `).join('');
-          }
           if (mLabel1 && p.stat1) mLabel1.textContent = p.stat1.label;
           if (mVal1 && p.stat1) mVal1.textContent = p.stat1.val;
           if (mLabel2 && p.stat2) mLabel2.textContent = p.stat2.label;
@@ -5571,18 +5556,23 @@
 
         const rows = listContainer.querySelectorAll('.why-pillar-row');
         rows.forEach((row, i) => {
+          const titleSpan = row.querySelector('.why-row-title');
           if (i === idx) {
             row.classList.add('active');
             row.style.backgroundColor = '#ffffff';
             row.style.borderLeftColor = p.color;
-            const titleSpan = row.querySelector('.why-row-title');
-            if (titleSpan) titleSpan.style.color = '#09143f';
+            if (titleSpan) {
+              titleSpan.style.color = '#09143f';
+              titleSpan.style.fontWeight = '400';
+            }
           } else {
             row.classList.remove('active');
             row.style.backgroundColor = 'transparent';
             row.style.borderLeftColor = 'transparent';
-            const titleSpan = row.querySelector('.why-row-title');
-            if (titleSpan) titleSpan.style.color = '#334155';
+            if (titleSpan) {
+              titleSpan.style.color = '#475569';
+              titleSpan.style.fontWeight = '300';
+            }
           }
         });
       }
@@ -5591,12 +5581,12 @@
       PILLARS.forEach((p, i) => {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'why-pillar-row group flex flex-1 items-center p-4 sm:p-6 text-left border-b border-slate-200/80 last:border-b-0 transition-all duration-200 cursor-pointer border-l-4 border-l-transparent';
+        btn.className = 'why-pillar-row group flex flex-1 items-center px-6 sm:px-8 py-5 sm:py-6 text-left border-b border-slate-200/80 last:border-b-0 transition-all duration-200 cursor-pointer border-l-4 border-l-transparent';
         btn.innerHTML = `
           <div class="flex-1 min-w-0">
-            <h4 class="why-row-title text-sm sm:text-base font-medium text-slate-700 tracking-tight transition-colors group-hover:text-mobrilz-blue">
+            <h3 class="why-row-title font-sans text-lg sm:text-xl lg:text-[22px] font-light text-slate-600 tracking-tight leading-snug transition-colors duration-200 group-hover:text-mobrilz-navy">
               ${p.title}
-            </h4>
+            </h3>
           </div>
         `;
         btn.onclick = () => renderDetail(i);
