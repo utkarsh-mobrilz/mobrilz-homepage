@@ -1663,12 +1663,6 @@
             </div>
           </div>
 
-          <!-- Bottom Metric Bar matching Flubble's "Suggested duration" line -->
-          <div id="flubbleMetaWrapper" class="pt-6 border-t border-slate-200 mt-6 flex items-center justify-between text-xs font-mono text-slate-500 relative z-10 transition-all duration-350 ease-out transform">
-            <span id="flubbleMetaLabel" class="text-slate-400">Suggested duration</span>
-            <span id="flubbleMetaValue" class="text-white font-medium">4 to 8 weeks</span>
-          </div>
-
           <!-- Soft ambient accent in corner -->
           <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-[#3779cb]/15 blur-[80px] pointer-events-none rounded-full"></div>
         </div>
@@ -5223,7 +5217,6 @@
 
         // Elements
         const contentWrapper = document.getElementById('flubbleContentWrapper');
-        const metaWrapper = document.getElementById('flubbleMetaWrapper');
         const tagEl = document.getElementById('flubbleDetailTag');
         const descEl = document.getElementById('flubbleDetailDesc');
         const listEl = document.getElementById('flubbleSubList');
@@ -5239,9 +5232,9 @@
           if (metaValEl) metaValEl.textContent = item.duration;
           if (listEl) {
             listEl.innerHTML = item.subItems.map((sub, i) => `
-              <div class="flex items-center justify-between p-3 rounded-xl bg-white/[0.03] border border-white/5 hover:border-blue-400/20 hover:bg-white/[0.06] transition-all transform hover:translate-x-1" style="animation: flubbleFadeSlide 280ms cubic-bezier(0.16, 1, 0.3, 1) ${i * 45}ms both;">
-                <span class="text-xs sm:text-sm text-white font-normal">${sub.name}</span>
-                <span class="text-[10px] font-mono text-slate-400">${sub.meta || ''}</span>
+              <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-mobrilz-blue/40 hover:bg-slate-100/80 shadow-xs transition-all transform hover:translate-x-1" style="animation: flubbleFadeSlide 280ms cubic-bezier(0.16, 1, 0.3, 1) ${i * 45}ms both;">
+                <span class="text-xs sm:text-sm text-mobrilz-navy font-normal">${sub.name}</span>
+                
               </div>
             `).join('');
           }
@@ -5260,10 +5253,6 @@
           contentWrapper.style.transition = 'transform 180ms cubic-bezier(0.4, 0, 0.2, 1), opacity 180ms cubic-bezier(0.4, 0, 0.2, 1)';
           contentWrapper.style.opacity = '0';
           contentWrapper.style.transform = `translateY(${exitOffset})`;
-        }
-        if (metaWrapper) {
-          metaWrapper.style.transition = 'opacity 150ms ease-out';
-          metaWrapper.style.opacity = '0.3';
         }
         if (imgEl) {
           imgEl.style.transition = 'transform 240ms cubic-bezier(0.4, 0, 0.2, 1), opacity 200ms ease-in-out';
@@ -5311,10 +5300,6 @@
               contentWrapper.style.transition = 'transform 360ms cubic-bezier(0.16, 1, 0.3, 1), opacity 320ms cubic-bezier(0.16, 1, 0.3, 1)';
               contentWrapper.style.opacity = '1';
               contentWrapper.style.transform = 'translateY(0)';
-            }
-            if (metaWrapper) {
-              metaWrapper.style.transition = 'opacity 300ms ease-out';
-              metaWrapper.style.opacity = '1';
             }
             if (imgEl) {
               imgEl.style.transition = 'transform 480ms cubic-bezier(0.16, 1, 0.3, 1), opacity 360ms ease-out';
