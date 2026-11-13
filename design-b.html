@@ -1595,7 +1595,6 @@
             class="flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#0e1742] border border-blue-500/40 shadow-[0_0_25px_rgba(55,121,203,0.22)]"
             data-index="0"
           >
-            <span class="flubble-nav-num text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-[#3779cb]">1.</span>
             <span class="flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-[#09143f]">Development</span>
           </button>
 
@@ -1607,7 +1606,6 @@
             class="flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#09143f]/75 border border-white/10 hover:border-blue-400/30 hover:bg-[#09143f]"
             data-index="1"
           >
-            <span class="flubble-nav-num text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-400">2.</span>
             <span class="flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white">Design</span>
           </button>
 
@@ -1619,7 +1617,6 @@
             class="flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#09143f]/75 border border-white/10 hover:border-blue-400/30 hover:bg-[#09143f]"
             data-index="2"
           >
-            <span class="flubble-nav-num text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-400">3.</span>
             <span class="flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white">Infrastructure</span>
           </button>
 
@@ -1631,7 +1628,6 @@
             class="flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#09143f]/75 border border-white/10 hover:border-blue-400/30 hover:bg-[#09143f]"
             data-index="3"
           >
-            <span class="flubble-nav-num text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-400">4.</span>
             <span class="flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white">Digital Marketing</span>
           </button>
 
@@ -5215,15 +5211,12 @@
         // Update nav items styling
         const buttons = document.querySelectorAll('.flubble-nav-item');
         buttons.forEach((btn, idx) => {
-          const numSpan = btn.querySelector('.flubble-nav-num');
           const textSpan = btn.querySelector('.flubble-nav-text');
           if (idx === index) {
             btn.className = "flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#0e1742] border border-blue-500/40 shadow-[0_0_25px_rgba(55,121,203,0.22)] translate-x-1";
-            if (numSpan) numSpan.className = "flubble-nav-num text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-[#3779cb]";
             if (textSpan) textSpan.className = "flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-white";
           } else {
             btn.className = "flubble-nav-item group/item flex items-start gap-3.5 rounded-2xl p-6 sm:p-7 text-left transition-all duration-300 lg:flex-1 cursor-pointer bg-[#09143f]/75 border border-white/10 hover:border-blue-400/30 hover:bg-[#09143f] translate-x-0";
-            if (numSpan) numSpan.className = "flubble-nav-num text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-400";
             if (textSpan) textSpan.className = "flubble-nav-text text-xl sm:text-2xl font-light tracking-tight transition-colors duration-300 text-slate-300 group-hover/item:text-white";
           }
         });
