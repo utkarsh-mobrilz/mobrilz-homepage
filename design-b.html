@@ -2751,10 +2751,14 @@
   <!-- ========================================================================= -->
   <!-- 06. WHY CHOOSE US (BYTELEAPS-INSPIRED STUDIO MASTER-DETAIL INTERACTION)    -->
   <!-- ========================================================================= -->
-  <section id="why-us" class="py-20 md:py-32 bg-[#f4f8fd] relative overflow-hidden">
-    <!-- Ambient brand backdrop accents -->
-    <div class="absolute top-1/4 -left-24 w-[460px] h-[460px] bg-[#3779cb]/12 blur-[130px] rounded-full pointer-events-none"></div>
-    <div class="absolute bottom-6 -right-20 w-[440px] h-[440px] bg-[#09143f]/8 blur-[140px] rounded-full pointer-events-none"></div>
+  <section id="why-us" class="py-20 md:py-32 bg-gradient-to-br from-[#e2eefc] via-[#f4f8ff] to-[#d5e6fa] relative overflow-hidden">
+    <!-- Subtle architectural dot matrix pattern -->
+    <div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background-image: radial-gradient(#09143f 1px, transparent 1px); background-size: 28px 28px;"></div>
+
+    <!-- Rich, lifelike Mobrilz brand mesh & aurora radial gradients -->
+    <div class="absolute -top-24 -left-24 w-[780px] h-[640px] pointer-events-none rounded-full" style="background: radial-gradient(ellipse at center, rgba(55, 121, 203, 0.42) 0%, rgba(154, 187, 227, 0.22) 48%, transparent 72%); filter: blur(52px);"></div>
+    <div class="absolute top-[15%] -right-24 w-[740px] h-[680px] pointer-events-none rounded-full" style="background: radial-gradient(circle at center, rgba(39, 85, 153, 0.36) 0%, rgba(55, 121, 203, 0.20) 50%, transparent 74%); filter: blur(56px);"></div>
+    <div class="absolute -bottom-28 left-1/3 -translate-x-1/2 w-[880px] h-[580px] pointer-events-none rounded-full" style="background: radial-gradient(ellipse at center, rgba(55, 121, 203, 0.38) 0%, rgba(9, 20, 63, 0.15) 52%, transparent 74%); filter: blur(54px);"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
@@ -2801,66 +2805,17 @@
               </p>
             </div>
 
-            <!-- Dual Architectural Proof & Telemetry Showcase Cards -->
-            <div id="whyMetricsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
-              
-              <!-- Card 1: Dark Mobrilz Navy Executive Proof Card -->
-              <div class="relative overflow-hidden rounded-2xl p-5 sm:p-6 bg-gradient-to-br from-[#060d28] via-[#09143f] to-[#122663] border border-[#1e3a8a] text-white shadow-[0_14px_34px_rgba(6,13,40,0.16)] flex flex-col justify-between gap-4">
-                <div class="absolute -right-8 -bottom-8 w-36 h-36 bg-[#3779cb]/25 blur-[45px] rounded-full pointer-events-none"></div>
-                
-                <div class="relative z-10 flex items-center justify-between gap-2">
-                  <div id="whyMetricIcon1" class="w-9 h-9 rounded-xl bg-white/10 border border-white/15 text-[#60a5fa] flex items-center justify-center shrink-0">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
-                  </div>
-                  <span id="whyMetricBadge1" class="px-2.5 py-1 rounded-full bg-[#3779cb]/25 border border-[#60a5fa]/30 text-[10px] font-mono font-medium text-[#bfdbfe] tracking-wide">
-                    Zero Agency Markup
-                  </span>
-                </div>
-
-                <div class="relative z-10">
-                  <span id="whyMetricLabel1" class="text-[11px] font-mono text-[#9abbe3] block uppercase tracking-wider mb-1">Capital Efficiency</span>
-                  <span id="whyMetricVal1" class="text-2xl sm:text-[28px] font-light text-white tracking-tight font-sans leading-tight block">2.5x Savings</span>
-                </div>
-
-                <div class="relative z-10 space-y-2 pt-1 border-t border-white/10">
-                  <div class="h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
-                    <div id="whyMetricBar1" class="h-full rounded-full bg-gradient-to-r from-[#3779cb] to-[#60a5fa] transition-all duration-700" style="width: 92%"></div>
-                  </div>
-                  <p id="whyMetricCaption1" class="text-[11.5px] text-slate-300 font-light leading-snug">
-                    100% of budget allocated directly to engineering
-                  </p>
-                </div>
+            <!-- Dark Mobrilz Branded Proof Metric Stat Box -->
+            <div class="relative overflow-hidden grid grid-cols-2 gap-6 p-6 rounded-2xl bg-gradient-to-br from-[#060d28] via-[#09143f] to-[#102052] border border-[#1e3a8a]/80 shadow-[0_14px_34px_rgba(6,13,40,0.16)]">
+              <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-[#3779cb]/25 blur-[50px] rounded-full pointer-events-none"></div>
+              <div class="relative z-10">
+                <span id="whyMetricLabel1" class="text-[11px] font-mono text-[#bfdbfe] block uppercase tracking-wider mb-1">Capital Efficiency</span>
+                <span id="whyMetricVal1" class="text-xl sm:text-2xl font-light text-white tracking-tight font-sans">2.5x Savings</span>
               </div>
-
-              <!-- Card 2: Crisp Light Brand-Tinted Architectural Proof Card -->
-              <div class="relative overflow-hidden rounded-2xl p-5 sm:p-6 bg-gradient-to-br from-[#f4f8fd] via-[#eef5fc] to-[#e6f0fc] border border-[#cfe0f7] text-[#09143f] shadow-[0_10px_28px_rgba(9,20,63,0.05)] flex flex-col justify-between gap-4">
-                <div class="absolute -right-8 -top-8 w-32 h-32 bg-[#3779cb]/10 blur-[40px] rounded-full pointer-events-none"></div>
-
-                <div class="relative z-10 flex items-center justify-between gap-2">
-                  <div id="whyMetricIcon2" class="w-9 h-9 rounded-xl bg-[#09143f] text-[#60a5fa] flex items-center justify-center shrink-0 shadow-sm">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                  </div>
-                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-[#cfe0f7] text-[10px] font-mono font-semibold text-[#18346b] shadow-2xs">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#3779cb] animate-pulse"></span>
-                    <span id="whyMetricBadge2">6+ Yrs Avg. Exp</span>
-                  </span>
-                </div>
-
-                <div class="relative z-10">
-                  <span id="whyMetricLabel2" class="text-[11px] font-mono text-[#3779cb] font-semibold block uppercase tracking-wider mb-1">Seniority Level</span>
-                  <span id="whyMetricVal2" class="text-2xl sm:text-[28px] font-light text-[#09143f] tracking-tight font-sans leading-tight block">Lead &amp; Staff Devs</span>
-                </div>
-
-                <div class="relative z-10 space-y-2 pt-1 border-t border-[#cfe0f7]/80">
-                  <div class="h-1.5 w-full rounded-full bg-[#cfe0f7] overflow-hidden">
-                    <div id="whyMetricBar2" class="h-full rounded-full bg-gradient-to-r from-[#09143f] to-[#3779cb] transition-all duration-700" style="width: 96%"></div>
-                  </div>
-                  <p id="whyMetricCaption2" class="text-[11.5px] text-slate-600 font-light leading-snug">
-                    Direct architect access on Slack &amp; GitHub
-                  </p>
-                </div>
+              <div class="relative z-10 border-l border-white/10 pl-6">
+                <span id="whyMetricLabel2" class="text-[11px] font-mono text-[#bfdbfe] block uppercase tracking-wider mb-1">Seniority Level</span>
+                <span id="whyMetricVal2" class="text-xl sm:text-2xl font-light text-white tracking-tight font-sans">Lead &amp; Staff Devs</span>
               </div>
-
             </div>
 
           </div>
