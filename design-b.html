@@ -2785,7 +2785,7 @@
             <!-- Dynamic Icon & Metric Meta Bar -->
             <div class="flex items-center justify-between gap-4">
               <div id="whyDetailIconBox" class="w-16 h-16 rounded-2xl bg-blue-50/80 border border-blue-200/60 text-mobrilz-blue flex items-center justify-center shadow-sm">
-                <i id="whyDetailIcon" data-lucide="dollar-sign" class="w-8 h-8"></i>
+                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
               </div>
               <div class="text-right">
                 <span id="whyDetailIndex" class="font-mono text-xs tracking-widest text-slate-400 font-medium">01 / 06</span>
@@ -5419,7 +5419,8 @@
           title: '50 to 65% Cost Arbitrage',
           blurb: 'Direct collaboration with senior architects with zero agency overhead.',
           desc: 'Collaborate directly with senior full stack architects and staff engineers at competitive offshore rates. We eliminate costly project management layers, account managers, and agency markups so 100% of your budget translates directly into shippable production code.',
-          icon: 'dollar-sign',
+          icon: 'trending-up',
+          svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>',
           color: '#3779cb',
           bgColor: 'rgba(55, 121, 203, 0.08)',
           borderColor: 'rgba(55, 121, 203, 0.25)',
@@ -5434,9 +5435,10 @@
           blurb: 'All code pushed directly to your repos from Day 1 with strict NDAs.',
           desc: 'Your intellectual property belongs entirely to you. All pull requests, architecture diagrams, build artifacts, and infrastructure configurations are pushed straight to your enterprise Git organization from Day 1 under stringent mutual non disclosure protections.',
           icon: 'shield-check',
-          color: '#059669',
-          bgColor: 'rgba(5, 150, 105, 0.08)',
-          borderColor: 'rgba(5, 150, 105, 0.25)',
+          svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>',
+          color: '#1e4280',
+          bgColor: 'rgba(30, 66, 128, 0.08)',
+          borderColor: 'rgba(30, 66, 128, 0.25)',
           highlight: 'Enterprise Security',
           tags: ['Direct Repo Commits', 'Mutual NDA Enforced', 'Zero Vendor Lock-in', 'Clean Audit Trails'],
           stat1: { label: 'IP Assignment', val: '100% Client-Owned' },
@@ -5448,9 +5450,10 @@
           blurb: 'Architectures engineered AI-ready by design with agent integrations.',
           desc: 'We engineer architectures prepared for autonomous AI workflows from the ground up. Integrating MCP servers, LLM orchestration layers, continuous evaluation benchmarks, and automated semantic pipelines that turn legacy products into modern intelligent platforms.',
           icon: 'cpu',
-          color: '#7c3aed',
-          bgColor: 'rgba(124, 58, 237, 0.08)',
-          borderColor: 'rgba(124, 58, 237, 0.25)',
+          svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>',
+          color: '#2563eb',
+          bgColor: 'rgba(37, 99, 235, 0.08)',
+          borderColor: 'rgba(37, 99, 235, 0.25)',
           highlight: 'Future-Proof Architecture',
           tags: ['MCP Server Ready', 'Vector Search & RAG', 'Agentic Workflows', 'Cognitive Tooling'],
           stat1: { label: 'Sprint Velocity', val: '3x Faster POCs' },
@@ -5462,9 +5465,10 @@
           blurb: '4 to 5 hours of real time collaboration with US and EU teams.',
           desc: 'No waiting 24 hours for simple feedback. We guarantee 4 to 5 hours of synchronized daily overlap with North American (EST/PST) and European (GMT/CET) business hours, driving rapid Slack/Teams communication, real time code reviews, and daily standups.',
           icon: 'clock',
-          color: '#0284c7',
-          bgColor: 'rgba(2, 132, 199, 0.08)',
-          borderColor: 'rgba(2, 132, 199, 0.25)',
+          svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>',
+          color: '#3779cb',
+          bgColor: 'rgba(55, 121, 203, 0.08)',
+          borderColor: 'rgba(55, 121, 203, 0.25)',
           highlight: 'Synchronized Workflow',
           tags: ['Live Daily Standups', 'Real Time Slack Channels', 'Async Video Walkthroughs', 'Rapid PR Approvals'],
           stat1: { label: 'Daily Overlap', val: '4–5 Hours Min' },
@@ -5476,9 +5480,10 @@
           blurb: 'Automated test suites verify every commit before reaching staging.',
           desc: 'Quality is non-negotiable. Every pull request passes through automated regression test suites, unit tests, end to end browser tests, and static security vulnerability scans before anything merges into production branches.',
           icon: 'check-check',
-          color: '#d97706',
-          bgColor: 'rgba(217, 119, 6, 0.08)',
-          borderColor: 'rgba(217, 119, 6, 0.25)',
+          svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 7 17l-5-5"></path><path d="m22 10-7.5 7.5L13 16"></path></svg>',
+          color: '#18346b',
+          bgColor: 'rgba(24, 52, 107, 0.08)',
+          borderColor: 'rgba(24, 52, 107, 0.25)',
           highlight: 'Zero-Regressions',
           tags: ['Playwright / E2E', 'Continuous Integration', 'Static Security Scans', 'Zero-Downtime Releases'],
           stat1: { label: 'Test Coverage', val: '92%+ Suites' },
@@ -5490,6 +5495,7 @@
           blurb: '7 years of continuous delivery since 2018 across 15+ countries.',
           desc: 'Seven years of reliable software delivery across North America, Europe, Australia, and Asia. Proven track record powering high scale consumer applications, fintech engines, B2B SaaS portals, and logistics ecosystems with 5-star verified reviews.',
           icon: 'award',
+          svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>',
           color: '#09143f',
           bgColor: 'rgba(9, 20, 63, 0.08)',
           borderColor: 'rgba(9, 20, 63, 0.25)',
@@ -5503,7 +5509,6 @@
       const listContainer = document.getElementById('whyPillarsList');
       const detailContent = document.getElementById('whyDetailContent');
       const iconBox = document.getElementById('whyDetailIconBox');
-      const iconEl = document.getElementById('whyDetailIcon');
       const indexEl = document.getElementById('whyDetailIndex');
       const highlightEl = document.getElementById('whyDetailHighlight');
       const titleEl = document.getElementById('whyDetailTitle');
@@ -5531,9 +5536,7 @@
             iconBox.style.backgroundColor = p.bgColor;
             iconBox.style.borderColor = p.borderColor;
             iconBox.style.color = p.color;
-          }
-          if (iconEl) {
-            iconEl.setAttribute('data-lucide', p.icon);
+            iconBox.innerHTML = p.svg;
           }
           if (indexEl) indexEl.textContent = `${p.num} / 06`;
           if (highlightEl) {
