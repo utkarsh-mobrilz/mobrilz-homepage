@@ -456,18 +456,22 @@
   
     /* Flubble Dual-Track Infinite Marquee Animation */
     @keyframes marqueeScroll {
-      0% { transform: translateX(0%); }
-      100% { transform: translateX(calc(-100% - 1rem)); }
+      0% { transform: translate3d(0%, 0, 0); }
+      100% { transform: translate3d(calc(-100% - 1rem), 0, 0); }
     }
     @keyframes marqueeScrollReverse {
-      0% { transform: translateX(calc(-100% - 1rem)); }
-      100% { transform: translateX(0%); }
+      0% { transform: translate3d(calc(-100% - 1rem), 0, 0); }
+      100% { transform: translate3d(0%, 0, 0); }
     }
     .animate-marquee {
       animation: marqueeScroll 42s linear infinite;
+      animation-delay: -19s;
+      will-change: transform;
     }
     .animate-marquee-reverse {
       animation: marqueeScrollReverse 45s linear infinite;
+      animation-delay: -23s;
+      will-change: transform;
     }
 
     /* ThreeAtoms-Inspired Glassmorphic FAQ Interactive Cards */
@@ -2751,11 +2755,11 @@
   <!-- ========================================================================= -->
   <!-- 06. WHY CHOOSE US (BYTELEAPS-INSPIRED STUDIO MASTER-DETAIL INTERACTION)    -->
   <!-- ========================================================================= -->
-  <section id="why-us" class="py-20 md:py-32 relative overflow-hidden" style="background: linear-gradient(180deg, #f8fbff 0%, #eef5fc 45%, #e2eefb 100%);">
+  <section id="why-us" class="py-20 md:py-32 relative overflow-hidden" style="background: linear-gradient(135deg, #f8fbff 0%, #dbeafe 42%, #93c5fd 100%);">
     <!-- Subtle architectural grid lines -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#09143f06_1px,transparent_1px),linear-gradient(to_bottom,#09143f06_1px,transparent_1px)] bg-[size:44px_44px] pointer-events-none"></div>
-    <!-- Soft diagonal linear light sweep (no radial blobs) -->
-    <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(125deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 48%, rgba(55, 121, 203, 0.09) 100%);"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#09143f0a_1px,transparent_1px),linear-gradient(to_bottom,#09143f0a_1px,transparent_1px)] bg-[size:44px_44px] pointer-events-none"></div>
+    <!-- Rich diagonal Mobrilz linear color sweep -->
+    <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(160deg, rgba(255, 255, 255, 0.65) 0%, rgba(55, 121, 203, 0.18) 52%, rgba(24, 52, 107, 0.28) 100%);"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
@@ -2867,7 +2871,7 @@
     <div class="relative w-full overflow-hidden flex flex-col gap-5 [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
       
       <!-- MARQUEE ROW 1: Client Testimonial Cards (Left to Right / Standard Marquee) -->
-      <div class="group/marquee relative flex w-full overflow-hidden">
+      <div class="group/marquee relative flex w-full overflow-hidden gap-4">
         <div class="flex w-max shrink-0 items-stretch gap-4 animate-marquee group-hover/marquee:[animation-play-state:paused]">
           
           <!-- Testimonial 1: Christopher Menchaca -->
@@ -3064,7 +3068,7 @@
       </div>
 
       <!-- MARQUEE ROW 2: Featured Project Cards (Right to Left / Reverse Marquee) -->
-      <div class="group/marquee relative flex w-full overflow-hidden">
+      <div class="group/marquee relative flex w-full overflow-hidden gap-4">
         <div class="flex w-max shrink-0 items-stretch gap-4 animate-marquee-reverse group-hover/marquee:[animation-play-state:paused]">
           
           <!-- Project 1: Voyagers -->
@@ -3173,6 +3177,151 @@
           </article>
 
           <!-- Project 4: FleetPulse Logistics -->
+          <article class="relative shrink-0 overflow-hidden rounded-2xl bg-[#09143f]/80 p-1.5 h-[310px] w-[390px] sm:w-[430px] border border-white/10 shadow-lg">
+            <span aria-hidden="true" class="absolute top-[18px] -right-7 z-10 w-[110px] rotate-[35deg] text-center text-[0.62rem] font-mono uppercase tracking-wider py-0.5 text-white bg-amber-600 shadow-md">
+              Logistics
+            </span>
+            <div class="flex h-full flex-col justify-between rounded-[11px] bg-[#0c194d]/90 backdrop-blur-md p-6 sm:p-7">
+              <div>
+                <div class="flex items-center justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="size-10 rounded-xl bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-white">
+                      <i data-lucide="truck" class="w-5 h-5 text-amber-400"></i>
+                    </div>
+                    <div>
+                      <p class="truncate text-base font-normal text-white">FleetPulse</p>
+                      <p class="truncate text-xs text-slate-400 font-light">Autonomous Fleet Telematics</p>
+                    </div>
+                  </div>
+                  <a href="#projects" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg border border-white/20 text-xs text-white hover:bg-white hover:text-[#060d28] transition-colors">
+                    <span>Explore</span>
+                    <svg class="size-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                  </a>
+                </div>
+                <p class="text-xs sm:text-sm font-light text-slate-300 leading-relaxed line-clamp-3">
+                  High frequency IoT vehicle telematics platform providing sub second GPS tracking, fuel route optimization algorithms, and automated driver safety compliance.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+                <span class="flex items-center gap-1.5 text-amber-300">
+                  <span>★</span> 4.8 Operational
+                </span>
+                <span class="text-slate-300">1,800+ Trucks</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- DUPLICATE TRACK FOR CONTINUOUS INFINITE LOOP (ROW 2) -->
+        <div aria-hidden="true" class="flex w-max shrink-0 items-stretch gap-4 animate-marquee-reverse group-hover/marquee:[animation-play-state:paused]">
+          
+          <!-- Duplicate Project 1: Voyagers -->
+          <article class="relative shrink-0 overflow-hidden rounded-2xl bg-[#09143f]/80 p-1.5 h-[310px] w-[390px] sm:w-[430px] border border-white/10 shadow-lg">
+            <span aria-hidden="true" class="absolute top-[18px] -right-7 z-10 w-[110px] rotate-[35deg] text-center text-[0.62rem] font-mono uppercase tracking-wider py-0.5 text-white bg-blue-600 shadow-md">
+              Travel App
+            </span>
+            <div class="flex h-full flex-col justify-between rounded-[11px] bg-[#0c194d]/90 backdrop-blur-md p-6 sm:p-7">
+              <div>
+                <div class="flex items-center justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="size-10 rounded-xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-white">
+                      <i data-lucide="compass" class="w-5 h-5 text-[#9abbe3]"></i>
+                    </div>
+                    <div>
+                      <p class="truncate text-base font-normal text-white">Voyagers</p>
+                      <p class="truncate text-xs text-slate-400 font-light">Himalayan Touring Platform</p>
+                    </div>
+                  </div>
+                  <a href="#projects" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg border border-white/20 text-xs text-white hover:bg-white hover:text-[#060d28] transition-colors">
+                    <span>Explore</span>
+                    <svg class="size-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                  </a>
+                </div>
+                <p class="text-xs sm:text-sm font-light text-slate-300 leading-relaxed line-clamp-3">
+                  Curated cycling and adventure tour booking platform connecting international travellers with certified mountain expedition guides across Ladakh and Rajasthan.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+                <span class="flex items-center gap-1.5 text-amber-300">
+                  <span>★</span> 4.9 App Store
+                </span>
+                <span class="text-slate-300">12k+ Bookings</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Duplicate Project 2: MediVanguard -->
+          <article class="relative shrink-0 overflow-hidden rounded-2xl bg-[#09143f]/80 p-1.5 h-[310px] w-[390px] sm:w-[430px] border border-white/10 shadow-lg">
+            <span aria-hidden="true" class="absolute top-[18px] -right-7 z-10 w-[110px] rotate-[35deg] text-center text-[0.62rem] font-mono uppercase tracking-wider py-0.5 text-white bg-emerald-600 shadow-md">
+              HealthTech
+            </span>
+            <div class="flex h-full flex-col justify-between rounded-[11px] bg-[#0c194d]/90 backdrop-blur-md p-6 sm:p-7">
+              <div>
+                <div class="flex items-center justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="size-10 rounded-xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-white">
+                      <i data-lucide="activity" class="w-5 h-5 text-emerald-400"></i>
+                    </div>
+                    <div>
+                      <p class="truncate text-base font-normal text-white">MediVanguard</p>
+                      <p class="truncate text-xs text-slate-400 font-light">HIPAA Diagnostic Portal</p>
+                    </div>
+                  </div>
+                  <a href="#projects" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg border border-white/20 text-xs text-white hover:bg-white hover:text-[#060d28] transition-colors">
+                    <span>Explore</span>
+                    <svg class="size-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                  </a>
+                </div>
+                <p class="text-xs sm:text-sm font-light text-slate-300 leading-relaxed line-clamp-3">
+                  HIPAA compliant telemedicine consultation hub with automated prescription workflows, electronic health records encryption, and real time biometric video consults.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+                <span class="flex items-center gap-1.5 text-amber-300">
+                  <span>★</span> 5.0 Rating
+                </span>
+                <span class="text-slate-300">45k+ Consultations</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Duplicate Project 3: ApexScale SaaS -->
+          <article class="relative shrink-0 overflow-hidden rounded-2xl bg-[#09143f]/80 p-1.5 h-[310px] w-[390px] sm:w-[430px] border border-white/10 shadow-lg">
+            <span aria-hidden="true" class="absolute top-[18px] -right-7 z-10 w-[110px] rotate-[35deg] text-center text-[0.62rem] font-mono uppercase tracking-wider py-0.5 text-white bg-indigo-600 shadow-md">
+              B2B SaaS
+            </span>
+            <div class="flex h-full flex-col justify-between rounded-[11px] bg-[#0c194d]/90 backdrop-blur-md p-6 sm:p-7">
+              <div>
+                <div class="flex items-center justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="size-10 rounded-xl bg-indigo-500/20 border border-indigo-400/30 flex items-center justify-center text-white">
+                      <i data-lucide="bar-chart-3" class="w-5 h-5 text-indigo-400"></i>
+                    </div>
+                    <div>
+                      <p class="truncate text-base font-normal text-white">ApexScale</p>
+                      <p class="truncate text-xs text-slate-400 font-light">RevOps Intelligence Engine</p>
+                    </div>
+                  </div>
+                  <a href="#projects" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg border border-white/20 text-xs text-white hover:bg-white hover:text-[#060d28] transition-colors">
+                    <span>Explore</span>
+                    <svg class="size-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                  </a>
+                </div>
+                <p class="text-xs sm:text-sm font-light text-slate-300 leading-relaxed line-clamp-3">
+                  Real time pipeline analytics engine processing $80M+ monthly sales velocity across Salesforce and HubSpot with automated forecasting and anomaly detection.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-slate-400">
+                <span class="flex items-center gap-1.5 text-amber-300">
+                  <span>★</span> 4.9 Enterprise
+                </span>
+                <span class="text-slate-300">$80M+ Pipeline</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Duplicate Project 4: FleetPulse Logistics -->
           <article class="relative shrink-0 overflow-hidden rounded-2xl bg-[#09143f]/80 p-1.5 h-[310px] w-[390px] sm:w-[430px] border border-white/10 shadow-lg">
             <span aria-hidden="true" class="absolute top-[18px] -right-7 z-10 w-[110px] rotate-[35deg] text-center text-[0.62rem] font-mono uppercase tracking-wider py-0.5 text-white bg-amber-600 shadow-md">
               Logistics
