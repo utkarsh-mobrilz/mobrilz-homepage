@@ -1719,21 +1719,21 @@
       <!-- Ambient Technical Background Dots -->
       <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#09143f 1px, transparent 1px); background-size: 28px 28px;"></div>
 
-      <!-- Multiple Subtle Ambient Radial Gradients (Spaced & Mobrilz Brand Aligned) -->
-      <!-- 1. Header Top Halo (Subtle Mobrilz Sapphire Blue) -->
-      <div class="absolute -top-16 left-1/2 -translate-x-1/2 w-[760px] h-[480px] bg-[radial-gradient(ellipse_at_center,rgba(55,121,203,0.065)_0%,rgba(55,121,203,0.015)_55%,transparent_75%)] blur-[90px] pointer-events-none rounded-full"></div>
+      <!-- Spaced, Visible & Elegant Ambient Radial Gradients (Mobrilz Brand Aligned) -->
+      <!-- 1. Header Top Gradient (Mobrilz Sapphire Glow) -->
+      <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-[850px] h-[550px] pointer-events-none rounded-full" style="background: radial-gradient(ellipse at center, rgba(55, 121, 203, 0.22) 0%, rgba(55, 121, 203, 0.08) 45%, transparent 70%); filter: blur(60px);"></div>
 
-      <!-- 2. Stage 01 Upper Left Aura (Subtle Soft Sky Highlight) -->
-      <div class="absolute top-[20%] -left-36 w-[560px] h-[560px] bg-[radial-gradient(circle_at_center,rgba(154,187,227,0.08)_0%,rgba(55,121,203,0.025)_50%,transparent_70%)] blur-[110px] pointer-events-none rounded-full"></div>
+      <!-- 2. Stage 01 Upper-Left Gradient (Soft Sky / Mobrilz Blue Aura) -->
+      <div class="absolute top-[18%] -left-20 w-[650px] h-[650px] pointer-events-none rounded-full" style="background: radial-gradient(circle at center, rgba(55, 121, 203, 0.18) 0%, rgba(154, 187, 227, 0.08) 50%, transparent 72%); filter: blur(70px);"></div>
 
-      <!-- 3. Stage 02 Mid Right Aura (Subtle Cobalt Blue) -->
-      <div class="absolute top-[44%] -right-32 w-[600px] h-[600px] bg-[radial-gradient(circle_at_center,rgba(39,85,153,0.075)_0%,rgba(55,121,203,0.02)_50%,transparent_70%)] blur-[120px] pointer-events-none rounded-full"></div>
+      <!-- 3. Stage 02 Mid-Right Gradient (Cobalt / Sapphire Aura) -->
+      <div class="absolute top-[42%] -right-20 w-[700px] h-[700px] pointer-events-none rounded-full" style="background: radial-gradient(circle at center, rgba(39, 85, 153, 0.20) 0%, rgba(55, 121, 203, 0.08) 48%, transparent 72%); filter: blur(75px);"></div>
 
-      <!-- 4. Stage 03 Mid-Lower Left Aura (Subtle Deep Royal Blue) -->
-      <div class="absolute top-[68%] -left-28 w-[580px] h-[580px] bg-[radial-gradient(circle_at_center,rgba(24,52,107,0.07)_0%,rgba(55,121,203,0.02)_50%,transparent_70%)] blur-[110px] pointer-events-none rounded-full"></div>
+      <!-- 4. Stage 03 Mid-Lower Left Gradient (Deep Royal & Mobrilz Blue Aura) -->
+      <div class="absolute top-[66%] -left-24 w-[680px] h-[680px] pointer-events-none rounded-full" style="background: radial-gradient(circle at center, rgba(55, 121, 203, 0.19) 0%, rgba(24, 52, 107, 0.09) 50%, transparent 72%); filter: blur(70px);"></div>
 
-      <!-- 5. Stage 04 Lower Right Aura (Subtle Mobrilz Blue Finish) -->
-      <div class="absolute bottom-8 right-[8%] w-[640px] h-[540px] bg-[radial-gradient(ellipse_at_center,rgba(55,121,203,0.07)_0%,rgba(154,187,227,0.02)_50%,transparent_70%)] blur-[100px] pointer-events-none rounded-full"></div>
+      <!-- 5. Stage 04 Lower-Right Gradient (Vibrant Sapphire Finish) -->
+      <div class="absolute bottom-6 right-[4%] w-[720px] h-[620px] pointer-events-none rounded-full" style="background: radial-gradient(ellipse at center, rgba(55, 121, 203, 0.22) 0%, rgba(154, 187, 227, 0.09) 50%, transparent 72%); filter: blur(65px);"></div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         
@@ -2115,7 +2115,7 @@
     <!-- ========================================================================= -->
   <!-- 05. AGILE DRIVEN SERVICES (MOBRILZ EXACT PIXEL-PERFECT BLUEPRINT)           -->
   <!-- ========================================================================= -->
-    <section id="technologies" class="relative z-10 -mt-6 sm:-mt-10 md:-mt-14 mb-4 sm:mb-8 md:mb-12 pt-16 sm:pt-20 md:pt-24 pb-20 sm:pb-24 md:pb-28 bg-[#060c24] text-white [border-radius:50%_/_40px] sm:[border-radius:50%_/_65px] md:[border-radius:50%_/_90px] overflow-hidden">
+    <section id="technologies" class="relative z-10 py-16 sm:py-20 md:py-28 bg-[#060c24] text-white overflow-hidden">
     
     
     
@@ -5711,5 +5711,197 @@
     })();
   </script>
 
+
+  <script>
+    // Dynamic Glowing SVG Connector Lines between Central 'M' and Target Tech Stack Containers
+    (function initTechNexusConnectors() {
+      function drawNexusLines() {
+        const row = document.getElementById('tech-nexus-row');
+        const svg = document.getElementById('tech-nexus-connectors');
+        const pathsGroup = document.getElementById('tech-nexus-paths');
+        const mHub = document.getElementById('tech-nexus-m');
+        if (!row || !svg || !pathsGroup || !mHub) return;
+
+        if (window.innerWidth < 1024) {
+          pathsGroup.innerHTML = '';
+          return;
+        }
+
+        const rowRect = row.getBoundingClientRect();
+        const mRect = mHub.getBoundingClientRect();
+        if (rowRect.width === 0 || mRect.width === 0) return;
+
+        svg.setAttribute('viewBox', `0 0 ${rowRect.width} ${rowRect.height}`);
+
+        const mLeftX = mRect.left - rowRect.left + 6;
+        const mRightX = mRect.right - rowRect.left - 6;
+        const mCenterY = mRect.top - rowRect.top + mRect.height / 2;
+
+        const getRect = (id) => {
+          const el = document.getElementById(id);
+          if (!el) return null;
+          const r = el.getBoundingClientRect();
+          return {
+            left: r.left - rowRect.left,
+            right: r.right - rowRect.left,
+            top: r.top - rowRect.top,
+            bottom: r.bottom - rowRect.top,
+            width: r.width,
+            height: r.height,
+            cy: r.top - rowRect.top + r.height / 2,
+            cx: r.left - rowRect.left + r.width / 2
+          };
+        };
+
+        const backend = getRect('tech-box-backend');
+        const frontend = getRect('tech-box-frontend');
+        const database = getRect('tech-box-database');
+        const apiGateway = getRect('tech-box-api-gateway');
+        const ios = getRect('tech-box-ios');
+        const android = getRect('tech-box-android');
+        const hybrid = getRect('tech-box-hybrid');
+        const qa = getRect('tech-box-qa');
+        const devops = getRect('tech-box-devops');
+        const deployment = getRect('tech-box-deployment');
+
+        const paths = [];
+        const nodes = [];
+
+        function addConnection(d, side, endX, endY, delay) {
+          const grad = side === 'left' ? 'url(#nexusGradLeft)' : 'url(#nexusGradRight)';
+          paths.push(`
+            <path d="${d}" fill="none" stroke="#3b82f6" stroke-width="4" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round" filter="url(#nexusLineGlow)">
+              <animate attributeName="stroke-opacity" values="0.12;0.45;0.18;0.55;0.12" dur="4.8s" begin="${delay}s" repeatCount="indefinite" />
+            </path>
+            <path d="${d}" fill="none" stroke="${grad}" stroke-width="1.6" stroke-opacity="0.75" stroke-linecap="round" stroke-linejoin="round">
+              <animate attributeName="stroke-opacity" values="0.35;0.95;0.45;1;0.35" dur="4.8s" begin="${delay}s" repeatCount="indefinite" />
+            </path>
+            <path d="${d}" fill="none" stroke="#e0f2fe" stroke-width="1.2" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#nexusLineGlow)">
+              <animate attributeName="stroke-opacity" values="0.1;0.85;0.25;0.95;0.1" dur="4.8s" begin="${delay}s" repeatCount="indefinite" />
+            </path>
+          `);
+          nodes.push(`
+            <circle cx="${endX}" cy="${endY}" r="4.5" fill="#38bdf8" fill-opacity="0.35" filter="url(#nexusLineGlow)">
+              <animate attributeName="fill-opacity" values="0.2;0.75;0.3;0.85;0.2" dur="4.8s" begin="${delay}s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="${endX}" cy="${endY}" r="2.5" fill="#e0f2fe" stroke="#38bdf8" stroke-width="1.2" />
+          `);
+        }
+
+        function curveH(x1, y1, x2, y2) {
+          const midX = x1 + (x2 - x1) * 0.5;
+          return `M ${x1.toFixed(1)} ${y1.toFixed(1)} C ${midX.toFixed(1)} ${y1.toFixed(1)}, ${midX.toFixed(1)} ${y2.toFixed(1)}, ${x2.toFixed(1)} ${y2.toFixed(1)}`;
+        }
+
+        // 1. Backend (smooth curved S-bezier from M left -> Backend right edge)
+        if (backend) {
+          const sx = mLeftX + 10;
+          const sy = mCenterY - 7;
+          const ex = backend.right;
+          const ey = backend.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'left', ex, ey, 0.3);
+        }
+
+        // 4. API Gateway (inner left column, right edge <- M left)
+        if (apiGateway) {
+          const sx = mLeftX + 8;
+          const sy = mCenterY - 2;
+          const ex = apiGateway.right;
+          const ey = apiGateway.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'left', ex, ey, 0);
+        }
+
+        // 2. Frontend (smooth curved S-bezier from M left -> Frontend right edge)
+        if (frontend) {
+          const sx = mLeftX + 6;
+          const sy = mCenterY + 3;
+          const ex = frontend.right;
+          const ey = frontend.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'left', ex, ey, 0.6);
+        }
+
+        // 3. Database (direct smooth curve from M left -> Database right edge)
+        if (database) {
+          const sx = mLeftX + 6;
+          const sy = mCenterY + 10;
+          const ex = database.right;
+          const ey = database.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'left', ex, ey, 0.9);
+        }
+
+        // 5. iOS (inner right column, left edge <- M right)
+        if (ios) {
+          const sx = mRightX;
+          const sy = mCenterY - 12;
+          const ex = ios.left;
+          const ey = ios.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 0.15);
+        }
+
+        // 6. Hybrid Apps Tech Stack (smooth curved S-bezier from M right -> Hybrid left edge)
+        if (hybrid) {
+          const sx = mRightX;
+          const sy = mCenterY - 18;
+          const ex = hybrid.left;
+          const ey = hybrid.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 0.45);
+        }
+
+        // 7. Android (inner right column below iOS, left edge <- M right)
+        if (android) {
+          const sx = mRightX;
+          const sy = mCenterY - 4;
+          const ex = android.left;
+          const ey = android.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 0.75);
+        }
+
+        // 8. QA & Test Automation (left edge <- M right)
+        if (qa) {
+          const sx = mRightX;
+          const sy = mCenterY + 4;
+          const ex = qa.left;
+          const ey = qa.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 1.05);
+        }
+
+        // 9. CI/CD & Containers (DevOps left edge <- M right)
+        if (devops) {
+          const sx = mRightX;
+          const sy = mCenterY + 12;
+          const ex = devops.left;
+          const ey = devops.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 1.35);
+        }
+
+        // 10. Cloud Infrastructure (smooth curved S-bezier from M right -> Deployment left edge)
+        if (deployment) {
+          const sx = mRightX;
+          const sy = mCenterY + 18;
+          const ex = deployment.left;
+          const ey = deployment.cy;
+          addConnection(curveH(sx, sy, ex, ey), 'right', ex, ey, 1.65);
+        }
+
+        nodes.push(`
+          <circle cx="${mLeftX}" cy="${mCenterY}" r="3.5" fill="#93c5fd" filter="url(#nexusLineGlow)" />
+          <circle cx="${mRightX}" cy="${mCenterY}" r="3.5" fill="#93c5fd" filter="url(#nexusLineGlow)" />
+        `);
+
+        pathsGroup.innerHTML = paths.join('') + nodes.join('');
+      }
+
+      window.addEventListener('load', () => {
+        setTimeout(drawNexusLines, 60);
+        setTimeout(drawNexusLines, 400);
+      });
+      window.addEventListener('resize', drawNexusLines);
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(drawNexusLines, 50);
+      }
+    })();
+  </script>
+
+  </script>
 </body>
 </html>
