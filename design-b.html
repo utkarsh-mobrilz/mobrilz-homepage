@@ -2786,7 +2786,7 @@
           <div id="whyDetailContent" class="relative z-10 transition-all duration-300 ease-out transform space-y-7">
             <!-- Dynamic Icon Bar -->
             <div class="flex items-center justify-between gap-4">
-              <div id="whyDetailIconBox" class="w-16 h-16 rounded-2xl bg-[#09143f] border border-[#1e3a8a] text-[#60a5fa] flex items-center justify-center shadow-[0_10px_25px_rgba(9,20,63,0.18)]">
+              <div id="whyDetailIconBox" class="w-16 h-16 rounded-2xl bg-[#3779cb]/10 border border-[#3779cb]/25 text-[#3779cb] flex items-center justify-center shadow-sm">
                 <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
               </div>
             </div>
@@ -2817,7 +2817,7 @@
           </div>
 
           <!-- Bottom Action Callout -->
-          <div class="relative z-10 mt-8 pt-6 border-t border-[#e2ecf8]">
+          <div class="relative z-10 mt-8">
             <a href="#cta" class="inline-flex items-center gap-2 text-sm sm:text-base font-normal text-slate-600 hover:text-[#3779cb] transition-colors py-1 group">
               <span>Have a project in mind?</span>
               <span class="font-medium text-[#3779cb] underline underline-offset-4 group-hover:text-[#09143f] inline-flex items-center gap-1">
@@ -5524,9 +5524,9 @@
 
         setTimeout(() => {
           if (iconBox) {
-            iconBox.style.backgroundColor = '#09143f';
-            iconBox.style.borderColor = '#1e3a8a';
-            iconBox.style.color = '#60a5fa';
+            iconBox.style.backgroundColor = 'rgba(55, 121, 203, 0.08)';
+            iconBox.style.borderColor = 'rgba(55, 121, 203, 0.25)';
+            iconBox.style.color = '#3779cb';
             iconBox.innerHTML = p.svg;
           }
           if (indexEl) indexEl.textContent = `${p.num} / 06`;
@@ -5541,7 +5541,7 @@
           if (mLabel2 && p.stat2) mLabel2.textContent = p.stat2.label;
           if (mVal2 && p.stat2) {
             mVal2.textContent = p.stat2.val;
-            mVal2.style.color = '#60a5fa';
+            mVal2.style.color = '#ffffff';
           }
 
           if (typeof lucide !== 'undefined' && lucide.createIcons) {
@@ -5557,10 +5557,10 @@
           const titleSpan = row.querySelector('.why-row-title');
           if (i === idx) {
             row.classList.add('active');
-            row.style.backgroundColor = '#09143f';
+            row.style.backgroundColor = '#ffffff';
             row.style.borderLeftColor = '#3779cb';
             if (titleSpan) {
-              titleSpan.style.color = '#ffffff';
+              titleSpan.style.color = '#09143f';
               titleSpan.style.fontWeight = '400';
             }
           } else {
@@ -5568,7 +5568,7 @@
             row.style.backgroundColor = 'transparent';
             row.style.borderLeftColor = 'transparent';
             if (titleSpan) {
-              titleSpan.style.color = '#1e293b';
+              titleSpan.style.color = '#475569';
               titleSpan.style.fontWeight = '300';
             }
           }
