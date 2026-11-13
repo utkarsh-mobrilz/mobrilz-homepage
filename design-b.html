@@ -3404,28 +3404,30 @@
 
 
   <!-- ========================================================================= -->
-  <!-- 08. BLOGS & INSIGHTS (LIGHT EDITORIAL MAGAZINE)                           -->
-  <!-- ========================================================================= -->
-    <!-- ========================================================================= -->
-  <!-- 08. PERSPECTIVES ON ENGINEERING AND AI (FLUBBLE-INSPIRED EDITORIAL FORMAT)-->
+  <!-- 08. PERSPECTIVES ON ENGINEERING AND AI (ASYMMETRIC EDITORIAL SHOWCASE)    -->
   <!-- ========================================================================= -->
   <section id="blogs" class="py-24 md:py-36 bg-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <!-- Section Header (Flubble News & Insights Format: Heading + Subtitle + Slide Button) -->
-      <div class="flex flex-col gap-6 md:flex-row md:items-end justify-between mb-16 md:mb-20">
-        <div class="md:max-w-xl">
-          <h2 class="text-3xl sm:text-5xl md:text-6xl font-light text-mobrilz-navy tracking-tight leading-[1.1]">
-            Perspectives on <br class="hidden sm:inline" />
-            <span>engineering and AI</span>
-          </h2>
+      <!-- Section Header (Reference Presentation: Left Heading + Bracket Divider + Subtitle | Right CTA) -->
+      <div class="mb-12 md:mb-14">
+        <h2 class="text-3xl sm:text-5xl md:text-6xl font-light text-mobrilz-navy tracking-tight leading-[1.1]">
+          Perspectives on <br class="hidden sm:inline" />
+          <span>engineering and AI</span>
+        </h2>
+
+        <!-- Architectural Bracket Rule from Reference Presentation -->
+        <div class="w-full max-w-md flex items-center justify-between border-t border-slate-300 h-2.5 mt-6 mb-5">
+          <div class="w-px h-full bg-slate-300 -mt-px"></div>
+          <div class="w-px h-full bg-slate-300 -mt-px"></div>
         </div>
-        
-        <div class="flex flex-col items-start gap-4 md:max-w-md">
-          <p class="text-slate-500 font-light text-sm sm:text-base leading-relaxed">
+
+        <!-- Subtitle Left & CTA Button Right -->
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+          <p class="text-slate-500 font-light text-sm sm:text-base leading-relaxed max-w-lg">
             Stay one step ahead with architecture teardowns, MCP protocol deep dives, and technical roadmaps designed for high scale teams.
           </p>
-          <div>
+          <div class="shrink-0">
             <a href="#cta" class="group inline-flex items-center gap-2.5 px-6 py-3 rounded-xl border border-[#09143f] text-[#09143f] bg-transparent text-sm font-medium tracking-tight hover:bg-[#09143f] hover:text-white transition-all duration-300 shadow-sm">
               <span>Explore All Articles</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
@@ -3434,95 +3436,108 @@
         </div>
       </div>
 
-      <!-- Flubble 3-Card Interactive Editorial Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <!-- Asymmetric Editorial Grid (Left Featured Card + Right Stacked Horizontal Cards) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-7 items-stretch">
         
-        <!-- Article Card 1 -->
-        <a href="#cta" class="blog-article-card group/blog flex flex-col bg-[#09143f] rounded-[24px] sm:rounded-[28px] p-2.5 sm:p-3 pb-6 sm:pb-7 border border-[#1b2b65] shadow-md hover:border-[#3779cb]/80 hover:shadow-xl hover:shadow-[#3779cb]/10 transition-all duration-300 text-left h-full">
-          <!-- 4:3 Aspect Image Frame with Ease-Out-Expo Scale Hover -->
-          <div class="relative aspect-[4/3] overflow-hidden rounded-[18px] sm:rounded-[20px] bg-[#060d28] border border-white/10 shadow-xs mb-5">
+        <!-- LEFT FEATURED CARD: Article Card 1 (7 Cols on Desktop) -->
+        <a href="#cta" class="blog-article-card group/blog lg:col-span-7 flex flex-col bg-[#09143f] rounded-[24px] sm:rounded-[28px] p-3 sm:p-4 pb-6 sm:pb-8 border border-[#1b2b65] shadow-md hover:border-[#3779cb]/80 hover:shadow-xl hover:shadow-[#3779cb]/10 transition-all duration-300 text-left h-full">
+          <!-- Top Wide Featured Image -->
+          <div class="relative aspect-[16/9] sm:aspect-[16/9.5] w-full overflow-hidden rounded-[18px] sm:rounded-[20px] bg-[#060d28] border border-white/10 shadow-xs mb-6">
             <img 
               src="https://flubble.io/blog/coklu-platform-gelistirme-mobil-web-ve.webp" 
               alt="Multi-Platform Development: Mobile, Web, and SaaS" 
               class="w-full h-full object-cover flubble-card-img"
               loading="lazy"
             />
-            <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#060d28]/85 backdrop-blur-md border border-white/20 text-white font-mono text-[10px] tracking-wider uppercase">
-              AI Search
-            </div>
           </div>
           
-          <!-- Card Copy & Content -->
-          <div class="flex flex-col flex-1 justify-between gap-4 px-2 sm:px-2.5">
-            <div class="space-y-2.5">
-              <h3 class="text-xl sm:text-[1.3rem] font-semibold text-[#FAFAFA] tracking-tight leading-snug transition-colors duration-300">
+          <!-- Featured Card Copy & Content Below Image -->
+          <div class="flex flex-col flex-1 justify-between gap-5 px-2 sm:px-3">
+            <div class="space-y-3.5">
+              <!-- Category Tag + Date/Read Time Meta -->
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="px-3 py-1 rounded-md bg-[#3779cb]/20 border border-[#3779cb]/40 text-white font-mono text-[10px] tracking-wider uppercase">
+                  AI Search
+                </span>
+                <time datetime="2026-04-18" class="text-xs sm:text-sm font-mono text-slate-400">Apr 18, 2026 · 6 min read</time>
+              </div>
+
+              <h3 class="text-2xl sm:text-[1.65rem] font-semibold text-[#FAFAFA] tracking-tight leading-snug transition-colors duration-300">
                 How Generative AI and Google's AI Overviews Are Rewriting the SEO Playbook in 2026
               </h3>
-              <p class="text-slate-300 font-light text-xs sm:text-sm leading-relaxed line-clamp-2">
+              <p class="text-slate-300 font-light text-sm sm:text-base leading-relaxed">
                 Why keyword density is obsolete and how semantic entity graphs drive sustained organic authority in modern conversational answer engines.
               </p>
             </div>
-            
-            <!-- Sliding Text Row / Card Footer -->
-            <div class="text-xs sm:text-sm font-mono text-slate-400 pt-3.5 border-t border-[#1b2b65] mt-auto"><time datetime="2026-04-18">Apr 18, 2026 · 6 min read</time></div>
           </div>
         </a>
 
-        <!-- Article Card 2 -->
-        <a href="#cta" class="blog-article-card group/blog flex flex-col bg-[#09143f] rounded-[24px] sm:rounded-[28px] p-2.5 sm:p-3 pb-6 sm:pb-7 border border-[#1b2b65] shadow-md hover:border-[#3779cb]/80 hover:shadow-xl hover:shadow-[#3779cb]/10 transition-all duration-300 text-left h-full">
-          <div class="relative aspect-[4/3] overflow-hidden rounded-[18px] sm:rounded-[20px] bg-[#060d28] border border-white/10 shadow-xs mb-5">
-            <img 
-              src="https://flubble.io/images/web-ve-saas-gelistirme-gorseli-e.webp" 
-              alt="Model Context Protocol (MCP) Enterprise Architecture" 
-              class="w-full h-full object-cover flubble-card-img"
-              loading="lazy"
-            />
-            <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#060d28]/85 backdrop-blur-md border border-white/20 text-white font-mono text-[10px] tracking-wider uppercase">
-              Agentic AI
-            </div>
-          </div>
+        <!-- RIGHT STACKED COLUMN: Article Cards 2 & 3 (5 Cols on Desktop) -->
+        <div class="lg:col-span-5 flex flex-col gap-6 sm:gap-7 h-full">
           
-          <div class="flex flex-col flex-1 justify-between gap-4">
-            <div class="space-y-2.5">
-              <h3 class="text-xl sm:text-[1.3rem] font-semibold text-[#FAFAFA] tracking-tight leading-snug transition-colors duration-300">
-                Why Model Context Protocol (MCP) is the Missing Bridge Between LLMs and Enterprise Data
-              </h3>
-              <p class="text-slate-300 font-light text-xs sm:text-sm leading-relaxed line-clamp-2">
-                A deep architectural teardown of connecting private enterprise microservices with autonomous Gemini and Claude agents with zero data leakages.
-              </p>
+          <!-- Article Card 2 (Horizontal Split: Text Left, Image Right) -->
+          <a href="#cta" class="blog-article-card group/blog flex-1 flex flex-col sm:flex-row items-stretch justify-between gap-4 sm:gap-5 bg-[#09143f] rounded-[24px] sm:rounded-[28px] p-3 sm:p-4 border border-[#1b2b65] shadow-md hover:border-[#3779cb]/80 hover:shadow-xl hover:shadow-[#3779cb]/10 transition-all duration-300 text-left">
+            <!-- Left Copy Column -->
+            <div class="flex flex-col flex-1 justify-between gap-3 py-1 sm:py-2 pl-2 sm:pl-2.5 order-2 sm:order-1">
+              <div class="space-y-2.5">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-0.5 rounded-md bg-[#3779cb]/20 border border-[#3779cb]/40 text-white font-mono text-[10px] tracking-wider uppercase">
+                    Agentic AI
+                  </span>
+                  <time datetime="2026-03-24" class="text-[11px] sm:text-xs font-mono text-slate-400">Mar 24, 2026 · 8 min read</time>
+                </div>
+                <h3 class="text-lg sm:text-[1.15rem] font-semibold text-[#FAFAFA] tracking-tight leading-snug transition-colors duration-300">
+                  Why Model Context Protocol (MCP) is the Missing Bridge Between LLMs and Enterprise Data
+                </h3>
+                <p class="text-slate-300 font-light text-xs sm:text-[13px] leading-relaxed line-clamp-2">
+                  A deep architectural teardown of connecting private enterprise microservices with autonomous Gemini and Claude agents with zero data leakages.
+                </p>
+              </div>
             </div>
-            
-            <div class="text-xs sm:text-sm font-mono text-slate-400 pt-3.5 border-t border-[#1b2b65] mt-auto"><time datetime="2026-03-24">Mar 24, 2026 · 8 min read</time></div>
-          </div>
-        </a>
 
-        <!-- Article Card 3 -->
-        <a href="#cta" class="blog-article-card group/blog flex flex-col bg-[#09143f] rounded-[24px] sm:rounded-[28px] p-2.5 sm:p-3 pb-6 sm:pb-7 border border-[#1b2b65] shadow-md hover:border-[#3779cb]/80 hover:shadow-xl hover:shadow-[#3779cb]/10 transition-all duration-300 text-left h-full">
-          <div class="relative aspect-[4/3] overflow-hidden rounded-[18px] sm:rounded-[20px] bg-[#060d28] border border-white/10 shadow-xs mb-5">
-            <img 
-              src="https://flubble.io/blog/mobil-uygulamalarda-kullanici-bagliligi-olusturmanin-7.webp" 
-              alt="12 Architecture Trends in Mobile App Engineering" 
-              class="w-full h-full object-cover flubble-card-img"
-              loading="lazy"
-            />
-            <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#060d28]/85 backdrop-blur-md border border-white/20 text-white font-mono text-[10px] tracking-wider uppercase">
-              Mobile Engineering
+            <!-- Right Square/Vertical Image Thumbnail -->
+            <div class="relative w-full sm:w-[42%] shrink-0 aspect-[16/10] sm:aspect-square overflow-hidden rounded-[18px] sm:rounded-[20px] bg-[#060d28] border border-white/10 shadow-xs order-1 sm:order-2">
+              <img 
+                src="https://flubble.io/images/web-ve-saas-gelistirme-gorseli-e.webp" 
+                alt="Model Context Protocol (MCP) Enterprise Architecture" 
+                class="w-full h-full object-cover flubble-card-img"
+                loading="lazy"
+              />
             </div>
-          </div>
-          
-          <div class="flex flex-col flex-1 justify-between gap-4">
-            <div class="space-y-2.5">
-              <h3 class="text-xl sm:text-[1.3rem] font-semibold text-[#FAFAFA] tracking-tight leading-snug transition-colors duration-300">
-                12 Architecture Trends Dominating Modern Mobile App Engineering in 2026
-              </h3>
-              <p class="text-slate-300 font-light text-xs sm:text-sm leading-relaxed line-clamp-2">
-                From offline first event sourcing and native biometric passes to edge model inference on iOS and Android devices.
-              </p>
+          </a>
+
+          <!-- Article Card 3 (Horizontal Split: Text Left, Image Right) -->
+          <a href="#cta" class="blog-article-card group/blog flex-1 flex flex-col sm:flex-row items-stretch justify-between gap-4 sm:gap-5 bg-[#09143f] rounded-[24px] sm:rounded-[28px] p-3 sm:p-4 border border-[#1b2b65] shadow-md hover:border-[#3779cb]/80 hover:shadow-xl hover:shadow-[#3779cb]/10 transition-all duration-300 text-left">
+            <!-- Left Copy Column -->
+            <div class="flex flex-col flex-1 justify-between gap-3 py-1 sm:py-2 pl-2 sm:pl-2.5 order-2 sm:order-1">
+              <div class="space-y-2.5">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-2.5 py-0.5 rounded-md bg-[#3779cb]/20 border border-[#3779cb]/40 text-white font-mono text-[10px] tracking-wider uppercase">
+                    Mobile Engineering
+                  </span>
+                  <time datetime="2026-02-12" class="text-[11px] sm:text-xs font-mono text-slate-400">Feb 12, 2026 · 5 min read</time>
+                </div>
+                <h3 class="text-lg sm:text-[1.15rem] font-semibold text-[#FAFAFA] tracking-tight leading-snug transition-colors duration-300">
+                  12 Architecture Trends Dominating Modern Mobile App Engineering in 2026
+                </h3>
+                <p class="text-slate-300 font-light text-xs sm:text-[13px] leading-relaxed line-clamp-2">
+                  From offline first event sourcing and native biometric passes to edge model inference on iOS and Android devices.
+                </p>
+              </div>
             </div>
-            
-            <div class="text-xs sm:text-sm font-mono text-slate-400 pt-3.5 border-t border-[#1b2b65] mt-auto"><time datetime="2026-02-12">Feb 12, 2026 · 5 min read</time></div>
-          </div>
-        </a>
+
+            <!-- Right Square/Vertical Image Thumbnail -->
+            <div class="relative w-full sm:w-[42%] shrink-0 aspect-[16/10] sm:aspect-square overflow-hidden rounded-[18px] sm:rounded-[20px] bg-[#060d28] border border-white/10 shadow-xs order-1 sm:order-2">
+              <img 
+                src="https://flubble.io/blog/mobil-uygulamalarda-kullanici-bagliligi-olusturmanin-7.webp" 
+                alt="12 Architecture Trends in Mobile App Engineering" 
+                class="w-full h-full object-cover flubble-card-img"
+                loading="lazy"
+              />
+            </div>
+          </a>
+
+        </div>
 
       </div>
 
