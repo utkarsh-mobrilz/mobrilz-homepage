@@ -1737,10 +1737,10 @@
         </div>
 
         <!-- COLUMN 3: Visual Showcase Card with Image & Cyberpunk Glow -->
-        <div class="rounded-3xl bg-[#09143f]/80 backdrop-blur-md border border-white/10 overflow-hidden relative lg:w-[32%] lg:flex-1 h-[320px] lg:h-full group">
+        <div class="rounded-3xl bg-[#060d28] border border-white/10 overflow-hidden relative lg:w-[32%] lg:flex-1 h-[320px] lg:h-full group">
           
           <!-- Image layers for smooth directional slide -->
-          <div class="absolute inset-0 overflow-hidden">
+          <div class="absolute inset-0 overflow-hidden rounded-3xl">
             <img 
               id="flubbleShowcaseImg" 
               src="./assets/expertise/development.jpg" 
@@ -1751,16 +1751,6 @@
 
           <!-- Gradient overlays for depth & text contrast -->
           <div class="absolute inset-0 bg-gradient-to-t from-[#060d28] via-[#060d28]/35 to-transparent pointer-events-none z-10"></div>
-
-          <!-- Bottom Floating Showcase Caption with Slide Transition -->
-          <div id="flubbleCaptionWrapper" class="absolute bottom-6 left-6 right-6 z-20 space-y-1 transition-all duration-350 ease-out transform">
-            <div id="flubbleShowcaseTitle" class="text-lg font-light text-white tracking-tight drop-shadow-md">
-              Enterprise Mobile & Web
-            </div>
-            <div id="flubbleShowcaseSubtitle" class="text-xs text-slate-300 font-light">
-              High concurrency digital platforms engineered for scale.
-            </div>
-          </div>
 
         </div>
 
@@ -2820,7 +2810,7 @@
   <!-- ========================================================================= -->
   <!-- 06. WHY CHOOSE US (BYTELEAPS-INSPIRED STUDIO MASTER-DETAIL INTERACTION)    -->
   <!-- ========================================================================= -->
-  <section id="why-us" class="py-20 md:py-32 relative overflow-hidden" style="background: linear-gradient(135deg, #ffffff 0%, #f1f7fe 48%, #dce9fa 100%);">
+  <section id="why-us" class="pt-20 md:pt-32 pb-32 sm:pb-36 md:pb-44 relative overflow-hidden" style="background: linear-gradient(135deg, #ffffff 0%, #f1f7fe 48%, #dce9fa 100%);">
     <!-- Refined diagonal Mobrilz linear color sweep -->
     <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(160deg, rgba(255, 255, 255, 0.75) 0%, rgba(55, 121, 203, 0.08) 55%, rgba(24, 52, 107, 0.13) 100%);"></div>
 
@@ -2906,7 +2896,7 @@
   <!-- ========================================================================= -->
   <!-- 07. BUILT ON TRUST, REAL RELATIONSHIPS (FLUBBLE-INSPIRED MARQUEE FORMAT)  -->
   <!-- ========================================================================= -->
-  <div class="relative overflow-hidden" style="background: linear-gradient(180deg, #e7f0fc 0%, #ffffff 100%);">
+  <div class="relative z-20 -mt-12 sm:-mt-16 md:-mt-24 overflow-hidden bg-transparent">
     <section id="reviews" class="py-20 md:py-32 bg-[#060d28] text-white [border-radius:50%_/_40px] sm:[border-radius:50%_/_65px] md:[border-radius:50%_/_90px] relative overflow-hidden select-none">
     <!-- Ambient Sapphire Glows -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-r from-blue-900/20 via-[#3779cb]/15 to-indigo-900/20 blur-[160px] pointer-events-none rounded-full"></div>
@@ -3536,134 +3526,162 @@
   <!-- ========================================================================= -->
   <!-- 09. FAQs (LIGHT ACCORDION WITH THIN DIVIDERS)                             -->
   <!-- ========================================================================= -->
-    <!-- ========================================================================= -->
-  <!-- 09. FREQUENTLY ASKED QUESTIONS (THREEATOMS-INSPIRED GLASS INTERACTION)    -->
   <!-- ========================================================================= -->
-  <section id="faqs" class="py-24 md:py-36 bg-[#f8fafc] relative overflow-hidden">
-    <!-- Ambient Sapphire Glow Accents -->
-    <div class="absolute top-1/3 -right-24 w-96 h-96 bg-[#3779cb]/8 blur-[130px] rounded-full pointer-events-none"></div>
-    <div class="absolute bottom-12 -left-20 w-96 h-96 bg-[#09143f]/5 blur-[120px] rounded-full pointer-events-none"></div>
+  <!-- 09. FREQUENTLY ASKED QUESTIONS (FLUBBLE-INSPIRED TWO-COLUMN ACCORDION)     -->
+  <!-- ========================================================================= -->
+  <section id="faqs" class="py-20 md:py-28 bg-[#060d28] text-white relative overflow-hidden">
+      <!-- "+" Crosshair & Blueprint Grid Pattern Overlay (Exact Hero Section Pattern) -->
+      <svg class="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="faq-plus-grid-pattern" width="72" height="72" patternUnits="userSpaceOnUse">
+            <!-- Faint 1px grid lines intersecting at (36, 36) -->
+            <path d="M 36 0 V 72 M 0 36 H 72" fill="none" stroke="rgba(55, 121, 203, 0.04)" stroke-width="1" />
+            <!-- Subtle "+" crosshair mark at each intersection (36, 36) -->
+            <path d="M 36 31.5 V 40.5 M 31.5 36 H 40.5" fill="none" stroke="rgba(64, 142, 235, 0.22)" stroke-width="1.2" stroke-linecap="square" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#faq-plus-grid-pattern)" />
+      </svg>
+
+      <!-- Subtle Ambient Indigo/Sapphire Glows -->
+      <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#3779cb]/15 blur-[120px] pointer-events-none"></div>
+      <div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-[#1b2b65]/30 blur-[140px] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <!-- Section Header matching ThreeAtoms layout (Centered + Gradient/Accent Sub-heading) -->
-      <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
-        <h2 class="text-3xl sm:text-5xl md:text-6xl font-light text-mobrilz-navy tracking-tight leading-[1.12]">
-          Frequently Asked <span class="text-mobrilz-blue font-light">Questions</span>
-        </h2>
-        <p class="text-slate-500 font-light text-sm sm:text-base leading-relaxed">
-          Got questions? We've got answers. Here's everything you need to know about our engineering process, pricing models, IP ownership, and team ramp up.
-        </p>
-      </div>
-
-      <!-- ThreeAtoms Interactive Accordion Container (Floating Glass Cards with + / x Spring Rotation) -->
-      <div class="threeatoms-faq-section flex flex-col gap-4">
+      <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
         
-        <!-- FAQ 1 (Open by Default) -->
-        <div class="threeatoms-faq-item cardOpen" onclick="toggleThreeAtomsFaq(this)">
-          <button type="button" aria-expanded="true" class="threeatoms-question-row">
-            <span class="threeatoms-question-text">
-              How does project pricing and billing work?
-            </span>
-            <div class="threeatoms-icon-wrapper">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                <path d="M5 12h14"></path>
-                <path d="M12 5v14"></path>
-              </svg>
-            </div>
-          </button>
-          <div class="threeatoms-answer-wrapper" style="max-height: 280px;">
-            <div class="threeatoms-answerContent">
-              We provide two transparent engagement models: <strong>Fixed Price Milestone Contracts</strong> for clearly scoped projects with guaranteed budgets, and <strong>Dedicated Engineering Pods (Staff Augmentation)</strong> where you hire pre vetted senior full stack developers on a predictable monthly retainer with zero placement fees or markup penalties.
-            </div>
-          </div>
-        </div>
+        <!-- LEFT COLUMN: Sticky Header, Eyebrow, Title, Description, and Contact CTA -->
+        <div class="lg:w-[42%] lg:sticky lg:top-28 flex flex-col gap-6">
 
-        <!-- FAQ 2 -->
-        <div class="threeatoms-faq-item" onclick="toggleThreeAtomsFaq(this)">
-          <button type="button" aria-expanded="false" class="threeatoms-question-row">
-            <span class="threeatoms-question-text">
-              Who owns the intellectual property and code?
-            </span>
-            <div class="threeatoms-icon-wrapper">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                <path d="M5 12h14"></path>
-                <path d="M12 5v14"></path>
-              </svg>
-            </div>
-          </button>
-          <div class="threeatoms-answer-wrapper">
-            <div class="threeatoms-answerContent">
-              <strong>You own 100% of all intellectual property, source code, and design systems from Day 1.</strong> All pull requests, architecture docs, and CI/CD pipelines are pushed straight to your private GitHub or GitLab repositories under strict mutual non disclosure agreements with zero vendor lock in.
-            </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.04em] text-white leading-[1.15]">
+              Frequently Asked <br/>Questions
+            </h2>
+            <p class="max-w-[480px] text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+              Before kicking off your next sprint or dedicated build, get clarity on pricing models, IP ownership, timezones, and senior team orchestration.
+            </p>
           </div>
-        </div>
 
-        <!-- FAQ 3 -->
-        <div class="threeatoms-faq-item" onclick="toggleThreeAtomsFaq(this)">
-          <button type="button" aria-expanded="false" class="threeatoms-question-row">
-            <span class="threeatoms-question-text">
-              How do you manage timezone overlap with US and European clients?
-            </span>
-            <div class="threeatoms-icon-wrapper">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                <path d="M5 12h14"></path>
-                <path d="M12 5v14"></path>
-              </svg>
-            </div>
-          </button>
-          <div class="threeatoms-answer-wrapper">
-            <div class="threeatoms-answerContent">
-              We operate synchronized shifts guaranteeing a minimum of <strong>4 to 5 hours of real time overlap</strong> with North American (EST/PST) and European (GMT/CET) business hours. Our technical leads join daily standups, review PRs live on Slack/Teams, and provide video async updates to eliminate communication delays.
-            </div>
+          <div class="pt-2">
+            <a href="#cta" class="group inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#0a1638]/70 hover:bg-[#0f2152] text-white font-sans text-xs sm:text-sm font-normal tracking-wide border border-blue-500/30 hover:border-blue-400/60 transition-all duration-300 shadow-sm backdrop-blur-sm">
+              <span>Contact Us</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </a>
           </div>
-        </div>
+</div>
 
-        <!-- FAQ 4 -->
-        <div class="threeatoms-faq-item" onclick="toggleThreeAtomsFaq(this)">
-          <button type="button" aria-expanded="false" class="threeatoms-question-row">
-            <span class="threeatoms-question-text">
-              What is Model Context Protocol (MCP) and how does Mobrilz build it?
-            </span>
-            <div class="threeatoms-icon-wrapper">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                <path d="M5 12h14"></path>
-                <path d="M12 5v14"></path>
-              </svg>
-            </div>
-          </button>
-          <div class="threeatoms-answer-wrapper">
-            <div class="threeatoms-answerContent">
-              MCP is an open standard enabling frontier AI models (such as Claude and Gemini) to securely communicate with internal databases, private APIs, and custom enterprise tools. We design sandboxed MCP servers with RBAC authentication so autonomous AI agents can safely query real time company knowledge without data leakage.
-            </div>
+        <!-- RIGHT COLUMN: Flubble Stacked Floating Card Accordions with Smooth Expand Motion -->
+        <div class="lg:w-[58%] w-full flex flex-col gap-3">
+          
+          <!-- Accordion Item 1 -->
+          <div class="faq-item rounded-2xl bg-[#09143f] border border-[#1b2b65] hover:border-[#3779cb]/50 transition-colors duration-300 shadow-sm overflow-hidden">
+            <button type="button" onclick="toggleFlubbleFaq(1)" aria-expanded="false" class="faq-btn flex w-full cursor-pointer items-center justify-between gap-6 p-6 sm:p-7 text-left focus:outline-none transition-colors">
+              <span class="text-base sm:text-lg font-semibold tracking-[-0.02em] text-white leading-snug">
+                How does project pricing and billing work?
+              </span>
+              <div class="faq-icon-box w-8 h-8 rounded-full bg-white/5 text-slate-300 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"></i>
+              </div>
+            </button>
+            <div id="flubble-faq-1" class="faq-content grid grid-rows-[0fr] opacity-0 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+              <div class="overflow-hidden min-h-0"><div class="px-6 pb-6 sm:px-7 sm:pb-7 pt-0 text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
+                We provide two transparent billing models: <strong class="text-white">Fixed Price Milestone Contracts</strong> for clearly defined scopes and deliverables, and <strong class="text-white">Dedicated Developer Retainers (Staff Augmentation)</strong> where you hire pre vetted senior engineers on a predictable monthly cadence with zero recruitment fees, delivering 50 to 65% cost arbitrage with no quality compromise.
+              </div>
+            </div></div>
           </div>
-        </div>
 
-        <!-- FAQ 5 -->
-        <div class="threeatoms-faq-item" onclick="toggleThreeAtomsFaq(this)">
-          <button type="button" aria-expanded="false" class="threeatoms-question-row">
-            <span class="threeatoms-question-text">
-              How quickly can an engineering pod ramp up on our existing codebase?
-            </span>
-            <div class="threeatoms-icon-wrapper">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                <path d="M5 12h14"></path>
-                <path d="M12 5v14"></path>
-              </svg>
-            </div>
-          </button>
-          <div class="threeatoms-answer-wrapper">
-            <div class="threeatoms-answerContent">
-              Most dedicated engineering pods begin shipping pull requests within <strong>3 to 5 business days</strong>. We perform an initial code architecture audit, replicate your Docker development environments, and align on coding conventions so there is zero friction entering your sprint cycles.
-            </div>
+          <!-- Accordion Item 2 -->
+          <div class="faq-item rounded-2xl bg-[#09143f] border border-[#1b2b65] hover:border-[#3779cb]/50 transition-colors duration-300 shadow-sm overflow-hidden">
+            <button type="button" onclick="toggleFlubbleFaq(2)" aria-expanded="false" class="faq-btn flex w-full cursor-pointer items-center justify-between gap-6 p-6 sm:p-7 text-left focus:outline-none transition-colors">
+              <span class="text-base sm:text-lg font-semibold tracking-[-0.02em] text-white leading-snug">
+                Who owns the intellectual property and code?
+              </span>
+              <div class="faq-icon-box w-8 h-8 rounded-full bg-white/5 text-slate-300 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"></i>
+              </div>
+            </button>
+            <div id="flubble-faq-2" class="faq-content grid grid-rows-[0fr] opacity-0 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+              <div class="overflow-hidden min-h-0"><div class="px-6 pb-6 sm:px-7 sm:pb-7 pt-0 text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
+                <strong class="text-white">You own 100% of all intellectual property, source code, and design assets from Day 1.</strong> Code is pushed directly to your private GitHub or GitLab repositories under strict mutual NDAs. We retain zero vendor lock in and zero secondary claims.
+              </div>
+            </div></div>
           </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="faq-item rounded-2xl bg-[#09143f] border border-[#1b2b65] hover:border-[#3779cb]/50 transition-colors duration-300 shadow-sm overflow-hidden">
+            <button type="button" onclick="toggleFlubbleFaq(3)" aria-expanded="false" class="faq-btn flex w-full cursor-pointer items-center justify-between gap-6 p-6 sm:p-7 text-left focus:outline-none transition-colors">
+              <span class="text-base sm:text-lg font-semibold tracking-[-0.02em] text-white leading-snug">
+                How do you manage timezone differences and communication?
+              </span>
+              <div class="faq-icon-box w-8 h-8 rounded-full bg-white/5 text-slate-300 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"></i>
+              </div>
+            </button>
+            <div id="flubble-faq-3" class="faq-content grid grid-rows-[0fr] opacity-0 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+              <div class="overflow-hidden min-h-0"><div class="px-6 pb-6 sm:px-7 sm:pb-7 pt-0 text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
+                You work with a dedicated technical project lead and senior developers providing a minimum of <strong class="text-white">4 to 5 hours of real time overlap</strong> with North American (EST/PST) and European (GMT/CET) working hours. We integrate directly into your Slack, run asynchronous daily video standups, and provide transparent weekly sprint demos.
+              </div>
+            </div></div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="faq-item rounded-2xl bg-[#09143f] border border-[#1b2b65] hover:border-[#3779cb]/50 transition-colors duration-300 shadow-sm overflow-hidden">
+            <button type="button" onclick="toggleFlubbleFaq(4)" aria-expanded="false" class="faq-btn flex w-full cursor-pointer items-center justify-between gap-6 p-6 sm:p-7 text-left focus:outline-none transition-colors">
+              <span class="text-base sm:text-lg font-semibold tracking-[-0.02em] text-white leading-snug">
+                Can you take over and refactor an existing legacy codebase?
+              </span>
+              <div class="faq-icon-box w-8 h-8 rounded-full bg-white/5 text-slate-300 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"></i>
+              </div>
+            </button>
+            <div id="flubble-faq-4" class="faq-content grid grid-rows-[0fr] opacity-0 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+              <div class="overflow-hidden min-h-0"><div class="px-6 pb-6 sm:px-7 sm:pb-7 pt-0 text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
+                Yes. Our senior architects conduct a rapid 3 day technical audit to identify bottlenecks, security gaps, and technical debt. We then formulate a modular migration roadmap, implementing CI/CD automated test suites and sprint based refactoring without disrupting ongoing production uptime.
+              </div>
+            </div></div>
+          </div>
+
+          <!-- Accordion Item 5 -->
+          <div class="faq-item rounded-2xl bg-[#09143f] border border-[#1b2b65] hover:border-[#3779cb]/50 transition-colors duration-300 shadow-sm overflow-hidden">
+            <button type="button" onclick="toggleFlubbleFaq(5)" aria-expanded="false" class="faq-btn flex w-full cursor-pointer items-center justify-between gap-6 p-6 sm:p-7 text-left focus:outline-none transition-colors">
+              <span class="text-base sm:text-lg font-semibold tracking-[-0.02em] text-white leading-snug">
+                What post launch support and SLA guarantees do you offer?
+              </span>
+              <div class="faq-icon-box w-8 h-8 rounded-full bg-white/5 text-slate-300 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"></i>
+              </div>
+            </button>
+            <div id="flubble-faq-5" class="faq-content grid grid-rows-[0fr] opacity-0 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+              <div class="overflow-hidden min-h-0"><div class="px-6 pb-6 sm:px-7 sm:pb-7 pt-0 text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
+                Every release includes a <strong class="text-white">30 day comprehensive bug warranty</strong>. Following that, we provide flexible ongoing maintenance packages covering 24/7 uptime monitoring, critical security patching, performance optimization, and on demand feature iterations.
+              </div>
+            </div></div>
+          </div>
+
+          <!-- Accordion Item 6 -->
+          <div class="faq-item rounded-2xl bg-[#09143f] border border-[#1b2b65] hover:border-[#3779cb]/50 transition-colors duration-300 shadow-sm overflow-hidden">
+            <button type="button" onclick="toggleFlubbleFaq(6)" aria-expanded="false" class="faq-btn flex w-full cursor-pointer items-center justify-between gap-6 p-6 sm:p-7 text-left focus:outline-none transition-colors">
+              <span class="text-base sm:text-lg font-semibold tracking-[-0.02em] text-white leading-snug">
+                How fast can a dedicated Mobrilz engineering pod ramp up?
+              </span>
+              <div class="faq-icon-box w-8 h-8 rounded-full bg-white/5 text-slate-300 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]"></i>
+              </div>
+            </button>
+            <div id="flubble-faq-6" class="faq-content grid grid-rows-[0fr] opacity-0 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+              <div class="overflow-hidden min-h-0"><div class="px-6 pb-6 sm:px-7 sm:pb-7 pt-0 text-sm sm:text-base text-slate-300 font-normal leading-relaxed">
+                Because we maintain internal benches of vetted senior full stack engineers and cloud architects, we can deploy a tailored team into your codebase within <strong class="text-white">5 to 7 business days</strong> following our initial scoping and architecture alignment call.
+              </div>
+            </div></div>
+          </div>
+
         </div>
 
       </div>
 
     </div>
   </section>
-
 
   <!-- ========================================================================= -->
   <!-- 10. CTA SECTION (DARK CONTRAST SECTION: HIGH IMPACT CONVERSION)           -->
@@ -4051,17 +4069,44 @@
       });
     }
 
-    // FAQ Accordion
-    function toggleFaq(id) {
-      const ans = document.getElementById(`faq-ans-${id}`);
-      const icon = document.getElementById(`faq-icon-${id}`);
-      if (ans.classList.contains('hidden')) {
-        ans.classList.remove('hidden');
-        icon.classList.add('rotate-180');
-      } else {
-        ans.classList.add('hidden');
-        icon.classList.remove('rotate-180');
+    // Flubble FAQ Accordion Toggle
+    function toggleFlubbleFaq(index) {
+      const targetContent = document.getElementById('flubble-faq-' + index);
+      const allContents = document.querySelectorAll('.faq-content');
+      const allButtons = document.querySelectorAll('.faq-btn');
+      const allIcons = document.querySelectorAll('.faq-icon-box i, .faq-icon-box svg');
+      
+      const isOpen = targetContent && targetContent.classList.contains('grid-rows-[1fr]');
+
+      // Close all accordions with ultra-smooth cubic transition
+      allContents.forEach((c) => {
+        c.classList.remove('grid-rows-[1fr]', 'opacity-100');
+        c.classList.add('grid-rows-[0fr]', 'opacity-0');
+      });
+      allButtons.forEach((b) => {
+        b.setAttribute('aria-expanded', 'false');
+      });
+      allIcons.forEach((i) => {
+        i.style.transform = 'rotate(0deg)';
+      });
+
+      // If clicked item was closed, open it smoothly
+      if (!isOpen && targetContent) {
+        targetContent.classList.remove('grid-rows-[0fr]', 'opacity-0');
+        targetContent.classList.add('grid-rows-[1fr]', 'opacity-100');
+        const clickedBtn = targetContent.previousElementSibling;
+        if (clickedBtn) {
+          clickedBtn.setAttribute('aria-expanded', 'true');
+          const icon = clickedBtn.querySelector('.faq-icon-box i, .faq-icon-box svg');
+          if (icon) {
+            icon.style.transform = 'rotate(180deg)';
+          }
+        }
       }
+    }
+
+    function toggleFaq(id) {
+      toggleFlubbleFaq(id);
     }
 
     // Inquiry Form
@@ -5451,7 +5496,7 @@
         if (imgEl) {
           imgEl.style.transition = 'transform 240ms cubic-bezier(0.4, 0, 0.2, 1), opacity 200ms ease-in-out';
           imgEl.style.opacity = '0.35';
-          imgEl.style.transform = `translateY(${exitOffset}) scale(1.02)`;
+          imgEl.style.transform = `translateY(${exitOffset}) scale(1.12)`;
         }
 
         // PHASE 2: Swap content and prepare incoming slide-in position
@@ -5481,7 +5526,7 @@
           }
           if (imgEl) {
             imgEl.style.transition = 'none';
-            imgEl.style.transform = `translateY(${enterOffset}) scale(1.04)`;
+            imgEl.style.transform = `translateY(${enterOffset}) scale(1.12)`;
             imgEl.style.opacity = '0.4';
           }
 
