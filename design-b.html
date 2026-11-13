@@ -2782,14 +2782,10 @@
         <div class="lg:col-span-7 flex flex-col justify-between p-8 sm:p-12 lg:p-16 bg-white relative overflow-hidden" id="whyDetailPanel">
           
           <div id="whyDetailContent" class="transition-all duration-300 ease-out transform space-y-7">
-            <!-- Dynamic Icon & Metric Meta Bar -->
+            <!-- Dynamic Icon Bar -->
             <div class="flex items-center justify-between gap-4">
               <div id="whyDetailIconBox" class="w-16 h-16 rounded-2xl bg-blue-50/80 border border-blue-200/60 text-mobrilz-blue flex items-center justify-center shadow-sm">
                 <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
-              </div>
-              <div class="text-right">
-                <span id="whyDetailIndex" class="font-mono text-xs tracking-widest text-slate-400 font-medium">01 / 06</span>
-                <div id="whyDetailHighlight" class="text-xs font-mono font-semibold text-mobrilz-blue mt-0.5">Cost Optimization</div>
               </div>
             </div>
 
@@ -2820,15 +2816,16 @@
           </div>
 
           <!-- Bottom Action Callout -->
-          <div class="pt-8 border-t border-slate-100 mt-8 flex flex-wrap items-center justify-between gap-4">
-            <span class="text-xs text-slate-500 font-light">
-              Ready to accelerate your next release cycle?
-            </span>
-            <a href="#cta" class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-mobrilz-navy hover:bg-mobrilz-blue text-white font-sans text-xs sm:text-sm font-medium tracking-wide transition-all duration-300 shadow-sm hover:shadow-md">
-              <span>Start Collaboration</span>
-              <svg class="w-4 h-4 text-white" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10h11m0 0-4-4m4 4-4 4" />
-              </svg>
+          <div class="mt-8">
+            <a href="#cta" class="inline-flex items-center gap-2 text-sm sm:text-base font-normal text-slate-500 hover:text-[#3779cb] transition-colors py-1 group">
+              <span>Have a project in mind?</span>
+              <span class="font-medium text-[#3779cb] underline underline-offset-4 group-hover:text-[#09143f] inline-flex items-center gap-1">
+                Talk to an expert
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </span>
             </a>
           </div>
 
