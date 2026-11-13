@@ -2751,10 +2751,10 @@
   <!-- ========================================================================= -->
   <!-- 06. WHY CHOOSE US (BYTELEAPS-INSPIRED STUDIO MASTER-DETAIL INTERACTION)    -->
   <!-- ========================================================================= -->
-  <section id="why-us" class="py-20 md:py-32 bg-[#f8fafc] relative overflow-hidden">
+  <section id="why-us" class="py-20 md:py-32 bg-[#f4f8fd] relative overflow-hidden">
     <!-- Ambient brand backdrop accents -->
-    <div class="absolute top-1/3 -left-32 w-96 h-96 bg-[#3779cb]/8 blur-[120px] rounded-full pointer-events-none"></div>
-    <div class="absolute bottom-10 right-0 w-96 h-96 bg-[#09143f]/5 blur-[130px] rounded-full pointer-events-none"></div>
+    <div class="absolute top-1/4 -left-24 w-[460px] h-[460px] bg-[#3779cb]/12 blur-[130px] rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-6 -right-20 w-[440px] h-[440px] bg-[#09143f]/8 blur-[140px] rounded-full pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
@@ -2771,53 +2771,54 @@
       </div>
 
       <!-- ByteLeaps-Style Studio Split Layout Container -->
-      <div class="bg-white rounded-3xl border border-slate-200/90 shadow-[0_12px_40px_rgba(9,20,63,0.06)] grid grid-cols-1 lg:grid-cols-12 overflow-hidden min-h-[640px]">
+      <div class="bg-white rounded-3xl border border-[#d6e4f5] shadow-[0_20px_55px_rgba(9,20,63,0.08)] grid grid-cols-1 lg:grid-cols-12 overflow-hidden min-h-[640px]">
         
         <!-- Left Column: Interactive Pillars List (5 cols on lg) -->
-        <div class="lg:col-span-5 flex flex-col border-b lg:border-b-0 lg:border-r border-slate-200/80 bg-slate-50/50" id="whyPillarsList">
+        <div class="lg:col-span-5 flex flex-col border-b lg:border-b-0 lg:border-r border-[#d6e4f5] bg-[#eef4fc]/75" id="whyPillarsList">
           <!-- Populated dynamically by JavaScript -->
         </div>
 
         <!-- Right Column: Animated Studio Showcase Detail Panel (7 cols on lg) -->
         <div class="lg:col-span-7 flex flex-col justify-between p-8 sm:p-12 lg:p-16 bg-white relative overflow-hidden" id="whyDetailPanel">
+          <!-- Subtle top-right brand radial accent inside detail panel -->
+          <div class="absolute -top-24 -right-24 w-72 h-72 bg-[#3779cb]/10 blur-[80px] rounded-full pointer-events-none"></div>
           
-          <div id="whyDetailContent" class="transition-all duration-300 ease-out transform space-y-7">
+          <div id="whyDetailContent" class="relative z-10 transition-all duration-300 ease-out transform space-y-7">
             <!-- Dynamic Icon Bar -->
             <div class="flex items-center justify-between gap-4">
-              <div id="whyDetailIconBox" class="w-16 h-16 rounded-2xl bg-blue-50/80 border border-blue-200/60 text-mobrilz-blue flex items-center justify-center shadow-sm">
+              <div id="whyDetailIconBox" class="w-16 h-16 rounded-2xl bg-[#09143f] border border-[#1e3a8a] text-[#60a5fa] flex items-center justify-center shadow-[0_10px_25px_rgba(9,20,63,0.18)]">
                 <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
               </div>
             </div>
 
             <!-- Title & Long Description -->
-            <div class="space-y-3.5">
+            <div class="space-y-4">
               <h3 id="whyDetailTitle" class="text-2xl sm:text-4xl font-light text-mobrilz-navy tracking-tight leading-tight">
                 50 to 65% Cost Arbitrage
               </h3>
-              <p id="whyDetailDesc" class="text-slate-600 font-light text-sm sm:text-base leading-relaxed max-w-xl">
+              <p id="whyDetailDesc" class="text-slate-600 font-light text-sm sm:text-base leading-[1.85] sm:leading-[1.9] max-w-xl">
                 Collaborate directly with senior full stack architects and staff engineers at competitive offshore rates. We eliminate costly project management bloat, account managers, and agency markups so 100% of your budget translates directly into shippable code.
               </p>
             </div>
 
-
-
-            <!-- Proof Metric Stat Box -->
-            <div class="grid grid-cols-2 gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100">
-              <div>
-                <span id="whyMetricLabel1" class="text-[11px] font-mono text-slate-400 block uppercase">Capital Efficiency</span>
-                <span id="whyMetricVal1" class="text-xl sm:text-2xl font-light text-mobrilz-navy tracking-tight font-sans">2.5x Savings</span>
+            <!-- Dark Mobrilz Branded Proof Metric Stat Box -->
+            <div class="relative overflow-hidden grid grid-cols-2 gap-6 p-6 rounded-2xl bg-gradient-to-br from-[#060d28] via-[#09143f] to-[#102052] border border-[#1e3a8a]/80 shadow-[0_14px_34px_rgba(6,13,40,0.16)]">
+              <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-[#3779cb]/25 blur-[50px] rounded-full pointer-events-none"></div>
+              <div class="relative z-10">
+                <span id="whyMetricLabel1" class="text-[11px] font-mono text-[#bfdbfe] block uppercase tracking-wider mb-1">Capital Efficiency</span>
+                <span id="whyMetricVal1" class="text-xl sm:text-2xl font-light text-white tracking-tight font-sans">2.5x Savings</span>
               </div>
-              <div>
-                <span id="whyMetricLabel2" class="text-[11px] font-mono text-slate-400 block uppercase">Seniority Level</span>
-                <span id="whyMetricVal2" class="text-xl sm:text-2xl font-light text-mobrilz-blue tracking-tight font-sans">Lead & Staff Devs</span>
+              <div class="relative z-10 border-l border-white/10 pl-6">
+                <span id="whyMetricLabel2" class="text-[11px] font-mono text-[#bfdbfe] block uppercase tracking-wider mb-1">Seniority Level</span>
+                <span id="whyMetricVal2" class="text-xl sm:text-2xl font-light text-white tracking-tight font-sans">Lead &amp; Staff Devs</span>
               </div>
             </div>
 
           </div>
 
           <!-- Bottom Action Callout -->
-          <div class="mt-8">
-            <a href="#cta" class="inline-flex items-center gap-2 text-sm sm:text-base font-normal text-slate-500 hover:text-[#3779cb] transition-colors py-1 group">
+          <div class="relative z-10 mt-8 pt-6 border-t border-[#e2ecf8]">
+            <a href="#cta" class="inline-flex items-center gap-2 text-sm sm:text-base font-normal text-slate-600 hover:text-[#3779cb] transition-colors py-1 group">
               <span>Have a project in mind?</span>
               <span class="font-medium text-[#3779cb] underline underline-offset-4 group-hover:text-[#09143f] inline-flex items-center gap-1">
                 Talk to an expert
@@ -5427,9 +5428,9 @@
           desc: 'Your intellectual property belongs entirely to you. All pull requests, architecture diagrams, build artifacts, and infrastructure configurations are pushed straight to your enterprise Git organization from Day 1 under stringent mutual non disclosure protections.',
           icon: 'shield-check',
           svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>',
-          color: '#1e4280',
-          bgColor: 'rgba(30, 66, 128, 0.08)',
-          borderColor: 'rgba(30, 66, 128, 0.25)',
+          color: '#3779cb',
+          bgColor: 'rgba(55, 121, 203, 0.08)',
+          borderColor: 'rgba(55, 121, 203, 0.25)',
           highlight: 'Enterprise Security',
           tags: ['Direct Repo Commits', 'Mutual NDA Enforced', 'Zero Vendor Lock-in', 'Clean Audit Trails'],
           stat1: { label: 'IP Assignment', val: '100% Client-Owned' },
@@ -5442,9 +5443,9 @@
           desc: 'We engineer architectures prepared for autonomous AI workflows from the ground up. Integrating MCP servers, LLM orchestration layers, continuous evaluation benchmarks, and automated semantic pipelines that turn legacy products into modern intelligent platforms.',
           icon: 'cpu',
           svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>',
-          color: '#2563eb',
-          bgColor: 'rgba(37, 99, 235, 0.08)',
-          borderColor: 'rgba(37, 99, 235, 0.25)',
+          color: '#3779cb',
+          bgColor: 'rgba(55, 121, 203, 0.08)',
+          borderColor: 'rgba(55, 121, 203, 0.25)',
           highlight: 'Future-Proof Architecture',
           tags: ['MCP Server Ready', 'Vector Search & RAG', 'Agentic Workflows', 'Cognitive Tooling'],
           stat1: { label: 'Sprint Velocity', val: '3x Faster POCs' },
@@ -5472,9 +5473,9 @@
           desc: 'Quality is non-negotiable. Every pull request passes through automated regression test suites, unit tests, end to end browser tests, and static security vulnerability scans before anything merges into production branches.',
           icon: 'check-check',
           svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 7 17l-5-5"></path><path d="m22 10-7.5 7.5L13 16"></path></svg>',
-          color: '#18346b',
-          bgColor: 'rgba(24, 52, 107, 0.08)',
-          borderColor: 'rgba(24, 52, 107, 0.25)',
+          color: '#3779cb',
+          bgColor: 'rgba(55, 121, 203, 0.08)',
+          borderColor: 'rgba(55, 121, 203, 0.25)',
           highlight: 'Zero-Regressions',
           tags: ['Playwright / E2E', 'Continuous Integration', 'Static Security Scans', 'Zero-Downtime Releases'],
           stat1: { label: 'Test Coverage', val: '92%+ Suites' },
@@ -5487,9 +5488,9 @@
           desc: 'Seven years of reliable software delivery across North America, Europe, Australia, and Asia. Proven track record powering high scale consumer applications, fintech engines, B2B SaaS portals, and logistics ecosystems with 5-star verified reviews.',
           icon: 'award',
           svg: '<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>',
-          color: '#09143f',
-          bgColor: 'rgba(9, 20, 63, 0.08)',
-          borderColor: 'rgba(9, 20, 63, 0.25)',
+          color: '#3779cb',
+          bgColor: 'rgba(55, 121, 203, 0.08)',
+          borderColor: 'rgba(55, 121, 203, 0.25)',
           highlight: 'Proven Track Record',
           tags: ['15+ Global Markets', 'Fintech & SaaS Specialization', 'High-Concurrency Systems', 'Top Rated on Clutch'],
           stat1: { label: 'Shipped Products', val: '250+' },
@@ -5523,15 +5524,15 @@
 
         setTimeout(() => {
           if (iconBox) {
-            iconBox.style.backgroundColor = p.bgColor;
-            iconBox.style.borderColor = p.borderColor;
-            iconBox.style.color = p.color;
+            iconBox.style.backgroundColor = '#09143f';
+            iconBox.style.borderColor = '#1e3a8a';
+            iconBox.style.color = '#60a5fa';
             iconBox.innerHTML = p.svg;
           }
           if (indexEl) indexEl.textContent = `${p.num} / 06`;
           if (highlightEl) {
             highlightEl.textContent = p.highlight;
-            highlightEl.style.color = p.color;
+            highlightEl.style.color = '#3779cb';
           }
           if (titleEl) titleEl.textContent = p.title;
           if (descEl) descEl.textContent = p.desc;
@@ -5540,7 +5541,7 @@
           if (mLabel2 && p.stat2) mLabel2.textContent = p.stat2.label;
           if (mVal2 && p.stat2) {
             mVal2.textContent = p.stat2.val;
-            mVal2.style.color = p.color;
+            mVal2.style.color = '#60a5fa';
           }
 
           if (typeof lucide !== 'undefined' && lucide.createIcons) {
@@ -5556,10 +5557,10 @@
           const titleSpan = row.querySelector('.why-row-title');
           if (i === idx) {
             row.classList.add('active');
-            row.style.backgroundColor = '#ffffff';
-            row.style.borderLeftColor = p.color;
+            row.style.backgroundColor = '#09143f';
+            row.style.borderLeftColor = '#3779cb';
             if (titleSpan) {
-              titleSpan.style.color = '#09143f';
+              titleSpan.style.color = '#ffffff';
               titleSpan.style.fontWeight = '400';
             }
           } else {
@@ -5567,7 +5568,7 @@
             row.style.backgroundColor = 'transparent';
             row.style.borderLeftColor = 'transparent';
             if (titleSpan) {
-              titleSpan.style.color = '#475569';
+              titleSpan.style.color = '#1e293b';
               titleSpan.style.fontWeight = '300';
             }
           }
@@ -5578,10 +5579,10 @@
       PILLARS.forEach((p, i) => {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'why-pillar-row group flex flex-1 items-center px-6 sm:px-8 py-5 sm:py-6 text-left border-b border-slate-200/80 last:border-b-0 transition-all duration-200 cursor-pointer border-l-4 border-l-transparent';
+        btn.className = 'why-pillar-row group flex flex-1 items-center px-6 sm:px-8 py-5 sm:py-6 text-left border-b border-[#d6e4f5]/80 last:border-b-0 transition-all duration-200 cursor-pointer border-l-4 border-l-transparent hover:bg-white/70';
         btn.innerHTML = `
           <div class="flex-1 min-w-0">
-            <h3 class="why-row-title font-sans text-lg sm:text-xl lg:text-[22px] font-light text-slate-600 tracking-tight leading-snug transition-colors duration-200 group-hover:text-mobrilz-navy">
+            <h3 class="why-row-title font-sans text-lg sm:text-xl lg:text-[22px] font-light text-slate-800 tracking-tight leading-snug transition-colors duration-200 group-hover:text-[#3779cb]">
               ${p.title}
             </h3>
           </div>
