@@ -668,10 +668,10 @@
       transform: translate(0, 0);
     }
     .flubble-cta-studio-img {
-      transition: transform 1s var(--ease-out-expo);
+      transform: none !important;
     }
     .flubble-cta-img-container:hover .flubble-cta-studio-img {
-      transform: scale(1.04);
+      transform: none !important;
     }
 
     /* Flubble Monolithic Deep Footer & Sliding Navigation Items */
@@ -1831,7 +1831,7 @@
         </div>
 
         <!-- COLUMN 3: Visual Showcase Card with Image & Cyberpunk Glow -->
-        <div class="rounded-3xl bg-[#060d28] border border-white/10 overflow-hidden relative lg:w-[32%] lg:flex-1 h-[320px] lg:h-full group">
+        <div class="rounded-3xl bg-[#060d28] border border-white/10 overflow-hidden relative lg:w-[32%] lg:flex-1 h-[320px] lg:h-full">
           
           <!-- Image layers for smooth directional slide -->
           <div class="absolute inset-0 overflow-hidden rounded-3xl">
@@ -1839,7 +1839,7 @@
               id="flubbleShowcaseImg" 
               src="./assets/expertise/development.jpg" 
               alt="Mobrilz Services Showcase" 
-              class="w-full h-full object-cover object-center transition-all duration-500 ease-out group-hover:scale-105"
+              class="w-full h-full object-cover object-center"
             />
           </div>
 
