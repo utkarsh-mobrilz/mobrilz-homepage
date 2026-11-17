@@ -2372,7 +2372,7 @@
               </div>
 
               <!-- Vertical Web Solutions Container -->
-              <div class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3.5 shadow-sm space-y-2">
+              <div id="tech-box-web-solutions" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3.5 shadow-sm space-y-2 cursor-pointer">
                 
                 <!-- 1. Single Page Applications -->
                 <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
@@ -2456,7 +2456,7 @@
               </div>
 
               <!-- Vertical Mobile Solutions Container -->
-              <div class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3.5 shadow-sm space-y-2">
+              <div id="tech-box-mobile-solutions" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3.5 shadow-sm space-y-2 cursor-pointer">
                 
                 <!-- 1. eCommerce Apps -->
                 <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
@@ -2534,7 +2534,7 @@
               </div>
 
               <!-- Vertical AI Solutions Container -->
-              <div class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3.5 shadow-sm space-y-2">
+              <div id="tech-box-ai-solutions" class="w-full rounded-xl bg-[#0b1744]/85 hover:bg-[#11225c] border border-[#274492] hover:border-[#3779cb] hover:shadow-[0_0_20px_rgba(55,121,203,0.3)] transition-all duration-300 p-3.5 shadow-sm space-y-2 cursor-pointer">
                 
                 <!-- 1. Machine Learning Solutions -->
                 <div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/[0.03] border border-white/5">
@@ -5399,43 +5399,25 @@
           ctx.closePath();
           ctx.fill();
         } else if (typeof activeExpTab !== 'undefined' && activeExpTab === 'development') {
-          // Development tab only: Perfectly 4-fold rotationally and bilaterally symmetric concave square
-          // Pure trigonometric circular corner arcs joined by symmetric quadratic Bézier inward saddles (0.0px discrepancy)
-          const cornerDist = 102;
-          const cornerR = 13;
-          const waist = 13;
-          const saddleDist = 44;
+          // Development tab only: Perfectly 8-fold symmetric concave square / organic cushion
+          // Mathematically pure continuous polar harmonic (D4 dihedral symmetry across all 4 edges, 4 corners, and 2 diagonals)
+          // r(θ) = R0 * (1 - k * cos(4θ)) -> 0.0px discrepancy, no bulbous corner flaring
+          const R0 = 88;
+          const k = 0.31;
+          const totalPoints = 360;
 
           ctx.beginPath();
-          for (let i = 0; i < 4; i++) {
-            // Corners located at -135°, -45°, 45°, 135° (top-left, top-right, bottom-right, bottom-left)
-            const angle = -3 * Math.PI / 4 + i * (Math.PI / 2);
-            const nextAngle = -3 * Math.PI / 4 + (i + 1) * (Math.PI / 2);
+          for (let step = 0; step <= totalPoints; step++) {
+            const rad = (step * 2 * Math.PI) / totalPoints;
+            const r = R0 * (1 - k * Math.cos(4 * rad));
+            const x = r * Math.cos(rad);
+            const y = r * Math.sin(rad);
 
-            const bx = Math.cos(angle) * cornerDist;
-            const by = Math.sin(angle) * cornerDist;
-
-            const nx = -Math.sin(angle) * waist;
-            const ny = Math.cos(angle) * waist;
-
-            if (i === 0) {
-              ctx.moveTo(bx + nx, by + ny);
+            if (step === 0) {
+              ctx.moveTo(x, y);
             } else {
-              ctx.lineTo(bx + nx, by + ny);
+              ctx.lineTo(x, y);
             }
-
-            ctx.arc(bx, by, cornerR, angle - Math.PI / 2, angle + Math.PI / 2);
-
-            const nextBx = Math.cos(nextAngle) * cornerDist;
-            const nextBy = Math.sin(nextAngle) * cornerDist;
-            const nextNx = -Math.sin(nextAngle) * waist;
-            const nextNy = Math.cos(nextAngle) * waist;
-
-            const midAngle = angle + Math.PI / 4;
-            const sx = Math.cos(midAngle) * saddleDist;
-            const sy = Math.sin(midAngle) * saddleDist;
-
-            ctx.quadraticCurveTo(sx, sy, nextBx - nextNx, nextBy - nextNy);
           }
           ctx.closePath();
           ctx.fill();
@@ -5778,3 +5760,5 @@
   </script>
 </body>
 </html>
+
+
