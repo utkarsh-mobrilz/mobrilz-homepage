@@ -820,48 +820,48 @@
     /* Fluid Liquid Water Waves Motion for 'Why founders and enterprises partner with us' */
     @keyframes liquidWaterFlow1 {
       0% {
-        transform: scale(1.08) translate(0%, 0%) rotate(0deg);
+        transform: scale(1.15) translate(0%, 0%) rotate(0deg);
       }
       25% {
-        transform: scale(1.14) translate(-2.5%, 2%) rotate(1.2deg);
+        transform: scale(1.28) translate(-6%, 5%) rotate(3deg);
       }
       50% {
-        transform: scale(1.18) translate(1.5%, 3.5%) rotate(-0.8deg);
+        transform: scale(1.22) translate(4.5%, 8%) rotate(-2deg);
       }
       75% {
-        transform: scale(1.12) translate(-1.8%, -1.5%) rotate(0.6deg);
+        transform: scale(1.3) translate(-4%, -4%) rotate(1.8deg);
       }
       100% {
-        transform: scale(1.08) translate(0%, 0%) rotate(0deg);
+        transform: scale(1.15) translate(0%, 0%) rotate(0deg);
       }
     }
 
     @keyframes liquidWaterFlow2 {
       0% {
-        transform: scale(1.12) translate(0%, 0%) rotate(0deg);
-        opacity: 0.45;
-      }
-      33% {
-        transform: scale(1.2) translate(3%, -2.5%) rotate(-1.5deg);
-        opacity: 0.65;
-      }
-      66% {
-        transform: scale(1.1) translate(-2%, 2%) rotate(1deg);
+        transform: scale(1.2) translate(0%, 0%) rotate(0deg);
         opacity: 0.4;
       }
+      30% {
+        transform: scale(1.32) translate(7%, -6%) rotate(-3.5deg);
+        opacity: 0.75;
+      }
+      65% {
+        transform: scale(1.18) translate(-6%, 5%) rotate(2.5deg);
+        opacity: 0.35;
+      }
       100% {
-        transform: scale(1.12) translate(0%, 0%) rotate(0deg);
-        opacity: 0.45;
+        transform: scale(1.2) translate(0%, 0%) rotate(0deg);
+        opacity: 0.4;
       }
     }
 
     .why-us-water-flow-1 {
-      animation: liquidWaterFlow1 22s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+      animation: liquidWaterFlow1 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
       will-change: transform;
     }
 
     .why-us-water-flow-2 {
-      animation: liquidWaterFlow2 28s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+      animation: liquidWaterFlow2 15s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
       will-change: transform, opacity;
     }
 
