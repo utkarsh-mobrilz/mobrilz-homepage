@@ -818,6 +818,24 @@
     }
 
     /* Light Modern Azure & Sapphire Fluid Aurora Movement for 'Why founders and enterprises partner with us' */
+    /* Lighter Mobrilz Glass Waves Motion & Aura */
+    @keyframes whyUsMeshDrift {
+      0% {
+        transform: scale(1.08) translate(0%, 0%) rotate(0deg);
+      }
+      50% {
+        transform: scale(1.18) translate(-2.5%, 3%) rotate(1.5deg);
+      }
+      100% {
+        transform: scale(1.1) translate(2%, -2%) rotate(-1deg);
+      }
+    }
+
+    .why-us-mesh-motion {
+      animation: whyUsMeshDrift 16s ease-in-out infinite alternate;
+      will-change: transform;
+    }
+
     @keyframes whyUsLightAurora1 {
       0%, 100% {
         transform: translate(0%, 0%) scale(1) rotate(0deg);
@@ -2857,21 +2875,19 @@
   <!-- ========================================================================= -->
   <!-- 06. WHY CHOOSE US (BYTELEAPS-INSPIRED STUDIO MASTER-DETAIL INTERACTION)    -->
   <!-- ========================================================================= -->
-  <section id="why-us" class="pt-20 md:pt-32 pb-32 sm:pb-36 md:pb-44 relative overflow-hidden bg-[#f4f8fd]" style="background: radial-gradient(120% 120% at 50% 10%, #f9fbfe 0%, #eef5fc 48%, #e1effc 100%);">
-    <!-- Light Luminous Organic Azure Motion Blobs Background Layer -->
+  <section id="why-us" class="pt-20 md:pt-32 pb-32 sm:pb-36 md:pb-44 relative overflow-hidden bg-[#0d1e4c]" style="background: radial-gradient(130% 120% at 50% 15%, #183375 0%, #0f2252 50%, #0a1638 100%);">
+    <!-- Fluid Ribbed Glass Motion Layer (Mobrilz Palette: Sapphire, Royal Blue & Electric Cyan) -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-      <!-- Ambient light base wash -->
-      <div class="absolute inset-0 bg-gradient-to-b from-[#f9fbfe]/80 via-transparent to-[#e8f1fc]/70 pointer-events-none"></div>
+      <!-- Animated Fluid Ribbed Glass Mesh Image -->
+      <div class="absolute -inset-[15%] w-[130%] h-[130%] why-us-mesh-motion pointer-events-none opacity-85 mix-blend-screen"
+           style="background-image: url('assets/why_us_mesh_blue_vibrant.jpg'); background-size: cover; background-position: center; filter: saturate(1.25) contrast(1.15);"></div>
 
-      <!-- Flowing Light Aurora Radial Clouds with Brand Blue and Azure hues -->
-      <div class="why-us-light-blob-1 absolute -top-24 -left-20 w-[720px] h-[640px] rounded-full opacity-70 pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(55, 121, 203, 0.28) 0%, rgba(96, 165, 250, 0.18) 46%, transparent 72%); filter: blur(80px);"></div>
-      <div class="why-us-light-blob-2 absolute top-1/4 -right-28 w-[820px] h-[720px] rounded-full opacity-65 pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.24) 0%, rgba(55, 121, 203, 0.14) 48%, transparent 72%); filter: blur(85px);"></div>
-      <div class="why-us-light-blob-3 absolute -bottom-32 left-1/4 w-[780px] h-[580px] rounded-full opacity-60 pointer-events-none" style="background: radial-gradient(circle at center, rgba(147, 197, 253, 0.38) 0%, rgba(55, 121, 203, 0.15) 50%, transparent 75%); filter: blur(80px);"></div>
+      <!-- Atmospheric Ambient Glows in Mobrilz Blue & Azure -->
+      <div class="why-us-light-blob-1 absolute -top-32 -left-20 w-[780px] h-[700px] rounded-full opacity-60 pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(55, 121, 203, 0.45) 0%, rgba(96, 165, 250, 0.2) 48%, transparent 72%); filter: blur(75px);"></div>
+      <div class="why-us-light-blob-2 absolute top-1/4 -right-32 w-[850px] h-[750px] rounded-full opacity-55 pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.5) 0%, rgba(55, 121, 203, 0.25) 48%, transparent 72%); filter: blur(80px);"></div>
 
-      <!-- Subtle atmospheric mesh / grid texture for refined studio feel -->
-      <div class="absolute inset-0 opacity-[0.35]" style="background-image: radial-gradient(rgba(55, 121, 203, 0.18) 1px, transparent 1px); background-size: 32px 32px;"></div>
-      <!-- Soft edge fading -->
-      <div class="absolute inset-0 bg-gradient-to-t from-[#f4f8fd] via-transparent to-[#f4f8fd]/70 pointer-events-none"></div>
+      <!-- Edge Vignette & Transitions to adjacent sections -->
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0a1638]/60 via-transparent to-[#0a1638]/80 pointer-events-none"></div>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -2879,11 +2895,11 @@
       <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
         <div>
-          <h2 class="text-3xl sm:text-5xl font-light text-mobrilz-navy tracking-tight leading-[1.15]">
+          <h2 class="text-3xl sm:text-5xl font-light text-white tracking-tight leading-[1.15]">
             Why founders and enterprises <br class="hidden sm:inline" />partner with us
           </h2>
         </div>
-        <p class="text-slate-600 font-normal text-sm sm:text-base max-w-md leading-relaxed">
+        <p class="text-slate-200 font-normal text-sm sm:text-base max-w-md leading-relaxed">
           Engineering rigor without the cumbersome bureaucracy or inflated agency overhead. You collaborate directly with senior architects dedicated to measurable business outcomes.
         </p>
       </div>
