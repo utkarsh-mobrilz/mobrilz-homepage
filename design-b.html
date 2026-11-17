@@ -4406,37 +4406,39 @@
       }
     }
 
-    // Capture and fix the default height of the FAQ photo card so it stays completely stagnant
+    // Capture and fix the default height of the FAQ photo card so it exactly matches the left FAQ cards
     function initFaqPhotoHeight() {
       const container = document.getElementById('faqCardsContainer');
       const photoCard = document.getElementById('faqPhotoCard');
       if (!container || !photoCard) return;
       if (window.innerWidth >= 1024) {
-        // Measure the natural collapsed height of the 6 FAQ cards
-        const items = container.querySelectorAll('.faq-item');
-        let collapsedH = 0;
-        items.forEach((item, idx) => {
-          const btn = item.querySelector('.faq-btn');
-          if (btn) {
-            collapsedH += btn.offsetHeight;
-          }
-          if (idx < items.length - 1) {
-            collapsedH += 12; // gap-3 = 12px
-          }
-        });
-        if (collapsedH > 400) {
-          photoCard.style.height = collapsedH + 'px';
+        // Measure the exact offsetHeight of the faqCardsContainer
+        const containerH = container.offsetHeight;
+        if (containerH > 200) {
+          photoCard.style.height = containerH + 'px';
         } else {
-          photoCard.style.height = '540px';
+          // Fallback if not yet fully rendered
+          const items = container.querySelectorAll('.faq-item');
+          let collapsedH = 0;
+          items.forEach((item, idx) => {
+            collapsedH += item.offsetHeight || 72;
+            if (idx < items.length - 1) collapsedH += 12;
+          });
+          if (collapsedH > 200) photoCard.style.height = collapsedH + 'px';
         }
       } else {
         photoCard.style.height = '';
       }
     }
 
-    window.addEventListener('load', initFaqPhotoHeight);
+    window.addEventListener('load', () => {
+      initFaqPhotoHeight();
+      setTimeout(initFaqPhotoHeight, 100);
+      setTimeout(initFaqPhotoHeight, 500);
+    });
     window.addEventListener('resize', initFaqPhotoHeight);
     setTimeout(initFaqPhotoHeight, 150);
+    setTimeout(initFaqPhotoHeight, 600);
 
     function toggleFaq(id) {
       toggleFlubbleFaq(id);
