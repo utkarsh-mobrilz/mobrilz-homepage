@@ -3884,8 +3884,18 @@
 
     <style>
       .osmo-footer .pf-heading { font-family:'Plus Jakarta Sans',sans-serif; font-size:1.05rem; font-weight:500; color:#FAFAFA; margin-bottom:1.1rem; }
-      .osmo-footer .pf-link { font-size:0.85rem; font-weight:300; color:rgba(250,250,250,0.82); transition:color .2s ease; }
-      .osmo-footer .pf-link:hover { color:#9abbe3; }
+      .osmo-footer .pf-link {
+        position: relative;
+        display: inline-block;
+        font-size: 0.85rem;
+        font-weight: 300;
+        color: rgba(250,250,250,0.82);
+        transition: color 0.2s ease, transform 0.2s ease;
+      }
+      .osmo-footer .pf-link:hover {
+        color: #64b5f6;
+        transform: translateX(3px);
+      }
       .osmo-footer .pf-social { width:30px; height:30px; border-radius:9999px; background:#FAFAFA; color:#09143f; display:inline-flex; align-items:center; justify-content:center; transition:all .25s ease; }
       .osmo-footer .pf-social:hover { background:#3779cb; color:#fff; transform:translateY(-2px); }
       .osmo-footer-logo-svg path { transform-origin:center center; }
@@ -3959,7 +3969,7 @@
       <div class="h-px w-full bg-white/15"></div>
 
       <!-- BOTTOM: address + copyright | socials -->
-      <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pt-8">
+      <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pt-8 pb-3 sm:pb-4">
         <div class="space-y-4 max-w-md">
           <p class="text-sm sm:text-base text-[#FAFAFA] leading-relaxed">Mobrilz HQ, E 160, 3rd Floor, Sector 63 Noida, U.P. 201301, India.</p>
           <p class="text-xs sm:text-sm text-[#FAFAFA]/70">Monday to Friday: 9:00 AM to 6:00 PM (IST)</p>
@@ -3977,7 +3987,7 @@
     </div>
 
     <!-- GIANT FADED WORDMARK (bleeds off bottom edge) -->
-    <div data-footer-logo-wrap class="relative mt-6 sm:mt-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto -mb-[2%] select-none">
+    <div data-footer-logo-wrap class="relative mt-2 sm:mt-3 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto -mb-[2%] select-none">
         <svg class="osmo-footer-logo-svg w-full h-auto pointer-events-none" viewBox="0 0 468 97" fill="url(#mobrilzFooterFade)" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="mobrilzFooterFade" x1="0" y1="0" x2="0" y2="1">
