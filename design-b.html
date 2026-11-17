@@ -3879,313 +3879,107 @@
   </footer>
 
   <!-- SITE FOOTER (identical to Design A) -->
-  <footer id="footer" class="osmo-footer relative z-10 mt-0 pt-16 sm:pt-20 md:pt-26 pb-10 bg-[#040817] text-white [border-top-left-radius:50%_40px] [border-top-right-radius:50%_40px] sm:[border-top-left-radius:50%_65px] sm:[border-top-right-radius:50%_65px] md:[border-top-left-radius:50%_90px] md:[border-top-right-radius:50%_90px] overflow-hidden">
+  <footer id="footer" class="osmo-footer relative z-10 mt-0 pt-16 sm:pt-20 md:pt-26 pb-10 bg-[#09143f] text-white [border-top-left-radius:50%_40px] [border-top-right-radius:50%_40px] sm:[border-top-left-radius:50%_65px] sm:[border-top-right-radius:50%_65px] md:[border-top-left-radius:50%_90px] md:[border-top-right-radius:50%_90px] overflow-hidden">
 
-    <!-- Subtle Ambient Glows -->
-    <div class="absolute -top-40 left-1/3 w-[600px] h-[300px] bg-[#3779cb]/10 blur-[150px] pointer-events-none rounded-full"></div>
-    <div class="absolute bottom-0 right-10 w-[500px] h-[250px] bg-[#18346b]/20 blur-[130px] pointer-events-none rounded-full"></div>
 
     <style>
-      /* Osmo Kinetic Rolling Text Button (Dark Clean Version) */
-      .osmo-rolling-btn {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        border-radius: 9999px;
-        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        text-decoration: none;
-      }
-      .osmo-rolling-btn .label-wrapper {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        line-height: 1.2;
-      }
-      .osmo-rolling-btn .label-primary,
-      .osmo-rolling-btn .label-hover {
-        display: block;
-        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .osmo-rolling-btn .label-hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(100%);
-      }
-      .osmo-rolling-btn:hover .label-primary {
-        transform: translateY(-100%);
-      }
-      .osmo-rolling-btn:hover .label-hover {
-        transform: translateY(0%);
-      }
-
-      /* Clean Dark Square Social Icon Button */
-        .osmo-square-icon-btn {
-          position: relative;
-          width: 50px;
-          height: 50px;
-          border-radius: 14px;
-          background: rgba(255, 255, 255, 0.04);
-          border: 1px solid rgba(255, 255, 255, 0.12);
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          overflow: hidden;
-          transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-          color: #FAFAFA;
-          box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-        }
-        .osmo-square-icon-btn:hover {
-          border-color: #3779cb;
-          color: #64b5f6;
-          background: rgba(55, 121, 203, 0.15);
-          transform: translateY(-2px);
-          box-shadow: 0 4px 14px rgba(55, 121, 203, 0.3);
-        }
-        .osmo-square-icon-btn .icon-stack {
-          position: relative;
-          width: 22px;
-          height: 22px;
-          overflow: hidden;
-        }
-        .osmo-square-icon-btn .icon-1,
-        .osmo-square-icon-btn .icon-2 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .osmo-square-icon-btn .icon-2 {
-          transform: translateY(100%);
-        }
-        .osmo-square-icon-btn:hover .icon-1 {
-          transform: translateY(-100%);
-        }
-        .osmo-square-icon-btn:hover .icon-2 {
-          transform: translateY(0%);
-        }
-
-      .osmo-footer .footer-col-heading {
-        font-size: 1.125rem !important; /* 18px */
-        font-weight: 800 !important;
-        font-family: 'Plus Jakarta Sans', var(--font-primary, sans-serif) !important;
-        letter-spacing: 0.08em;
-      }
-      /* Clean Dark Nav Links */
-      .osmo-nav-link {
-        position: relative;
-        display: inline-block;
-        color: #FAFAFA;
-        font-weight: 400;
-        font-size: 0.875rem;
-        transition: color 0.2s ease, transform 0.2s ease;
-      }
-      .osmo-nav-link:hover {
-        color: #64b5f6;
-        transform: translateX(3px);
-      }
-
-      /* Giant Logo Path Morph Scroll Effect */
-      .osmo-footer-logo-svg path {
-        transition: transform 0.15s ease-out;
-        transform-origin: center center;
-      }
+      .osmo-footer .pf-heading { font-family:'Plus Jakarta Sans',sans-serif; font-size:1.05rem; font-weight:500; color:#FAFAFA; margin-bottom:1.1rem; }
+      .osmo-footer .pf-link { font-size:0.85rem; font-weight:300; color:rgba(250,250,250,0.82); transition:color .2s ease; }
+      .osmo-footer .pf-link:hover { color:#9abbe3; }
+      .osmo-footer .pf-social { width:30px; height:30px; border-radius:9999px; background:#FAFAFA; color:#09143f; display:inline-flex; align-items:center; justify-content:center; transition:all .25s ease; }
+      .osmo-footer .pf-social:hover { background:#3779cb; color:#fff; transform:translateY(-2px); }
+      .osmo-footer-logo-svg path { transform-origin:center center; }
     </style>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-      <!-- ==================== TOP ROW: 4 NAVIGATION COLUMNS ==================== -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 lg:gap-12 pb-14">
-
-        <!-- Col 1: COMPANY -->
-        <div class="space-y-4">
-          <h4 class="footer-col-heading text-base sm:text-lg tracking-wider text-[#FAFAFA] uppercase font-sans">Company</h4>
-          <ul class="space-y-2.5">
-            <li><a href="#why-us" class="osmo-nav-link">About Us</a></li>
-            <li><a href="#cta" class="osmo-nav-link">Careers</a></li>
-            <li><a href="#technologies" class="osmo-nav-link">Technologies</a></li>
-            <li><a href="#projects" class="osmo-nav-link">Portfolios</a></li>
-            <li><a href="#faqs" class="osmo-nav-link">Refund Policy</a></li>
-            <li><a href="#faqs" class="osmo-nav-link">Privacy Policy</a></li>
-            <li><a href="#faqs" class="osmo-nav-link">Terms of Service</a></li>
+      <!-- TOP: 5 link columns -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-10 pb-12">
+        <div>
+          <h4 class="pf-heading">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="#why-us" class="pf-link">About Us</a></li>
+            <li><a href="#cta" class="pf-link">Careers</a></li>
+            <li><a href="#technologies" class="pf-link">Technologies</a></li>
+            <li><a href="#projects" class="pf-link">Portfolios</a></li>
+            <li><a href="#faqs" class="pf-link">Refund Policy</a></li>
+            <li><a href="#faqs" class="pf-link">Privacy Policy</a></li>
+            <li><a href="#faqs" class="pf-link">Terms of Service</a></li>
           </ul>
         </div>
-
-        <!-- Col 2: SERVICES -->
-        <div class="space-y-4">
-          <h4 class="footer-col-heading text-base sm:text-lg tracking-wider text-[#FAFAFA] uppercase font-sans">Services</h4>
-          <ul class="space-y-2.5">
-            <li><a href="#expertise" class="osmo-nav-link">Web Development</a></li>
-            <li><a href="#expertise" class="osmo-nav-link">Mobile Apps</a></li>
-            <li><a href="#expertise" class="osmo-nav-link">Cloud Solutions</a></li>
-            <li><a href="#expertise" class="osmo-nav-link">Custom Software</a></li>
-            <li><a href="#expertise" class="osmo-nav-link">UI/UX Design</a></li>
-            <li><a href="#expertise" class="osmo-nav-link">Branding</a></li>
-            <li><a href="#expertise" class="osmo-nav-link">Graphics Design</a></li>
-            <li><a href="#expertise" class="osmo-nav-link">DevOps</a></li>
-            <li><a href="#expertise" class="osmo-nav-link">API Integration</a></li>
-            <li><a href="#expertise" class="osmo-nav-link">Maintenance</a></li>
+        <div>
+          <h4 class="pf-heading">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="#expertise" class="pf-link">Web Development</a></li>
+            <li><a href="#expertise" class="pf-link">Mobile Apps</a></li>
+            <li><a href="#expertise" class="pf-link">Cloud Solutions</a></li>
+            <li><a href="#expertise" class="pf-link">Custom Software</a></li>
+            <li><a href="#expertise" class="pf-link">UI/UX Design</a></li>
+            <li><a href="#expertise" class="pf-link">Branding</a></li>
+            <li><a href="#expertise" class="pf-link">Graphics Design</a></li>
+            <li><a href="#expertise" class="pf-link">DevOps</a></li>
+            <li><a href="#expertise" class="pf-link">API Integration</a></li>
+            <li><a href="#expertise" class="pf-link">Maintenance</a></li>
           </ul>
         </div>
-
-        <!-- Col 3: INDUSTRIES -->
-        <div class="space-y-4">
-          <h4 class="footer-col-heading text-base sm:text-lg tracking-wider text-[#FAFAFA] uppercase font-sans">Industries</h4>
-          <ul class="space-y-2.5">
-            <li><a href="#projects" class="osmo-nav-link">Manufacturing</a></li>
-            <li><a href="#projects" class="osmo-nav-link">Finance</a></li>
-            <li><a href="#projects" class="osmo-nav-link">Healthcare</a></li>
-            <li><a href="#projects" class="osmo-nav-link">Real Estate</a></li>
-            <li><a href="#projects" class="osmo-nav-link">Education</a></li>
-            <li><a href="#projects" class="osmo-nav-link">Retail & eCommerce</a></li>
-            <li><a href="#projects" class="osmo-nav-link">Logistics & Supply</a></li>
+        <div>
+          <h4 class="pf-heading">Industries</h4>
+          <ul class="space-y-3">
+            <li><a href="#projects" class="pf-link">Manufacturing</a></li>
+            <li><a href="#projects" class="pf-link">Finance</a></li>
+            <li><a href="#projects" class="pf-link">Healthcare</a></li>
+            <li><a href="#projects" class="pf-link">Real Estate</a></li>
+            <li><a href="#projects" class="pf-link">Education</a></li>
+            <li><a href="#projects" class="pf-link">Retail &amp; eCommerce</a></li>
+            <li><a href="#projects" class="pf-link">Logistics &amp; Supply</a></li>
           </ul>
         </div>
-
-        <!-- Col 4: RESOURCES -->
-        <div class="space-y-4">
-          <h4 class="footer-col-heading text-base sm:text-lg tracking-wider text-[#FAFAFA] uppercase font-sans">Resources</h4>
-          <ul class="space-y-2.5">
-            <li><a href="#case-studies" class="osmo-nav-link">Case Studies</a></li>
-            <li><a href="#faqs" class="osmo-nav-link">Blog & Insights</a></li>
-            <li><a href="#faqs" class="osmo-nav-link">Knowledge Base</a></li>
-            <li><a href="#faqs" class="osmo-nav-link">Client Reviews</a></li>
-            <li><a href="#cta" class="osmo-nav-link">Free Quote Calculator</a></li>
-            <li><a href="#faqs" class="osmo-nav-link">FAQs</a></li>
+        <div>
+          <h4 class="pf-heading">Resources</h4>
+          <ul class="space-y-3">
+            <li><a href="#case-studies" class="pf-link">Case Studies</a></li>
+            <li><a href="#faqs" class="pf-link">Blog &amp; Insights</a></li>
+            <li><a href="#faqs" class="pf-link">Knowledge Base</a></li>
+            <li><a href="#faqs" class="pf-link">Client Reviews</a></li>
+            <li><a href="#cta" class="pf-link">Free Quote Calculator</a></li>
+            <li><a href="#faqs" class="pf-link">FAQs</a></li>
           </ul>
         </div>
-
-      </div>
-
-      <!-- ==================== MIDDLE ROW: VISIT US, GET IN TOUCH & SOCIALS ==================== -->
-      <div class="py-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start">
-
-          <!-- Section 1: Visit Us (Col 1-5) -->
-          <div class="lg:col-span-4 space-y-3 font-sans">
-            <h4 class="text-base sm:text-lg font-semibold text-[#FAFAFA] tracking-tight">Visit Us</h4>
-            <div class="space-y-2.5 text-xs sm:text-sm text-[#FAFAFA] font-light">
-              <div class="flex items-start gap-2.5">
-                <i data-lucide="map-pin" class="w-4 h-4 text-[#FAFAFA] shrink-0 mt-0.5"></i>
-                <span class="leading-relaxed text-[#FAFAFA]">E 160, 3rd Floor, Sector 63 Noida, U.P. 201301, India</span>
-              </div>
-              <div class="flex items-center gap-2.5">
-                <i data-lucide="clock" class="w-4 h-4 text-[#FAFAFA] shrink-0"></i>
-                <span class="text-[#FAFAFA]">Monday to Friday: 9:00 AM to 6:00 PM (IST)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Section 2: Get in Touch (Col 6-10) - Centered column alignment -->
-          <div class="lg:col-span-4 space-y-3 font-sans lg:flex lg:flex-col lg:items-center">
-            <div class="w-fit space-y-3">
-              <h4 class="text-base sm:text-lg font-semibold text-[#FAFAFA] tracking-tight">Get in Touch</h4>
-              <div class="space-y-3.5 text-xs sm:text-sm text-[#FAFAFA] font-light">
-                <!-- Sales Phone -->
-                <div class="flex items-center gap-2.5">
-                  <i data-lucide="phone" class="w-4 h-4 text-[#FAFAFA] shrink-0"></i>
-                  <a href="tel:+918010355718" class="text-[#FAFAFA] hover:text-white transition-colors">+91-8010355718 <span class="text-[#FAFAFA]/70 font-normal">(Sales)</span></a>
-                </div>
-                <!-- HR / Careers Phone (With matching icon & comfortable breathing room) -->
-                <div class="flex items-center gap-2.5">
-                  <i data-lucide="phone" class="w-4 h-4 text-[#FAFAFA] shrink-0"></i>
-                  <a href="tel:+917982528542" class="text-[#FAFAFA] hover:text-white transition-colors">+91-7982528542 <span class="text-[#FAFAFA]/70 font-normal">(HR/Careers)</span></a>
-                </div>
-                <!-- Email -->
-                <div class="flex items-center gap-2.5 pt-1">
-                  <i data-lucide="mail" class="w-4 h-4 text-[#FAFAFA] shrink-0"></i>
-                  <a href="mailto:sales@mobrilz.com" class="text-[#FAFAFA] hover:text-white transition-colors">sales@mobrilz.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Social Links (Col 11-12) -->
-          <div class="lg:col-span-4 flex items-center lg:justify-end pt-4 lg:pt-0">
-            <div class="grid grid-cols-3 gap-3 w-fit">
-              <!-- LinkedIn -->
-            <a href="https://linkedin.com/company/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="osmo-square-icon-btn">
-              <div class="icon-stack">
-                <span class="icon-1">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </span>
-                <span class="icon-2">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </span>
-              </div>
-            </a>
-            <!-- Twitter / X -->
-            <a href="https://twitter.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" class="osmo-square-icon-btn">
-              <div class="icon-stack">
-                <span class="icon-1">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-                </span>
-                <span class="icon-2">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-                </span>
-              </div>
-            </a>
-            <!-- GitHub -->
-            <a href="https://github.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="osmo-square-icon-btn">
-              <div class="icon-stack">
-                <span class="icon-1">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                </span>
-                <span class="icon-2">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                </span>
-              </div>
-            </a>
-            <!-- YouTube -->
-            <a href="https://youtube.com/@mobrilz" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="osmo-square-icon-btn">
-              <div class="icon-stack">
-                <span class="icon-1">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
-                </span>
-                <span class="icon-2">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
-                </span>
-              </div>
-            </a>
-            <!-- Instagram -->
-            <a href="https://instagram.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="osmo-square-icon-btn">
-              <div class="icon-stack">
-                <span class="icon-1">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
-                </span>
-                <span class="icon-2">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
-                </span>
-              </div>
-            </a>
-            <!-- Facebook -->
-            <a href="https://facebook.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="osmo-square-icon-btn">
-              <div class="icon-stack">
-                <span class="icon-1">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                </span>
-                <span class="icon-2">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                </span>
-              </div>
-            </a>
-            </div>
-          </div>
-
+        <div>
+          <h4 class="pf-heading">Get in Touch</h4>
+          <ul class="space-y-3">
+            <li><a href="mailto:sales@mobrilz.com" class="pf-link">sales@mobrilz.com</a></li>
+            <li><a href="tel:+918010355718" class="pf-link">+91-8010355718 (Sales)</a></li>
+            <li><a href="tel:+917982528542" class="pf-link">+91-7982528542 (HR/Careers)</a></li>
+          </ul>
         </div>
       </div>
 
-      <!-- ==================== SIGNATURE GIANT SCROLL-DRIVEN LOGO ==================== -->
-      <!-- Clean, crisp Antigravity-style giant watermark logo across the bottom in dark mode -->
-      <div data-footer-logo-wrap class="pt-16 pb-6 flex items-center justify-center overflow-hidden select-none">
-        <svg class="osmo-footer-logo-svg w-full max-w-6xl h-auto text-[#FAFAFA] pointer-events-none" viewBox="0 0 468 97" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <!-- Divider -->
+      <div class="h-px w-full bg-white/15"></div>
+
+      <!-- BOTTOM: address + copyright | socials -->
+      <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pt-8">
+        <div class="space-y-4 max-w-md">
+          <p class="text-sm sm:text-base text-[#FAFAFA] leading-relaxed">Mobrilz HQ, E 160, 3rd Floor, Sector 63 Noida, U.P. 201301, India.</p>
+          <p class="text-xs sm:text-sm text-[#FAFAFA]/70">Monday to Friday: 9:00 AM to 6:00 PM (IST)</p>
+          <p class="text-sm sm:text-base text-[#FAFAFA]">&copy; <span id="pf-year">2026</span> Mobrilz. All rights reserved.</p>
+        </div>
+        <div class="flex items-center gap-2.5">
+          <a href="https://linkedin.com/company/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="pf-social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          <a href="https://twitter.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" class="pf-social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+          <a href="https://github.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="pf-social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a>
+          <a href="https://youtube.com/@mobrilz" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="pf-social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a>
+          <a href="https://instagram.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="pf-social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+          <a href="https://facebook.com/mobrilz" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="pf-social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GIANT FADED WORDMARK (bleeds off bottom edge) -->
+    <div data-footer-logo-wrap class="relative mt-4 sm:mt-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto -mb-[1%] sm:-mb-[0.5%] pb-4 sm:pb-6 select-none overflow-hidden">
+        <svg class="osmo-footer-logo-svg w-full h-auto pointer-events-none transform -translate-y-4 sm:-translate-y-8 md:-translate-y-12" viewBox="0 0 468 97" fill="url(#mobrilzFooterFade)" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="mobrilzFooterFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#9abbe3" stop-opacity="0.38"/><stop offset="100%" stop-color="#9abbe3" stop-opacity="0.02"/></linearGradient></defs>
           <!-- Letter M (Official 3-stroke Mobrilz Brand Mark) -->
           <path id="osmo-l-0" d="M118 28c-3 0-5 1-8 5L91 60C85 68 81 74 73 76c-10 3-18 0-25-9-6-7-8-16-16-17 3-10 16-14 23-6 4 5 7 15 11 15 6 0 18-27 30-38 9-6 19-2 22 7ZM99 14c13-18 40-10 43 12 1 9 1 43 0 55-1 14-18 15-20 3-2-15 1-40 0-56-1-13-11-16-23-14ZM49 36c-4-2-8-2-12-1-9 2-10 11-9 22l1 19c0 6-1 10-5 13-7 6-16 0-17-9-1-11-1-33 3-41 7-14 27-18 39-3Z" />
           <!-- Letter O -->
@@ -4201,11 +3995,8 @@
           <!-- Letter Z -->
           <path id="osmo-l-6" d="M459 36 L434 77 L459 77 L457 92 L404 92 L428 51 L407 51 L410 36 Z" />
         </svg>
-      </div>
-
     </div>
 
-    <!-- Osmo ScrollTrigger Kinetic Letter Fan Script -->
     <script>
       (function() {
         function setupOsmoFooterMotion() {
@@ -4225,7 +4016,7 @@
               transformOrigin: "center center",
               rotate: fanAngles[idx] || 0,
               yPercent: yPercents[idx] || 0,
-              opacity: 0.85
+              opacity: 0.6
             });
           });
 
