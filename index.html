@@ -5399,26 +5399,32 @@
           ctx.closePath();
           ctx.fill();
         } else if (typeof activeExpTab !== 'undefined' && activeExpTab === 'development') {
-          // Development tab only: Perfectly 8-fold symmetric concave square / organic cushion
-          // Mathematically pure continuous polar harmonic (D4 dihedral symmetry across all 4 edges, 4 corners, and 2 diagonals)
-          // r(θ) = R0 * (1 - k * cos(4θ)) -> 0.0px discrepancy, no bulbous corner flaring
-          const R0 = 88;
-          const k = 0.31;
-          const totalPoints = 360;
+          // Development tab only: Concave square / pinched rectangle shape matching user sketch
+          const halfW = 86;
+          const halfH = 86;
+          const dip = 42; // How deeply each side bows inward
+          const cornerR = 14; // Smooth rounded corners
 
           ctx.beginPath();
-          for (let step = 0; step <= totalPoints; step++) {
-            const rad = (step * 2 * Math.PI) / totalPoints;
-            const r = R0 * (1 - k * Math.cos(4 * rad));
-            const x = r * Math.cos(rad);
-            const y = r * Math.sin(rad);
+          // Top-left corner
+          ctx.moveTo(-halfW + cornerR, -halfH);
+          // Top edge bowing inward towards center
+          ctx.quadraticCurveTo(0, -halfH + dip, halfW - cornerR, -halfH);
+          // Top-right corner rounded
+          ctx.arcTo(halfW, -halfH, halfW, -halfH + cornerR, cornerR);
+          // Right edge bowing inward towards center
+          ctx.quadraticCurveTo(halfW - dip, 0, halfW, halfH - cornerR);
+          // Bottom-right corner rounded
+          ctx.arcTo(halfW, halfH, halfW - cornerR, halfH, cornerR);
+          // Bottom edge bowing inward towards center
+          ctx.quadraticCurveTo(0, halfH - dip, -halfW + cornerR, halfH);
+          // Bottom-left corner rounded
+          ctx.arcTo(-halfW, halfH, -halfW, halfH - cornerR, cornerR);
+          // Left edge bowing inward towards center
+          ctx.quadraticCurveTo(-halfW + dip, 0, -halfW, -halfH + cornerR);
+          // Top-left corner rounded
+          ctx.arcTo(-halfW, -halfH, -halfW + cornerR, -halfH, cornerR);
 
-            if (step === 0) {
-              ctx.moveTo(x, y);
-            } else {
-              ctx.lineTo(x, y);
-            }
-          }
           ctx.closePath();
           ctx.fill();
         } else {
