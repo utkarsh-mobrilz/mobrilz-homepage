@@ -1119,7 +1119,7 @@
 
   </style>
 </head>
-<body class="bg-light-grid antialiased selection:bg-[#3779cb] selection:text-white">
+<body class="bg-white antialiased selection:bg-[#3779cb] selection:text-white">
   <!-- Interactive Floating Cursor Badge ('View Case Study') -->
   <div id="customCursor" class="custom-cursor">
     <span>View Case Study</span>
@@ -4404,31 +4404,39 @@
           }
         }
       }
-
-      // Sync photo height with FAQ cards
-      if (typeof syncFaqPhotoHeight === 'function') {
-        setTimeout(syncFaqPhotoHeight, 520);
-      }
     }
 
-    // Sync FAQ image height to exactly match the bottom of the last FAQ card
-    function syncFaqPhotoHeight() {
+    // Capture and fix the default height of the FAQ photo card so it stays completely stagnant
+    function initFaqPhotoHeight() {
       const container = document.getElementById('faqCardsContainer');
       const photoCard = document.getElementById('faqPhotoCard');
       if (!container || !photoCard) return;
       if (window.innerWidth >= 1024) {
-        const h = container.offsetHeight;
-        if (h > 0) {
-          photoCard.style.height = h + 'px';
+        // Measure the natural collapsed height of the 6 FAQ cards
+        const items = container.querySelectorAll('.faq-item');
+        let collapsedH = 0;
+        items.forEach((item, idx) => {
+          const btn = item.querySelector('.faq-btn');
+          if (btn) {
+            collapsedH += btn.offsetHeight;
+          }
+          if (idx < items.length - 1) {
+            collapsedH += 12; // gap-3 = 12px
+          }
+        });
+        if (collapsedH > 400) {
+          photoCard.style.height = collapsedH + 'px';
+        } else {
+          photoCard.style.height = '540px';
         }
       } else {
         photoCard.style.height = '';
       }
     }
 
-    window.addEventListener('load', syncFaqPhotoHeight);
-    window.addEventListener('resize', syncFaqPhotoHeight);
-    setTimeout(syncFaqPhotoHeight, 100);
+    window.addEventListener('load', initFaqPhotoHeight);
+    window.addEventListener('resize', initFaqPhotoHeight);
+    setTimeout(initFaqPhotoHeight, 150);
 
     function toggleFaq(id) {
       toggleFlubbleFaq(id);
